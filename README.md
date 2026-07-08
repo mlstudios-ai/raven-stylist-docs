@@ -3,13 +3,11 @@
 
 ## Overview
 
-RAVEN is a conversational AI stylist designed for online fashion retail, built to close the gap between what customers say and what they actually mean — a problem the report calls Intent Engineering, resolved by combining immediate, contextual, and universal intent signals. At its core is Sigmoi, a domain-specific reasoning model fine-tuned from the GPT-OSS-20B Mixture-of-Experts base using supervised fine-tuning on a synthetically generated, research-guided dataset of 4,739 samples spanning style, virtual try-on, and conversational tasks. RAVEN wraps this model in a multi-agent architecture with a conversational interface and photorealistic virtual try-on, aiming to achieve intuitive UI/UX, personalised guidance of an in-store stylist. Evaluated with an LLM-as-judge framework (Claude Opus 4.6) across six target-aligned criteria on 50 held-out style samples, Sigmoi outperforms its base model on every criterion — reaching mean scores of 0.82 on intent alignment and 0.78 on reasoning alignment against the base model's 0.56 and 0.48.
+RAVEN is a conversational AI stylist designed for online fashion retail, built to close the gap between what customers say and what they actually mean — a problem the report calls Intent Engineering, resolved by combining immediate, contextual, and universal intent signals. At its core is Sigmoi, a domain-specific reasoning model fine-tuned from the GPT-OSS-20B Mixture-of-Experts base using supervised fine-tuning on a synthetically generated, research-guided dataset of 4,739 samples spanning style, virtual try-on, and conversational tasks. RAVEN wraps this model in a multi-agent architecture with a conversational interface and photorealistic virtual try-on, aiming to achieve intuitive UI/UX, personalised guidance of an in-store stylist. 
 
 **Purpose**: Demonstrate that domain-specific trained models and multi-agent system design can enhance personalisation and recommendations.
 
 > NOTE: This is a distilled repository for illustrating the overall design and implementation of an end-to-end AI-native app spanning data pipeline, model training, and multi-agent applications. Separate repos contain the full agentic application and MLOps codebase.
-
-Conversational AI application for personalised style recommendations, powered by custom fine-tuned language models and multi-agent architecture.
 
 
 ## Features
