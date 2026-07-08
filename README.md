@@ -1,14 +1,16 @@
 # Raven AI Stylist
-
-> NOTE: This is a trimmed down and sanitised version of documendation and code to illustate the overall design and implmentation of end-to-end AI-native app spanning data pipeline, model training, and multi-agent applications.
-
-Conversational AI application for personalised style recommendations, powered by custom fine-tuned language models and multi-agent architecture.
+![System Architecture](images/ui.png)
 
 ## Overview
 
-Raven AI stylist showcasing domain-specific model fine-tuning and multi-agent system design for personalised recommendations. The system combines a custom-trained MoE model with a multi-agent orchestrator to deliver contextual style advice and AI-generated virtual try-on images.
+RAVEN is a conversational AI stylist designed for online fashion retail, built to close the gap between what customers say and what they actually mean — a problem the report calls Intent Engineering, resolved by combining immediate, contextual, and universal intent signals. At its core is Sigmoi, a domain-specific reasoning model fine-tuned from the GPT-OSS-20B Mixture-of-Experts base using supervised fine-tuning on a synthetically generated, research-guided dataset of 4,739 samples spanning style, virtual try-on, and conversational tasks. RAVEN wraps this model in a multi-agent architecture with a conversational interface and photorealistic virtual try-on, aiming to replicate the intuitive, personalised guidance of an in-store stylist that generic recommendation systems and general-purpose foundation models fail to deliver. Evaluated with an LLM-as-judge framework (Claude Opus 4.6) across six target-aligned criteria, Sigmoi outperforms its base model on every dimension.
 
-**Purpose**: Demonstrate that domain-specific trained models and multi-agent system design can enhance personalisation and recommendations. This is a showcase piece to validate model metrics.
+**Purpose**: Demonstrate that domain-specific trained models and multi-agent system design can enhance personalisation and recommendations.
+
+> NOTE: This is a distilled repository for illustrating the overall design and implementation of an end-to-end AI-native app spanning data pipeline, model training, and multi-agent applications. Separate repos contain the full agentic application and MLOps codebase.
+
+Conversational AI application for personalised style recommendations, powered by custom fine-tuned language models and multi-agent architecture.
+
 
 ## Features
 
@@ -17,6 +19,18 @@ Raven AI stylist showcasing domain-specific model fine-tuning and multi-agent sy
 - Real-time outfit card generation
 - AI-rendered virtual try-on images
 - Feedback loop (thumbs up/down) for personalisation refinement
+
+**Styles illustration for different tastes**
+
+**Maya Chen** - *Creator* <br>
+**Style:** soft structure · creative professional · muted palette · textural depth · versatile dressing
+
+![Maya's style](images/maya_chen.png)
+
+**Lerato Mokoena** - *HR professional* <br>
+**Style:** polished · understated · structured · modest · versatile
+
+![Lerato's style](images/lerato_mokoena.png)
 
 ## Architecture Overview
 
