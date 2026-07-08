@@ -18,7 +18,7 @@ Raven AI stylist showcasing domain-specific model fine-tuning and multi-agent sy
 - AI-rendered virtual try-on images
 - Feedback loop (thumbs up/down) for personalisation refinement
 
-## Architecture
+## Architecture Overview
 
 ![System Architecture](images/architecture-overview.png)
 
@@ -26,16 +26,16 @@ Raven AI stylist showcasing domain-specific model fine-tuning and multi-agent sy
 
 The system follows standard orchestrator + stateless-sub-agent pattern.
 
-![MLOPs Architecture](images/multi-agent-architecture.png)
+![Multi-Agent Architecture](images/multi-agent-architecture.png)
 
 **Components**:
-1. **Stylist Master Agent** (Orchestrator)
+1. **Stylist (Orchestration Agent)** 
    - Stateful session management
    - Coordinates sub-agents via tool calls
    - Maintains user preference state
    - Appends conversation memory
 
-2. **Style Agent**
+2. **Styling Agent**
    - Processes context and returns style guides
    - Generates outfit recommendations
 
@@ -47,6 +47,9 @@ The system follows standard orchestrator + stateless-sub-agent pattern.
 4. **User Profile Tool**
    - Stores user profiles in JSON format
    - Provides profile list for frontend selection
+
+NOTE: Persona Agent not implmented due to scope
+
 
 **Architecture Principles**:
 - Stylist orchestrator holds session state (stateful)
@@ -80,8 +83,8 @@ The system follows standard orchestrator + stateless-sub-agent pattern.
 - AWS deployment (Lambda, S3)
 - Local and remote deployment modes
 
-### MLOps (separate repo)
-**Architecture Overview**
+### MLOps
+**Pipeline Architecture**
 
 ![MLOPs Architecture](images/ml-pipeline.png)
 
