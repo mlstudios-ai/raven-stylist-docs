@@ -18,6 +18,17 @@ RAVEN is a conversational AI stylist designed for online fashion retail, built t
 - AI-rendered virtual try-on images
 - Feedback loop (thumbs up/down) for personalisation refinement
 
+## User Journey
+
+1. User selects a profile (starts new session)
+2. User types style query in chat
+3. System responds with outfit card
+4. System displays VTO image (auto-updates canvas)
+5. User provides feedback (thumbs up/down)
+6. Repeat for refinement
+
+**Note**: Switching profiles mid-session resets chat and VTO state.
+
 **Styles illustration for different tastes**
 
 **Maya Chen** - *Creator* <br>
@@ -67,7 +78,30 @@ This zooms into the Fashion Agent container above. The **Orchestration Agent** o
 NOTE: Persona Agent not implmented due to time limitations.
 
 
-**Architecture Principles**:
+### Data Flow
+
+```
+User → Frontend → Stylist Orchestrator → Sub-agents → Model Inference
+                        ↓                      ↓
+                  Session State          Structured Output
+                        ↓                      ↓
+                  conversations.jsonl    Episode Bundle
+```
+
+### Episode Persistence
+
+After each turn, orchestrator writes atomic bundle to:
+```
+backend/api/profiles/{user_id}/episodes/{ep_id}/
+  ├── request.json
+  ├── style.json (if style agent ran)
+  ├── vto.json (if VTO agent ran)
+  └── vto.png (if VTO agent ran)
+```
+
+All files written together or none (atomic).
+
+## Architecture Principles
 - Stylist orchestrator holds session state (stateful)
 - Sub-agents are stateless functions
 - Episode-based persistence with atomic writes
@@ -180,40 +214,6 @@ terraform apply
 # Deploy
 ./scripts/deploy.sh --mode remote
 ```
-
-## User Journey
-
-1. User selects a profile (starts new session)
-2. User types style query in chat
-3. System responds with outfit card
-4. System displays VTO image (auto-updates canvas)
-5. User provides feedback (thumbs up/down)
-6. Repeat for refinement
-
-**Note**: Switching profiles mid-session resets chat and VTO state.
-
-## Data Flow
-
-```
-User → Frontend → Stylist Orchestrator → Sub-agents → Model Inference
-                        ↓                      ↓
-                  Session State          Structured Output
-                        ↓                      ↓
-                  conversations.jsonl    Episode Bundle
-```
-
-### Episode Persistence
-
-After each turn, orchestrator writes atomic bundle to:
-```
-backend/api/profiles/{user_id}/episodes/{ep_id}/
-  ├── request.json
-  ├── style.json (if style agent ran)
-  ├── vto.json (if VTO agent ran)
-  └── vto.png (if VTO agent ran)
-```
-
-All files written together or none (atomic).
 
 ## Development Notes
 
