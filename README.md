@@ -1,6 +1,6 @@
 # Raven AI Stylist
 
-> NOTE: This is a trimmed down and sanitised version of documendation and code to illustation the overall design and implmentation of end-to-end AI-native app spanning data pipeline, model training, and multi-agent applications.
+> NOTE: This is a trimmed down and sanitised version of documendation and code to illustate the overall design and implmentation of end-to-end AI-native app spanning data pipeline, model training, and multi-agent applications.
 
 Conversational AI application for personalised style recommendations, powered by custom fine-tuned language models and multi-agent architecture.
 
