@@ -3,7 +3,7 @@
 
 ## Overview
 
-RAVEN is a conversational AI stylist designed for online fashion retail, built to close the gap between what customers say and what they actually mean — a problem the report calls Intent Engineering, resolved by combining immediate, contextual, and universal intent signals. At its core is Sigmoi, a domain-specific reasoning model fine-tuned from the GPT-OSS-20B Mixture-of-Experts base using supervised fine-tuning on a synthetically generated, research-guided dataset of 4,739 samples spanning style, virtual try-on, and conversational tasks. RAVEN wraps this model in a multi-agent architecture with a conversational interface and photorealistic virtual try-on, aiming to replicate the intuitive, personalised guidance of an in-store stylist that generic recommendation systems and general-purpose foundation models fail to deliver. Evaluated with an LLM-as-judge framework (Claude Opus 4.6) across six target-aligned criteria on 50 held-out style samples, Sigmoi outperforms its base model on every criterion — reaching mean scores of 0.82 on intent alignment and 0.78 on reasoning alignment against the base model's 0.56 and 0.48.
+RAVEN is a conversational AI stylist designed for online fashion retail, built to close the gap between what customers say and what they actually mean — a problem the report calls Intent Engineering, resolved by combining immediate, contextual, and universal intent signals. At its core is Sigmoi, a domain-specific reasoning model fine-tuned from the GPT-OSS-20B Mixture-of-Experts base using supervised fine-tuning on a synthetically generated, research-guided dataset of 4,739 samples spanning style, virtual try-on, and conversational tasks. RAVEN wraps this model in a multi-agent architecture with a conversational interface and photorealistic virtual try-on, aiming to achieve intuitive UI/UX, personalised guidance of an in-store stylist. Evaluated with an LLM-as-judge framework (Claude Opus 4.6) across six target-aligned criteria on 50 held-out style samples, Sigmoi outperforms its base model on every criterion — reaching mean scores of 0.82 on intent alignment and 0.78 on reasoning alignment against the base model's 0.56 and 0.48.
 
 **Purpose**: Demonstrate that domain-specific trained models and multi-agent system design can enhance personalisation and recommendations.
 
@@ -36,7 +36,7 @@ Conversational AI application for personalised style recommendations, powered by
 
 ![System Architecture](images/architecture-overview.png)
 
-A container-level view of the whole system. The web SPA is the only user-facing surface; it sends chat requests to the **Fashion Agent** (the stylist orchestrator), which is the single entry point into the backend. The orchestrator calls the **Model Endpoint** — the fine-tuned reasoning model served behind Lambda — for reasoning, and reads and writes user and chat data in the **Data & Artefacts** store (DynamoDB + S3). The **MLOps** side sits offline in SageMaker: it fine-tunes the reasoning model, pushes training artefacts into the same store, and deploys the model to the endpoint. All interactions between containers are JSON over HTTP(S).
+A container-level view of the whole system. The web SPA is the only user-facing surface; it sends chat requests to the **Fashion Agent** (the stylist orchestrator), which is the single entry point into the backend. The orchestrator calls the **Model Endpoint** — the fine-tuned reasoning model served behind GPU instance — for reasoning, and reads and writes user and chat data in the **Data & Artefacts** store (DynamoDB + S3). The **MLOps** side sits offline in SageMaker: it fine-tunes the reasoning model, pushes training artefacts into the same store, and deploys the model to the endpoint. All interactions between containers are JSON over HTTP(S).
 
 ### Multi-Agent System
 
@@ -78,7 +78,7 @@ NOTE: Persona Agent not implmented due to time limitations.
 
 1. **ML Pipeline**: 6-step orchestrated workflow (SageMaker Pipelines + model deployment)
 2. **Data Engineering**: Schema-driven feature extraction. Medallion Architecture data processing.
-3. **Training**: LoRA fine-tuning with Unsloth (4-bit quantisation, memory optimisation)
+3. **Training**: QLoRA fine-tuning with Unsloth (4-bit quantisation, memory optimisation)
 4. **Evaluation**: Dual-track assessment (automated model metrics + LLM-as-judge)
 5. **Multi-Agent Systems**: Stateful orchestrator with stateless sub-agents
 6. **Context Management**: Match training data distribution to inference patterns
@@ -224,6 +224,6 @@ All files written together or none (atomic).
 - Respect component boundaries and separation of concerns
 - See `backend/*/CLAUDE.md` for implementation details
 
-## Licence
+## License
 
 Private repository - All rights reserved
