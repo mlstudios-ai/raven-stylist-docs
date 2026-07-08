@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FAF6F1;
+  --foreground: #1F1812;
+}
+
+html, body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+}
+
+::selection {
+  background: #4A3A2A;
+  color: #FAF6F1;
+}
+
+/* Subtle animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes shimmer {
+  0%   { opacity: 0.4; }
+  50%  { opacity: 0.8; }
+  100% { opacity: 0.4; }
+}
+
+.animate-fade-up { animation: fadeUp 480ms cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.animate-fade-in { animation: fadeIn 600ms ease-out both; }
+.animate-shimmer { animation: shimmer 1.6s ease-in-out infinite; }
+
+/* Custom scrollbar — minimal, espresso-themed */
+.scrollbar-clean::-webkit-scrollbar { width: 6px; }
+.scrollbar-clean::-webkit-scrollbar-track { background: transparent; }
+.scrollbar-clean::-webkit-scrollbar-thumb { background: #C9B89E; border-radius: 3px; }
+.scrollbar-clean::-webkit-scrollbar-thumb:hover { background: #9F8568; }

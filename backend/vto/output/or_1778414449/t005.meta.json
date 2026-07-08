@@ -1,0 +1,108 @@
+{
+  "saved_at": 1778414497.722909,
+  "session_id": "or_1778414449",
+  "turn_id": "t005",
+  "user_id": "usr_006_jamie",
+  "image": {
+    "filename": "t005.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 704013
+  },
+  "input_request": {
+    "prompt": "show me what that looks like",
+    "style": {
+      "intent": {
+        "primary_intent": "find a wedding outfit that feels appropriate but not overly formal"
+      },
+      "context": {
+        "occasion": "formal daytime wedding",
+        "climate": "mild spring weather with possible light wind",
+        "time_of_day": "daytime"
+      },
+      "recommendations": [
+        {
+          "label": "Muted navy semi-formal option",
+          "logic_summary": "This is the safest wedding response: formal enough for the event, understated enough to fit his style, and easy to build from his existing wardrobe.",
+          "pieces": [
+            {
+              "role": "base layer",
+              "category": "dress shirt",
+              "color": "navy",
+              "styling_note": "Keep the front open for a relaxed but intentional look; this fits his preference for understated authority rather than bright tailoring."
+            },
+            {
+              "role": "mid layer",
+              "category": "overshirt",
+              "color": "dark charcoal",
+              "styling_note": "Wear open over the shirt to create depth without dressing up too much."
+            },
+            {
+              "role": "bottom",
+              "category": "dress trousers",
+              "color": "charcoal",
+              "styling_note": "Choose a flat-front or lightly structured front rather than a crisp poplin suit pant to keep the look grounded."
+            },
+            {
+              "role": "outer layer",
+              "category": "soft coat",
+              "color": "deep olive",
+              "styling_note": "Useful if the weather dips; keep it off the front to preserve the semi-formal shape."
+            },
+            {
+              "role": "footwear",
+              "category": "leather boots",
+              "color": "dark brown",
+              "styling_note": "This keeps the outfit grounded and seasonally appropriate without becoming dressy."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "He asked for a wedding outfit, and his last message confirms he wants something that fits his existing wardrobe and his understated, practical aesthetic. The strongest response is a semi-formal option in muted tones with a layered upper body and a clean trouser line, rather than a sharp suit or bright dress shirt."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: show me what that looks like\n\nstyle:\n  context:\n    occasion: formal daytime wedding\n  intent:\n    primary_intent: find a wedding outfit that feels appropriate but not overly formal\n  recommendations:\n  - label: Muted navy semi-formal option\n    logic_summary: This is the safest wedding response: formal enough for the event, understated enough to fit his style, and easy to build from his existing wardrobe.\n    pieces:\n    - category: dress shirt\n      color: navy\n      role: base layer\n      styling_note: Keep the front open for a relaxed but intentional look; this fits his preference for understated authority rather than bright tailoring.\n    - category: overshirt\n      color: dark charcoal\n      role: mid layer\n      styling_note: Wear open over the shirt to create depth without dressing up too much.\n    - category: dress trousers\n      color: charcoal\n      role: bottom\n      styling_note: Choose a flat-front or lightly structured front rather than a crisp poplin suit pant to keep the look grounded.\n    - category: soft coat\n      color: deep olive\n      role: outer layer\n      styling_note: Useful if the weather dips; keep it off the front to preserve the semi-formal shape.\n    - category: leather boots\n      color: dark brown\n      role: footwear\n      styling_note: This keeps the outfit grounded and seasonally appropriate without becoming dressy.\n",
+    "response": {
+      "scene": {
+        "occasion": "formal daytime wedding",
+        "setting": "outdoor garden wedding at a private estate in the South of England, with manicured lawns, low floral arches, and subtle period décor",
+        "lighting": "soft natural daylight with gentle diffused light and minimal harsh shadows, realistic outdoor wedding lighting",
+        "time_of_day": "daytime",
+        "mood": "refined, understated, elegant, and calm"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "navy long-sleeve dress shirt in a muted matte fabric with a subtle rib texture, tailored through the chest and upper arms, with a clean button closure and a slightly longer hem"
+          },
+          {
+            "description": "dark charcoal overshirt in a soft structured matte fabric, worn open over the shirt, with a relaxed but intentional drape and a longer hem"
+          },
+          {
+            "description": "charcoal flat-front dress trousers in a muted matte weave, tailored through the seat and upper leg with a clean line and a slightly longer inseam"
+          },
+          {
+            "description": "deep olive soft coat in a refined matte wool blend, long enough to cover the overshirt, with a relaxed clean line and a slightly longer hem"
+          },
+          {
+            "description": "dark brown smooth leather dress boots in a matte finish, low-profile and understated"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are Gemini Flash, a visual generation model. Create a photorealistic virtual try-on image. Prioritize scene realism, accurate garment drape, natural body proportions, and believable fabric behavior. Keep the image commercial-free, fully clothed, and editorially tasteful. Use the outfit and scene details exactly as described, with no added accessories, jewelry, or editorial styling beyond what the user requested. Render the person in a realistic wedding-guest context, outdoors in soft daylight, with subtle environmental cues and no distracting background. Preserve the understated formal intent and avoid any bright tailoring, loud patterns, or overly polished tuxedo language.",
+        "user": "Create a photorealistic virtual try-on image for a man who wants to look appropriate for a formal daytime wedding but not overly formal. Render him wearing the top-ranked outfit: a muted navy long-sleeve dress shirt in a matte soft-touch fabric, a dark charcoal overshirt worn open over the shirt, charcoal flat-front trousers, a deep olive soft coat when needed, and dark brown matte leather dress boots. He prefers understated authority, so keep the shirt open, the overshirt relaxed, and the coat clean and slightly longer than a typical suit coat. Place him outdoors in soft natural daylight on a manicured garden lawn at a South of England private estate wedding. The scene should feel realistic and calm, not staged or editorial. Show accurate garment fit, natural fabric texture, subtle drape, and believable body proportions. Avoid any bright tailoring, loud pattern, or tuxedo language. The photo should read like a candid but polished wedding-guest look, refined, muted, and seasonally appropriate."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are Gemini Flash, a visual generation model. Create a photorealistic virtual try-on image. Prioritize scene realism, accurate garment drape, natural body proportions, and believable fabric behavior. Keep the image commercial-free, fully clothed, and editorially tasteful. Use the outfit and scene details exactly as described, with no added accessories, jewelry, or editorial styling beyond what the user requested. Render the person in a realistic wedding-guest context, outdoors in soft daylight, with subtle environmental cues and no distracting background. Preserve the understated formal intent and avoid any bright tailoring, loud patterns, or overly polished tuxedo language.",
+    "prompt_user_sent": "Create a photorealistic virtual try-on image for a man who wants to look appropriate for a formal daytime wedding but not overly formal. Render him wearing the top-ranked outfit: a muted navy long-sleeve dress shirt in a matte soft-touch fabric, a dark charcoal overshirt worn open over the shirt, charcoal flat-front trousers, a deep olive soft coat when needed, and dark brown matte leather dress boots. He prefers understated authority, so keep the shirt open, the overshirt relaxed, and the coat clean and slightly longer than a typical suit coat. Place him outdoors in soft natural daylight on a manicured garden lawn at a South of England private estate wedding. The scene should feel realistic and calm, not staged or editorial. Show accurate garment fit, natural fabric texture, subtle drape, and believable body proportions. Avoid any bright tailoring, loud pattern, or tuxedo language. The photo should read like a candid but polished wedding-guest look, refined, muted, and seasonally appropriate.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_006_jamie/photos/headshot.png"
+  }
+}

@@ -1,0 +1,92 @@
+project-name: sigmoi
+
+# also used as mlflow experiment tracking name
+pipeline-name: sigmoi-stylist 
+pipeline-run-prefix: sigmoi-run
+region: ap-southeast-2
+role: arn:aws:iam::123345678901:role/sigmoi-sagemaker-execution
+
+# project artifact defaults terraform output
+bucket-name: sigmoi-artifacts-dev
+bucket-prefix: mlops
+
+# mlflow tracking get values from terraform outputs
+mlflow-artifact-bucket: sigmoi-mlflow-artifacts-dev
+mlflow-artifact-uri: s3://sigmoi-mlflow-artifacts-dev
+mlflow-tracking-url: https://app-q3vsyejjbbrl.mlflow.sagemaker.ap-southeast-2.app.aws/
+mlflow-tracking-uri: arn:aws:sagemaker:ap-southeast-2:123345678901:mlflow-app/app-Q3VSYEJJBBRL
+mlflow-tracking-auth: sagemaker
+mlflow-experiment-name: sigmoi-stylist
+mlflow-run-prefix: sigmoi-run
+
+# instance types
+processing-instance-type: ml.t3.medium
+processing-instance-count: 1
+processing-image-uri: 123345678901.dkr.ecr.ap-southeast-2.amazonaws.com/sigmoi-base-image:latest
+training-instance-type: ml.g5.xlarge
+training-instance-count: 1
+training-spot-instance: false
+training-image-uri: 123345678901.dkr.ecr.ap-southeast-2.amazonaws.com/sigmoi-base-image:latest
+eval-instance-type: ml.g6.xlarge
+eval-instance-count: 1
+eval-instance-image: 123345678901.dkr.ecr.ap-southeast-2.amazonaws.com/sigmoi-base-image:latest
+inference-instance-type: ml.g6.xlarge
+inference-instance-count: 1
+inference-image-uri: 123345678901.dkr.ecr.ap-southeast-2.amazonaws.com/sigmoi-base-image:latest
+
+# processing bucket
+external-dir: data/synthetic
+raw-dir: data/stylist/raw
+schema-dir: configs/data/schemas
+extract-dir: data/stylist/extract
+feature-dir: data/stylist/features
+template-dir: configs/data/templates
+split-val-size: 0.1
+split-test-size: 0.05
+split-seed: 42
+dataset-file-path: data/stylist/dataset/full/dataset.jsonl
+dataset-split-dir: data/stylist/dataset/split
+dataset-formatted-dir: data/stylist/dataset/formatted
+dataset-tokenized-dir: data/stylist/dataset/tokenized
+dataset-train-dir: data/stylist/dataset/formatted
+max-seq-length: 2176
+
+# training
+# base-model-name: unsloth/Nemotron-3-Nano-30B-A3B
+# base-model-name: unsloth/Nemotron-3-Nano-30B-A3B-FP8
+# base-model-name: unsloth/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
+# base-model-name: unsloth/gpt-oss-20b-BF16
+# base-model-name: unsloth/gpt-oss-20b-unsloth-bnb-4bit
+# base-model-name: microsoft/Phi-mini-MoE-instruct
+# base-model-name: unsloth/Llama-3.2-1B-Instruct-bnb-4bit
+base-model-name: unsloth/gpt-oss-20b-unsloth-bnb-4bit
+base-model-dir: models
+model-config-dir: configs/model
+model-config-file: hyps.yaml
+model-name: sigmoi/sigmoi-stylist-moe-4bit
+model-checkpoint-dir: outputs/models/sigmoi/checkpoints
+model-output-dir: outputs/models/sigmoi/adapters
+model-merge-dir: outputs/models/sigmoi/sigmoi-stylist-moe-4bit
+model-gguf-dir: outputs/models/sigmoi/gguf
+
+# evaluation
+eval-dataset-dir: data/stylist/dataset/split
+eval-split: test
+eval-metrics-file: eval_metrics.json
+eval-max-new-tokens: 2048
+eval-style-prompts-file: outputs/models/sigmoi/evaluation/style-prompts.json
+eval-style-targets-file: outputs/models/sigmoi/evaluation/style-targets.json
+eval-style-predictions-file: outputs/models/sigmoi/evaluation/style-predictions.json
+eval-style-predictions-base-file: outputs/models/sigmoi/evaluation/style-predictions-base.json
+accuracy-threshold: 0.7
+# judge-provider: bedrock
+# judge-model-id: apac.anthropic.claude-3-5-sonnet-20241022-v2:0
+judge-provider: openai
+judge-model-id: gpt-5.4
+judge-max-tokens: 1000
+metrics-dir: outputs/models/sigmoi/evaluation/metrics
+judge-metrics-file: judge_metrics.json
+
+# inference
+model-endpoint: http://localhost:8000
+model-identity: "You are Sigmoi, a personal AI stylist that helps customers discover and personalise their unique style with their chat, profile, and persona data if available."

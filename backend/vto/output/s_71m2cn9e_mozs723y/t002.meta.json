@@ -1,0 +1,96 @@
+{
+  "saved_at": 1778418192.8089511,
+  "session_id": "s_71m2cn9e_mozs723y",
+  "turn_id": "t002",
+  "user_id": "usr_006_jamie",
+  "image": {
+    "filename": "t002.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 760633
+  },
+  "input_request": {
+    "prompt": "show me one suit options",
+    "style": {
+      "intent": {
+        "primary_intent": "Get one suit outfit for a wedding"
+      },
+      "context": {
+        "occasion": "wedding",
+        "climate": "mild autumn weather with possible light rain",
+        "time_of_day": "evening"
+      },
+      "recommendations": [
+        {
+          "label": "1. Dark navy full suit with subtle texture",
+          "logic_summary": "This is the safest wedding option because it keeps the formality of a full suit while staying understated and season-appropriate through texture and color depth rather than black or extreme tailoring.",
+          "pieces": [
+            {
+              "role": "base",
+              "category": "suit",
+              "color": "dark navy",
+              "styling_note": "Choose a jacket with clean shoulders and a half-zip or open-collar option so it feels wedding-appropriate without looking corporate."
+            },
+            {
+              "role": "underlayer",
+              "category": "shirt",
+              "color": "deep ivory or off-white",
+              "styling_note": "This keeps the look polished and wedding-appropriate while avoiding the starkness of true black."
+            },
+            {
+              "role": "accent",
+              "category": "vest",
+              "color": "charcoal",
+              "styling_note": "Adds depth and interest under the jacket without making the outfit feel layered or busy."
+            },
+            {
+              "role": "bottom",
+              "category": "trousers",
+              "color": "charcoal",
+              "styling_note": "Keeps the suit cohesive and seasonally grounded while still looking tailored."
+            },
+            {
+              "role": "footwear",
+              "category": "dress shoes",
+              "color": "dark brown",
+              "styling_note": "This keeps the outfit elegant for evening without making it feel formal or rigid."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "The last user message asks for one suit option, so the strongest answer is a single tailored outfit that feels wedding-appropriate, understated, and true to his existing wardrobe through texture, layering, and muted color rather than black or flashy tailoring."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: show me one suit options\n\nprofile:\n  identity:\n    gender_identity: man\n    age: 31\n    body_shape: tall frame with broad shoulders, long arms and legs, and fuller midsection\n\nstyle:\n  context:\n    occasion: wedding\n  intent:\n    primary_intent: Get one suit outfit for a wedding\n  recommendations:\n  - label: 1. Dark navy full suit with subtle texture\n    logic_summary: This is the safest wedding option because it keeps the formality of a full suit while staying understated and season-appropriate through texture and color depth rather than black or extreme tailoring.\n    pieces:\n    - category: suit\n      color: dark navy\n      role: base\n      styling_note: Choose a jacket with clean shoulders and a half-zip or open-collar option so it feels wedding-appropriate without looking corporate.\n    - category: shirt\n      color: deep ivory or off-white\n      role: underlayer\n      styling_note: This keeps the look polished and wedding-appropriate while avoiding the starkness of true black.\n    - category: vest\n      color: charcoal\n      role: accent\n      styling_note: Adds depth and interest under the jacket without making the outfit feel layered or busy.\n    - category: trousers\n      color: charcoal\n      role: bottom\n      styling_note: Keeps the suit cohesive and seasonally grounded while still looking tailored.\n    - category: dress shoes\n      color: dark brown\n      role: footwear\n      styling_note: This keeps the outfit elegant for evening without making it feel formal or rigid.\n",
+    "response": {
+      "scene": {
+        "occasion": "wedding",
+        "setting": "outdoor garden wedding entrance at sunset",
+        "lighting": "soft golden sunset light with natural outdoor ambience",
+        "time_of_day": "late afternoon into evening",
+        "mood": "polished, understated, elegant, relaxed"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "dark navy full suit with subtle texture, clean shoulders, half-zip jacket, deep ivory off-white dress shirt, charcoal vest, charcoal charcoal trousers, dark brown leather dress shoes"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash prompt generator for virtual try-on. Render the outfit as a photorealistic full-body image of the user exactly as described in their headshot and profile. Prioritize realism, accurate garment drape, true-to-life lighting, and natural posture. Keep the scene simple and wedding-appropriate. Avoid fashion editorial exaggeration, fantasy styling, exaggerated camera angles, or any visual cues that would make the image look staged or editorial. Preserve the user's body proportions, face, skin tone, and hair from the reference photo. Do not add accessories beyond what the outfit calls for. Do not create multiple people, alter gender presentation, or change the outfit. Use the outfit and scene context literally.",
+        "user": "Show me one suit option for a wedding. The same man from the reference photo is wearing a dark navy full suit with subtle texture, a clean shoulder line, a half-zip jacket, a deep ivory off-white dress shirt, a charcoal vest, charcoal charcoal trousers, and dark brown leather dress shoes. He is standing naturally at the outdoor garden wedding entrance as the sun sets, with soft golden light highlighting the texture of the suit and the understated elegance of the whole look. The image feels photorealistic, elegant, relaxed, and appropriate for a wedding without looking corporate or formal-rigid."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash prompt generator for virtual try-on. Render the outfit as a photorealistic full-body image of the user exactly as described in their headshot and profile. Prioritize realism, accurate garment drape, true-to-life lighting, and natural posture. Keep the scene simple and wedding-appropriate. Avoid fashion editorial exaggeration, fantasy styling, exaggerated camera angles, or any visual cues that would make the image look staged or editorial. Preserve the user's body proportions, face, skin tone, and hair from the reference photo. Do not add accessories beyond what the outfit calls for. Do not create multiple people, alter gender presentation, or change the outfit. Use the outfit and scene context literally.",
+    "prompt_user_sent": "Show me one suit option for a wedding. The same man from the reference photo is wearing a dark navy full suit with subtle texture, a clean shoulder line, a half-zip jacket, a deep ivory off-white dress shirt, a charcoal vest, charcoal charcoal trousers, and dark brown leather dress shoes. He is standing naturally at the outdoor garden wedding entrance as the sun sets, with soft golden light highlighting the texture of the suit and the understated elegance of the whole look. The image feels photorealistic, elegant, relaxed, and appropriate for a wedding without looking corporate or formal-rigid.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_006_jamie/photos/headshot.png"
+  }
+}

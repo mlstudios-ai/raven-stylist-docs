@@ -1,0 +1,107 @@
+SchemaVersion: '1.0'
+
+SageMaker:
+  PythonSDK:
+    # -------------------------------------------------------------------------
+    # Tags: Global resource metadata
+    # Use: Apply consistent cost-center or project tags to EVERYTHING.
+    # -------------------------------------------------------------------------
+    Tags:
+      Project: "sigmoi-mlops"
+      # Team: "ai-engineering"
+      # CostCenter: "12345"
+
+    Modules:
+      
+      # -----------------------------------------------------------------------
+      # Session: Global SDK defaults
+      # Maps to: sagemaker.session.Session
+      # Use: Set your default S3 bucket and region for all operations.
+      # -----------------------------------------------------------------------
+      Session:
+        DefaultS3Bucket: "sigmoi-mlflow-artifacts-dev"
+        DefaultS3ObjectKeyPrefix: "mlops"
+        Region: "ap-southeast-2"
+        EnvironmentVariables:
+          SAGEMAKER_ROLE_ARN: "arn:aws:iam::123345678901:role/sigmoi-sagemaker-execution"
+
+      # -----------------------------------------------------------------------
+      # Estimator: Legacy and standard training jobs
+      # Maps to: sagemaker.estimator.Estimator, PyTorch, HuggingFace, etc.
+      # Use: Standard TrainingStep or standalone training runs.
+      # -----------------------------------------------------------------------
+      Estimator:
+        InstanceType: "ml.m5.xlarge"
+        RoleArn: "arn:aws:iam::123345678901:role/sigmoi-sagemaker-execution"
+        VolumeSizeInGB: 50
+        # KeepAlivePeriodInSeconds: 3600 # Enable Warm Pools (V3)
+        EnvironmentVariables:
+          MLFLOW_TRACKING_URL: "https://app-q3vsyejjbbrl.mlflow.sagemaker.ap-southeast-2.app.aws/"
+          MLFLOW_TRACKING_URI: "arn:aws:sagemaker:ap-southeast-2:123345678901:mlflow-app/app-Q3VSYEJJBBRL"
+          MLFLOW_TRACKING_AUTH: "sagemaker"
+          MLFLOW_EXPERIMENT_NAME: "sigmoi-stylist"
+          MLFLOW_ARTIFACT_BUCKET: "sigmoi-mlflow-artifacts-dev"
+          MLFLOW_ARTIFACT_URI: "s3://sigmoi-mlflow-artifacts-dev"
+
+      # -----------------------------------------------------------------------
+      # Processor: Data engineering and evaluation
+      # Maps to: ScriptProcessor, SKLearnProcessor, PyTorchProcessor
+      # Use: ProcessingStep (Ingestion, Evaluation, etc.)
+      # -----------------------------------------------------------------------
+      Processor:
+        InstanceType: "ml.m5.xlarge"
+        RoleArn: "arn:aws:iam::123345678901:role/sigmoi-sagemaker-execution"
+        VolumeSizeInGB: 30
+        EnvironmentVariables:
+          DEBUG_MODE: "true"
+          SAGEMAKER_ROLE_ARN: "arn:aws:iam::123345678901:role/sigmoi-sagemaker-execution"
+          SIGMOI_TEMPLATE_DIR: "configs/templates"
+          SIGMOI_DATASET_FILE_PATH: "data/stylist/dataset/full_dataset.jsonl"
+
+      # -----------------------------------------------------------------------
+      # RemoteFunction: High-level function-to-job conversion
+      # Maps to: @remote decorator
+      # Use: Converting a local Python function into a cloud job instantly.
+      # -----------------------------------------------------------------------
+      RemoteFunction:
+        InstanceType: "ml.m5.xlarge"
+        RoleArn: "arn:aws:iam::123345678901:role/sigmoi-sagemaker-execution"
+        IncludeLocalWorkDir: true
+        CustomFileFilter:
+          IgnoreNamePatterns: ["Makefile", "pyproject.toml", "*.db", "requirements.txt", "*.lock", "*.ipynb", "venv/", "data/", "src/", "tests", "*.md", "notebooks", ".github/", ".claude/", ".venv", ".*", "docker/, "docs", "infra", "mlruns", "models", "reports", "scripts"]
+
+      # -----------------------------------------------------------------------
+      # ModelTrainer: NEW V3 unified training interface
+      # Maps to: sagemaker.train.ModelTrainer
+      # Use: The modern V3 replacement for framework-specific Estimators.
+      # -----------------------------------------------------------------------
+      ModelTrainer:
+        InstanceType: "ml.g5.2xlarge"
+        RoleArn: "arn:aws:iam::123345678901:role/sigmoi-sagemaker-execution"
+        # Aligns with unified V3 training parameters
+
+      # -----------------------------------------------------------------------
+      # ModelBuilder: NEW V3 unified inference interface
+      # Maps to: sagemaker.serve.ModelBuilder
+      # Use: Deploying models for real-time inference (replaces Model class).
+      # -----------------------------------------------------------------------
+      ModelBuilder:
+        RoleArn: "arn:aws:iam::123345678901:role/sigmoi-sagemaker-execution"
+        InferenceSpec:
+          # Configuration for deployment servers like TGI or TorchServe
+
+      # -----------------------------------------------------------------------
+      # Pipeline: MLOps workflow orchestration
+      # Maps to: sagemaker.workflow.pipeline.Pipeline
+      # Use: Global settings for your entire DAG structure.
+      # -----------------------------------------------------------------------
+      Pipeline:
+        RoleArn: "arn:aws:iam::123345678901:role/sigmoi-sagemaker-execution"
+
+      # -----------------------------------------------------------------------
+      # Model: Legacy inference/packaging
+      # Maps to: sagemaker.model.Model
+      # Use: Defining artifacts and environments for saved models.
+      # -----------------------------------------------------------------------
+      Model:
+        ExecutionRoleArn: "arn:aws:iam::123345678901:role/sigmoi-sagemaker-execution"

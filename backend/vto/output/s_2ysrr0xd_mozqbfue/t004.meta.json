@@ -1,0 +1,99 @@
+{
+  "saved_at": 1778415003.629354,
+  "session_id": "s_2ysrr0xd_mozqbfue",
+  "turn_id": "t004",
+  "user_id": "usr_006_jamie",
+  "image": {
+    "filename": "t004.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 661037
+  },
+  "input_request": {
+    "prompt": "how me how that will look on me",
+    "style": {
+      "intent": {
+        "primary_intent": "Get a single outfit recommendation for a casual dinner"
+      },
+      "context": {
+        "occasion": "casual dinner",
+        "climate": "mild autumn weather with possible wind",
+        "time_of_day": "evening"
+      },
+      "recommendations": [
+        {
+          "label": "Evening olive and charcoal",
+          "logic_summary": "A dinner-leaning version of what already works for you: muted, easy, and subtly refined without feeling overdressed.",
+          "pieces": [
+            {
+              "role": "base",
+              "category": "knit",
+              "color": "charcoal",
+              "styling_note": "keeps the look grounded and easy rather than shirt-and-pants formal."
+            },
+            {
+              "role": "layer",
+              "category": "overshirt",
+              "color": "olive",
+              "styling_note": "keeps the dinner feel understated while adding texture and weather protection."
+            },
+            {
+              "role": "bottom",
+              "category": "trousers",
+              "color": "charcoal",
+              "styling_note": "keeps the silhouette relaxed and leg-length-proving rather than dark formal."
+            },
+            {
+              "role": "shoe",
+              "category": "boots",
+              "color": "dark brown",
+              "styling_note": "keeps the outfit grounded and contemporary without becoming clubwear."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: how me how that will look on me\n\nstyle:\n  context:\n    occasion: casual dinner\n  intent:\n    primary_intent: Get a single outfit recommendation for a casual dinner\n  recommendations:\n  - label: Evening olive and charcoal\n    logic_summary: A dinner-leaning version of what already works for you: muted, easy, and subtly refined without feeling overdressed.\n    pieces:\n    - category: knit\n      color: charcoal\n      role: base\n      styling_note: keeps the look grounded and easy rather than shirt-and-pants formal.\n    - category: overshirt\n      color: olive\n      role: layer\n      styling_note: keeps the dinner feel understated while adding texture and weather protection.\n    - category: trousers\n      color: charcoal\n      role: bottom\n      styling_note: keeps the silhouette relaxed and leg-length-proving rather than dark formal.\n    - category: boots\n      color: dark brown\n      role: shoe\n      styling_note: keeps the outfit grounded and contemporary without becoming clubwear.\n",
+    "response": {
+      "scene": {
+        "occasion": "casual dinner",
+        "setting": "intimate urban restaurant interior in a European city, low-ceiling table, muted walls, subtle bar lighting, other diners blurred softly in background",
+        "lighting": "soft natural-dusk mixed with warm ambient restaurant light, gentle rim lighting on the jacket, realistic skin and fabric texture, no harsh flash",
+        "time_of_day": "evening",
+        "mood": "refined, relaxed, conversational, subtly upscale"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "charcoal fine-gauge knit polo or crew-neck top, fitted through chest and midriff, short hem just above the waistband, matte wool-fleece texture, olive overshirt in soft cotton-wool blend with a relaxed shoulder and dropped shoulder effect, charcoal slim straight trousers with a high rise and mid-thigh break, dark brown suede or leather low-top boots with a slightly worn but clean finish"
+          },
+          {
+            "role": "base"
+          },
+          {
+            "role": "layer"
+          },
+          {
+            "role": "bottom"
+          },
+          {
+            "role": "shoe"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are Gemini Flash generating a photorealistic virtual try-on image. Prioritize scene realism, accurate garment drape, natural body proportions, true-to-life fabric texture, and believable lighting. Keep the result retailer-agnostic. Use the outfit and style context as the sole visual reference. Avoid fashion editorial stylization, dramatic poses, glossy glossy effects, or fantasy lighting. Render a realistic evening-dinner scene with subtle upscale ambience and clean composition.",
+        "user": "Create a photorealistic virtual try-on image for a casual dinner in a European city. Use the exact outfit described: a charcoal fine-gauge knit polo with a short hem, an olive soft overshirt with relaxed shoulders, charcoal high-rise slim trousers with a mid-thigh break, and dark brown suede or leather low-top boots. Set the scene inside an intimate urban restaurant at evening, with natural dusk blending into warm ambient lighting, muted walls, and other diners softly blurred in the background. Emphasize the olive and charcoal palette, realistic fabric texture, natural body proportions, and believable garment fit. Show the overshirt open or slightly open, the knit top flat and clean, and the trousers sitting high with a clean mid-thigh line. Keep the mood refined, relaxed, conversational, and subtly upscale. Avoid any clubwear connotation, editorial pose exaggeration, glossy finish, or fantasy lighting. The image should feel like a real dinner photo rather than a fashion illustration."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are Gemini Flash generating a photorealistic virtual try-on image. Prioritize scene realism, accurate garment drape, natural body proportions, true-to-life fabric texture, and believable lighting. Keep the result retailer-agnostic. Use the outfit and style context as the sole visual reference. Avoid fashion editorial stylization, dramatic poses, glossy glossy effects, or fantasy lighting. Render a realistic evening-dinner scene with subtle upscale ambience and clean composition.",
+    "prompt_user_sent": "Create a photorealistic virtual try-on image for a casual dinner in a European city. Use the exact outfit described: a charcoal fine-gauge knit polo with a short hem, an olive soft overshirt with relaxed shoulders, charcoal high-rise slim trousers with a mid-thigh break, and dark brown suede or leather low-top boots. Set the scene inside an intimate urban restaurant at evening, with natural dusk blending into warm ambient lighting, muted walls, and other diners softly blurred in the background. Emphasize the olive and charcoal palette, realistic fabric texture, natural body proportions, and believable garment fit. Show the overshirt open or slightly open, the knit top flat and clean, and the trousers sitting high with a clean mid-thigh line. Keep the mood refined, relaxed, conversational, and subtly upscale. Avoid any clubwear connotation, editorial pose exaggeration, glossy finish, or fantasy lighting. The image should feel like a real dinner photo rather than a fashion illustration.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_006_jamie/photos/headshot.png"
+  }
+}

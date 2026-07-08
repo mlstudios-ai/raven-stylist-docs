@@ -1,0 +1,96 @@
+{
+  "saved_at": 1778396963.811266,
+  "session_id": "smoke_session",
+  "turn_id": "t003",
+  "user_id": "usr_006_jamie",
+  "image": {
+    "filename": "t003.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 719989
+  },
+  "input_request": {
+    "prompt": "show me what that looks like on me",
+    "style": {
+      "intent": {
+        "primary_intent": "Get a single sharp-but-not-flashy dinner-and-bars look for a friend's birthday"
+      },
+      "context": {
+        "occasion": "dinner and bars for a friend's birthday",
+        "climate": "mild autumn weather with possible drizzle",
+        "time_of_day": "evening"
+      },
+      "recommendations": [
+        {
+          "label": "Navy overshirt with charcoal knit and dark trousers",
+          "logic_summary": "A classic sharpness engine: navy gives enough structure for bars, charcoal keeps it subdued, and the overshirt-to-knit layering reads smart-casual without effort.",
+          "pieces": [
+            {
+              "role": "outer layer",
+              "category": "overshirt",
+              "color": "navy",
+              "styling_note": "Wear open over a fine-gauge knit to create vertical line and bar-ready polish."
+            },
+            {
+              "role": "base layer",
+              "category": "fine-gauge knit",
+              "color": "charcoal",
+              "styling_note": "Keeps the look refined and prevents it from feeling like full workwear."
+            },
+            {
+              "role": "bottom",
+              "category": "trousers",
+              "color": "charcoal",
+              "styling_note": "A dark straight leg keeps the silhouette contemporary and bar-appropriate."
+            },
+            {
+              "role": "shoe",
+              "category": "dress shoe",
+              "color": "dark brown",
+              "styling_note": "Supports the navy/charcoal palette and lifts the outfit away from casual jeans."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "The user wants something sharp but not flashy for a dinner-and-bars event. The strongest response is a navy overshirt with a charcoal knit and dark trousers, which gives enough structure and polish for bars while staying understated and true to his existing wardrobe.",
+        "persona_alignment": "This works with his practical, understated, textured, durable, weather-aware, smart-casual identity and his expressed need to look sharp without becoming showy.",
+        "profile_alignment": "The pieces match his liked categories, color palette, and fit preference for relaxed straight lines with structure through shoulders and upper body.",
+        "prompt_alignment": "All recommendations are tied directly to the last user message and the persona data, staying within his budget, climate, and evening-use context."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: show me what that looks like on me\n\nstyle:\n  context:\n    occasion: dinner and bars for a friend's birthday\n  intent:\n    primary_intent: Get a single sharp-but-not-flashy dinner-and-bars look for a friend's birthday\n  recommendations:\n  - label: Navy overshirt with charcoal knit and dark trousers\n    logic_summary: A classic sharpness engine: navy gives enough structure for bars, charcoal keeps it subdued, and the overshirt-to-knit layering reads smart-casual without effort.\n    pieces:\n    - category: overshirt\n      color: navy\n      role: outer layer\n      styling_note: Wear open over a fine-gauge knit to create vertical line and bar-ready polish.\n    - category: fine-gauge knit\n      color: charcoal\n      role: base layer\n      styling_note: Keeps the look refined and prevents it from feeling like full workwear.\n    - category: trousers\n      color: charcoal\n      role: bottom\n      styling_note: A dark straight leg keeps the silhouette contemporary and bar-appropriate.\n    - category: dress shoe\n      color: dark brown\n      role: shoe\n      styling_note: Supports the navy/charcoal palette and lifts the outfit away from casual jeans.\n",
+    "response": {
+      "scene": {
+        "occasion": "dinner and bars for a friend's birthday",
+        "setting": "intimate upscale bar in a European city, dimly lit with warm amber lighting, polished wood or stone surfaces, a small table or bar-side setting, subtle city nightlife in the background",
+        "lighting": "soft warm ambient bar lighting with gentle directional highlights, realistic skin tones, matte fabric texture visible, no harsh flash",
+        "time_of_day": "night",
+        "mood": "refined, relaxed, socially polished, effortlessly contemporary"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "navy overshirt in a fine soft cotton blend, open front, charcoal fine-gauge knit sweater peeking out, charcoal straight-leg trousers, dark brown leather dress shoes"
+          },
+          {
+            "description": "navy overshirt with a clean straight shoulder line, open over a fine-gauge charcoal knit, charcoal tailored trousers, dark brown leather shoes, contemporary smart-casual bar-ready silhouette"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash image prompt generator for virtual try-on. Produce a single high-fidelity realistic photo prompt that focuses on scene setting, accurate garment rendering, natural body pose, and subtle styling. Keep the output retailer-agnostic. Use photo realism, realistic fabric behavior, true-to-life colors, and believable lighting. Avoid editorial exaggeration, fantasy styling, or overly dramatic composition. The goal is a believable near-real photo of the outfit worn in the described setting.",
+        "user": "Create a realistic photo prompt for a single sharp-but-not-flashy dinner-and-bars look for a friend's birthday. Use the style intent and this specific outfit: navy overshirt in a fine soft cotton blend, charcoal fine-gauge knit sweater, charcoal straight-leg trousers, dark brown leather dress shoes. Set the scene in an intimate upscale bar in a European city at night, with warm amber ambient lighting, polished surfaces, and a relaxed but refined mood. Show the outfit in full length or full-body close-up, with natural posture, accurate drape, and true-to-life color rendering. Emphasize navy and charcoal contrast, the overshirt open over the knit, and the contemporary smart-casual bar-ready silhouette. Keep the photo realistic, subtle, and socially polished, as if taken by a street photographer during a birthday dinner-and-bars outing."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash image prompt generator for virtual try-on. Produce a single high-fidelity realistic photo prompt that focuses on scene setting, accurate garment rendering, natural body pose, and subtle styling. Keep the output retailer-agnostic. Use photo realism, realistic fabric behavior, true-to-life colors, and believable lighting. Avoid editorial exaggeration, fantasy styling, or overly dramatic composition. The goal is a believable near-real photo of the outfit worn in the described setting.",
+    "prompt_user_sent": "Create a realistic photo prompt for a single sharp-but-not-flashy dinner-and-bars look for a friend's birthday. Use the style intent and this specific outfit: navy overshirt in a fine soft cotton blend, charcoal fine-gauge knit sweater, charcoal straight-leg trousers, dark brown leather dress shoes. Set the scene in an intimate upscale bar in a European city at night, with warm amber ambient lighting, polished surfaces, and a relaxed but refined mood. Show the outfit in full length or full-body close-up, with natural posture, accurate drape, and true-to-life color rendering. Emphasize navy and charcoal contrast, the overshirt open over the knit, and the contemporary smart-casual bar-ready silhouette. Keep the photo realistic, subtle, and socially polished, as if taken by a street photographer during a birthday dinner-and-bars outing.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_006_jamie/photos/headshot.png"
+  }
+}

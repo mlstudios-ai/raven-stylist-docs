@@ -1,0 +1,108 @@
+{
+  "saved_at": 1778476178.978888,
+  "session_id": "s_a9zps3si_mp0qqzfv",
+  "turn_id": "t003",
+  "user_id": "usr_025_lerato",
+  "image": {
+    "filename": "t003.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 620871
+  },
+  "input_request": {
+    "prompt": "can you show how I would look in it? the dinner is at someone's house",
+    "style": {
+      "intent": {
+        "primary_intent": "Get outfit ideas for a casual dinner that still feel intentional and polished."
+      },
+      "context": {
+        "occasion": "casual dinner",
+        "climate": "mild winter evening with possible indoor-outdoor transitions",
+        "time_of_day": "night"
+      },
+      "recommendations": [
+        {
+          "label": "Soft evening dinner with a long open layer",
+          "logic_summary": "This works because it keeps her dinner look polished without feeling formal, uses her comfort strengths, and lets her favorite long layers and straight trousers shine.",
+          "pieces": [
+            {
+              "role": "main layer",
+              "category": "long open-front coat",
+              "color": "charcoal",
+              "styling_note": "Wear open to create vertical length and keep the look relaxed rather than dressy."
+            },
+            {
+              "role": "top",
+              "category": "fine-gauge knit V-neck",
+              "color": "deep teal",
+              "styling_note": "A knit keeps the outfit warm and elegant without the stiffness of a shirt."
+            },
+            {
+              "role": "bottom",
+              "category": "full-length trousers",
+              "color": "black",
+              "styling_note": "Keep the line clean and long so the outfit stays dinner-appropriate and not too dressy."
+            },
+            {
+              "role": "shoes",
+              "category": "block-heel loafers",
+              "color": "black",
+              "styling_note": "A slightly higher block heel keeps the look grounded and photo-conscious."
+            },
+            {
+              "role": "accessory",
+              "category": "watch",
+              "color": "dark silver",
+              "styling_note": "Use her favorite understated jewelry to finish the evening without effort."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "Her last message asks for dinner ideas, so the response focuses on one polished but clearly casual option that feels intentional for night, uses her comfort strengths, and avoids the stiffness or overt formality she has avoided in recent styling."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: can you show how I would look in it? the dinner is at someone's house\n\nstyle:\n  context:\n    occasion: casual dinner\n  intent:\n    primary_intent: Get outfit ideas for a casual dinner that still feel intentional and polished.\n  recommendations:\n  - label: Soft evening dinner with a long open layer\n    logic_summary: This works because it keeps her dinner look polished without feeling formal, uses her comfort strengths, and lets her favorite long layers and straight trousers shine.\n    pieces:\n    - category: long open-front coat\n      color: charcoal\n      role: main layer\n      styling_note: Wear open to create vertical length and keep the look relaxed rather than dressy.\n    - category: fine-gauge knit V-neck\n      color: deep teal\n      role: top\n      styling_note: A knit keeps the outfit warm and elegant without the stiffness of a shirt.\n    - category: full-length trousers\n      color: black\n      role: bottom\n      styling_note: Keep the line clean and long so the outfit stays dinner-appropriate and not too dressy.\n    - category: block-heel loafers\n      color: black\n      role: shoes\n      styling_note: A slightly higher block heel keeps the look grounded and photo-conscious.\n    - category: watch\n      color: dark silver\n      role: accessory\n      styling_note: Use her favorite understated jewelry to finish the evening without effort.\n",
+    "response": {
+      "scene": {
+        "occasion": "casual dinner at a friend's house",
+        "setting": "intimate indoor dinner setting with subtle home details, a table, ambient evening lighting, and a relaxed but polished atmosphere",
+        "lighting": "soft warm indoor evening lighting with gentle shadows and natural skin tone rendering",
+        "time_of_day": "evening",
+        "mood": "cozy, intentional, effortlessly polished"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "charcoal long open-front coat in a fluid wool-silk blend, worn open over a knit, with a clean shoulder line and a slightly longer length that frames the torso"
+          },
+          {
+            "description": "deep teal fine-gauge knit V-neck top in a smooth wool-silk blend, matte finish, with a relaxed but defined neckline and a clean vertical line"
+          },
+          {
+            "description": "black full-length trousers in a matte wool-silk blend, flat front, ankle-length, with a straight leg and a polished but casual silhouette"
+          },
+          {
+            "description": "black matte leather block-heel loafers with a slightly higher heel and a supportive structured shape"
+          },
+          {
+            "description": "dark silver analog watch with a matte leather strap and understated finish"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash prompt generator for virtual try-on. Render a photorealistic image of the user wearing the exact outfit described. Preserve body proportions, natural posture, and realistic garment drape. Keep the image believable and visually useful for online styling. Use the attached headshot reference for facial features, hair, and overall likeness. Do not invent a different person. Avoid editorial exaggeration, fantasy styling, or dramatic fashion photography poses.",
+        "user": "Show me a photorealistic virtual try-on of the recommended outfit for a casual dinner at someone's house. The user is a 30-year-old woman with a tall, lean body, long straight legs, and a preference for clean lines, fluid tailoring, and matte fabrics. She wants the look to feel intentional, effortlessly polished, and not dressy. Render the outfit exactly as recommended: a charcoal long open-front coat in a fluid wool-silk blend worn open over a deep teal fine-gauge knit V-neck top, black matte full-length trousers with a flat front, and black matte leather block-heel loafers. Keep the proportions realistic and the silhouette grounded. Use soft warm indoor evening lighting, a cozy intimate dining setting, and subtle home details. The overall effect should be polished, understated, and well-suited to her personal style."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash prompt generator for virtual try-on. Render a photorealistic image of the user wearing the exact outfit described. Preserve body proportions, natural posture, and realistic garment drape. Keep the image believable and visually useful for online styling. Use the attached headshot reference for facial features, hair, and overall likeness. Do not invent a different person. Avoid editorial exaggeration, fantasy styling, or dramatic fashion photography poses.",
+    "prompt_user_sent": "Show me a photorealistic virtual try-on of the recommended outfit for a casual dinner at someone's house. The user is a 30-year-old woman with a tall, lean body, long straight legs, and a preference for clean lines, fluid tailoring, and matte fabrics. She wants the look to feel intentional, effortlessly polished, and not dressy. Render the outfit exactly as recommended: a charcoal long open-front coat in a fluid wool-silk blend worn open over a deep teal fine-gauge knit V-neck top, black matte full-length trousers with a flat front, and black matte leather block-heel loafers. Keep the proportions realistic and the silhouette grounded. Use soft warm indoor evening lighting, a cozy intimate dining setting, and subtle home details. The overall effect should be polished, understated, and well-suited to her personal style.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_025_lerato/photos/headshot.png"
+  }
+}

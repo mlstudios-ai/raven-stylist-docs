@@ -1,0 +1,99 @@
+{
+  "saved_at": 1778494875.096468,
+  "session_id": "s_wfuqeknq_mp11v1rj",
+  "turn_id": "t003",
+  "user_id": "usr_034_youssef",
+  "image": {
+    "filename": "t003.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 647934
+  },
+  "input_request": {
+    "prompt": "it a work conference, the dress code is semi casual",
+    "style": {
+      "intent": {
+        "primary_intent": "find semi-casual conference outfit ideas that look polished in warm weather and fit my regular fit preference"
+      },
+      "context": {
+        "occasion": "work conference with semi-casual dress code",
+        "climate": "warm outdoor conditions",
+        "time_of_day": "daytime"
+      },
+      "recommendations": [
+        {
+          "label": "Muted semi-casual conference day",
+          "logic_summary": "This is the strongest match for a warm-weather semi-casual conference: a soft collar shirt with fine texture, a lightweight unstructured jacket, and straight trousers in muted tones gives polish without formality.",
+          "pieces": [
+            {
+              "role": "conference shirt",
+              "category": "shirt",
+              "color": "soft blue",
+              "styling_note": "Choose a collar that opens well and a texture like brushed cotton or fine merino blend to avoid stiffness."
+            },
+            {
+              "role": "outer layer",
+              "category": "light jacket",
+              "color": "warm gray",
+              "styling_note": "Wear open for a relaxed but put-together conference look; keep the length long enough to balance the trouser rise."
+            },
+            {
+              "role": "work trousers",
+              "category": "trousers",
+              "color": "olive",
+              "styling_note": "This keeps the outfit grounded and conference-appropriate while staying softer than black and easier to move in."
+            },
+            {
+              "role": "shoes",
+              "category": "dress shoes",
+              "color": "dark brown",
+              "styling_note": "A matte finish keeps the look understated and suitable for both indoor sessions and outdoor transitions."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "The user is looking for conference outfits that feel polished in warm weather and match his current wardrobe logic. The strongest response is to keep him in understated, practical, softly tailored pieces with muted neutrals and matte fabrics, rather than pushing him toward sharper suiting or lighter-casual extremes."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: it a work conference, the dress code is semi casual\n\nstyle:\n  context:\n    occasion: work conference with semi-casual dress code\n  intent:\n    primary_intent: find semi-casual conference outfit ideas that look polished in warm weather and fit my regular fit preference\n  recommendations:\n  - label: Muted semi-casual conference day\n    logic_summary: This is the strongest match for a warm-weather semi-casual conference: a soft collar shirt with fine texture, a lightweight unstructured jacket, and straight trousers in muted tones gives polish without formality.\n    pieces:\n    - category: shirt\n      color: soft blue\n      role: conference shirt\n      styling_note: Choose a collar that opens well and a texture like brushed cotton or fine merino blend to avoid stiffness.\n    - category: light jacket\n      color: warm gray\n      role: outer layer\n      styling_note: Wear open for a relaxed but put-together conference look; keep the length long enough to balance the trouser rise.\n    - category: trousers\n      color: olive\n      role: work trousers\n      styling_note: This keeps the outfit grounded and conference-appropriate while staying softer than black and easier to move in.\n    - category: dress shoes\n      color: dark brown\n      role: shoes\n      styling_note: A matte finish keeps the look understated and suitable for both indoor sessions and outdoor transitions.\n",
+    "response": {
+      "scene": {
+        "occasion": "work conference with semi-casual dress code",
+        "setting": "modern conference venue in a large city, indoor registration area or early-morning lobby, subtle corporate atmosphere, clean lines, neutral surroundings",
+        "lighting": "soft natural and ambient indoor conference lighting, balanced exposure, realistic skin tones, no harsh flash",
+        "time_of_day": "morning",
+        "mood": "confident, calm, understated, professional"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "soft blue fine-texture collar shirt in a relaxed regular fit, breathable fine-weave or brushed cotton, clean front, easy movement through the torso"
+          },
+          {
+            "description": "warm gray unstructured lightweight jacket, soft drape, matte fabric, open over the shirt, easy shoulder and chest room"
+          },
+          {
+            "description": "olive straight-leg trousers, mid-to-high rise, matte woven fabric, clean front, room through seat and thigh"
+          },
+          {
+            "description": "dark brown matte leather low-profile dress shoes, soft leather, low-profile, polished but understated"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash prompt generator for virtual try-on. Render a photorealistic image of the user wearing the specified outfit. Preserve the user's real appearance exactly as shown in the headshot reference: olive brown eyes, short dark brown hair, olive skin, natural facial features, and a tall build with long legs. Use the outfit and style intent to guide proportion, fabric rendering, and overall look. Keep the scene realistic and believable for a work conference in warm weather. Avoid editorial exaggeration, fantasy styling, or any change to identity, body, or clothing beyond what is described.",
+        "user": "Create a photorealistic virtual try-on image for a work conference in warm weather. The user is wearing a soft blue fine-texture collar shirt, a warm gray unstructured lightweight jacket open over the shirt, olive mid-to-high rise straight-leg trousers, and dark brown matte leather low-profile shoes. Show the user in this full outfit from a flattering full-body perspective, with natural posture and a calm confident expression. Keep the lighting realistic for morning conference conditions, with soft natural and ambient indoor light. Emphasize understated semi-casual polish, soft drape, breathable matte fabrics, and a balanced silhouette that feels professional without stiffness. The background should suggest a conference venue with neutral corporate décor, not a fashion runway. Preserve the exact color relationships and relaxed-but-put-together mood described in the style context. Render the image with realistic skin tones, natural hair texture, accurate collar and jacket structure, and believable fabric behavior in warm light."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash prompt generator for virtual try-on. Render a photorealistic image of the user wearing the specified outfit. Preserve the user's real appearance exactly as shown in the headshot reference: olive brown eyes, short dark brown hair, olive skin, natural facial features, and a tall build with long legs. Use the outfit and style intent to guide proportion, fabric rendering, and overall look. Keep the scene realistic and believable for a work conference in warm weather. Avoid editorial exaggeration, fantasy styling, or any change to identity, body, or clothing beyond what is described.",
+    "prompt_user_sent": "Create a photorealistic virtual try-on image for a work conference in warm weather. The user is wearing a soft blue fine-texture collar shirt, a warm gray unstructured lightweight jacket open over the shirt, olive mid-to-high rise straight-leg trousers, and dark brown matte leather low-profile shoes. Show the user in this full outfit from a flattering full-body perspective, with natural posture and a calm confident expression. Keep the lighting realistic for morning conference conditions, with soft natural and ambient indoor light. Emphasize understated semi-casual polish, soft drape, breathable matte fabrics, and a balanced silhouette that feels professional without stiffness. The background should suggest a conference venue with neutral corporate décor, not a fashion runway. Preserve the exact color relationships and relaxed-but-put-together mood described in the style context. Render the image with realistic skin tones, natural hair texture, accurate collar and jacket structure, and believable fabric behavior in warm light.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_034_youssef/photos/headshot.png"
+  }
+}

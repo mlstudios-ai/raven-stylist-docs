@@ -1,0 +1,93 @@
+{
+  "saved_at": 1779248117.7625148,
+  "session_id": "s_rfaf7uif_mpdia69l",
+  "turn_id": "t004",
+  "user_id": "usr_007_maya",
+  "image": {
+    "filename": "t004.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 645693
+  },
+  "input_request": {
+    "prompt": "show me",
+    "style": {
+      "intent": {
+        "primary_intent": "plan a birthday-dinner outfit that feels celebratory, comfortable, and true to her wardrobe"
+      },
+      "context": {
+        "occasion": "birthday dinner with friends",
+        "climate": "cool autumn evening with possible light wind",
+        "time_of_day": "evening"
+      },
+      "analysis": {
+        "why_this_works_now": "The last user message asks for more ideas, so the response focuses on a small set of polished birthday-dinner options rather than everyday work outfits. The recommendations stay within her comfort zone: muted tones, softly structured pieces, practical layers, and heeled boots or refined flats. They feel special through line, fabric depth, and season-appropriate styling rather than overtly dramatic.",
+        "persona_alignment": "These looks align with her self-described wardrobe because they use muted color, soft structure, and practical refinement—exactly what she wears and loves. The celebratory effect comes from proportion, neckline, and evening polish, not from foreign styling territory.",
+        "profile_alignment": "All options respect her fit preferences and body needs: softly shaped tops or dresses with waist emphasis, straight or midi-length bottoms, open or softly structured outer layers, and comfortable heeled or supportive flat footwear. They avoid boxy knit tops, close fine-knit dresses, and stiff outerwear that she has said feels wrong.",
+        "prompt_alignment": "The response follows the request to give more ideas for a birthday dinner. Each recommendation is built from her liked and rejected signals, keeping the same style logic and avoiding the weaker boxy knit-makeup she dislikes."
+      },
+      "recommendations": [
+        {
+          "label": "Muted plum midi with soft jacket and heeled boot",
+          "logic_summary": "A deep muted evening midi keeps the look celebratory while staying true to her wardrobe. The soft jacket adds polish without stiffness, and the heeled boot gives evening height without looking shoe-heavy.",
+          "pieces": [
+            {
+              "role": "base",
+              "category": "jacket",
+              "color": "muted plum",
+              "styling_note": "Keep the outer layer open to create vertical line and keep the look polished rather than boxed."
+            },
+            {
+              "role": "bottom",
+              "category": "midi skirt",
+              "color": "olive",
+              "styling_note": "A full-length midi keeps the look elegant and her favorite part of her dressing world, while the muted tone keeps it evening-appropriate."
+            },
+            {
+              "role": "footwear",
+              "category": "heeled ankle boots",
+              "color": "washed black",
+              "styling_note": "A soft-heeled boot keeps the outfit grounded and practical while still feeling celebratory."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: show me\n\nstyle:\n  context:\n    occasion: birthday dinner with friends\n  intent:\n    primary_intent: plan a birthday-dinner outfit that feels celebratory, comfortable, and true to her wardrobe\n  recommendations:\n  - label: Muted plum midi with soft jacket and heeled boot\n    logic_summary: A deep muted evening midi keeps the look celebratory while staying true to her wardrobe. The soft jacket adds polish without stiffness, and the heeled boot gives evening height without looking shoe-heavy.\n    pieces:\n    - category: jacket\n      color: muted plum\n      role: base\n      styling_note: Keep the outer layer open to create vertical line and keep the look polished rather than boxed.\n    - category: midi skirt\n      color: olive\n      role: bottom\n      styling_note: A full-length midi keeps the look elegant and her favorite part of her dressing world, while the muted tone keeps it evening-appropriate.\n    - category: heeled ankle boots\n      color: washed black\n      role: footwear\n      styling_note: A soft-heeled boot keeps the outfit grounded and practical while still feeling celebratory.\n",
+    "response": {
+      "scene": {
+        "occasion": "birthday dinner with friends",
+        "setting": "intimate upscale restaurant interior with muted wood accents, soft table lighting, and a refined but relaxed dining atmosphere",
+        "lighting": "warm ambient interior lighting with soft table glow and gentle room wash, natural evening light from the outside setting low enough to keep the focus on the outfit",
+        "time_of_day": "evening",
+        "mood": "refined, celebratory, comfortable, and understated"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "muted plum soft tailored jacket with a relaxed boxy shape, slightly longer than typical, open front, and a subtle shoulder structure"
+          },
+          {
+            "description": "muted olive full-length midi skirt with a fluid drape, subtle movement, and a hem that grazes the ankle"
+          },
+          {
+            "description": "washed black heeled ankle boots with soft vamp detail, a practical low heel, and a polished but approachable finish"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash prompt generator for a virtual try-on task. Render the user in the specified outfit with photographic realism. Prioritize accurate body proportions, natural pose, true-to-life fabric behavior, and subtle styling details. Keep the image fashion-forward but believable and grounded in real-world dining wear. Use the attached headshot reference as the visual anchor for face, hair, and overall style. Avoid editorial exaggeration, fantasy styling, or dramatic lighting. The goal is a realistic, celebratory, comfortable outfit photo that could be shared on social media or used for personal shopping decisions.",
+        "user": "Create a hyper-realistic photo of a 30-something woman dressed for a birthday dinner with friends. She wears a muted plum soft tailored jacket, an olive full-length midi skirt, and washed black heeled ankle boots. The outfit should feel refined, celebratory, and comfortable, with no stiffness or stiffness cues. Pose her in a relaxed restaurant setting, standing near a table or a subtle background, with warm evening interior lighting and soft ambient glow. Keep the jacket open, the midi skirt fluid, and the boots polished but approachable. Emphasize her personal style: muted colors, soft tailoring, full-length midi skirt comfort, and heeled ankle boots. Avoid any overtly stiff tailoring, boxy stiffness, or dramatic fashion-book pose. The image should read like a real dinner-plug photo taken by a skilled street or editorial photographer, with natural body proportion, believable fabric drape, and a celebratory but understated mood."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash prompt generator for a virtual try-on task. Render the user in the specified outfit with photographic realism. Prioritize accurate body proportions, natural pose, true-to-life fabric behavior, and subtle styling details. Keep the image fashion-forward but believable and grounded in real-world dining wear. Use the attached headshot reference as the visual anchor for face, hair, and overall style. Avoid editorial exaggeration, fantasy styling, or dramatic lighting. The goal is a realistic, celebratory, comfortable outfit photo that could be shared on social media or used for personal shopping decisions.",
+    "prompt_user_sent": "Create a hyper-realistic photo of a 30-something woman dressed for a birthday dinner with friends. She wears a muted plum soft tailored jacket, an olive full-length midi skirt, and washed black heeled ankle boots. The outfit should feel refined, celebratory, and comfortable, with no stiffness or stiffness cues. Pose her in a relaxed restaurant setting, standing near a table or a subtle background, with warm evening interior lighting and soft ambient glow. Keep the jacket open, the midi skirt fluid, and the boots polished but approachable. Emphasize her personal style: muted colors, soft tailoring, full-length midi skirt comfort, and heeled ankle boots. Avoid any overtly stiff tailoring, boxy stiffness, or dramatic fashion-book pose. The image should read like a real dinner-plug photo taken by a skilled street or editorial photographer, with natural body proportion, believable fabric drape, and a celebratory but understated mood.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_007_maya/photos/headshot.png"
+  }
+}

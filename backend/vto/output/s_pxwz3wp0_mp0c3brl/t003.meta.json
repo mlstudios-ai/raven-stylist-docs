@@ -1,0 +1,108 @@
+{
+  "saved_at": 1778451571.737982,
+  "session_id": "s_pxwz3wp0_mp0c3brl",
+  "turn_id": "t003",
+  "user_id": "usr_006_jamie",
+  "image": {
+    "filename": "t003.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 683148
+  },
+  "input_request": {
+    "prompt": "high end expensive restaurant at a event",
+    "style": {
+      "intent": {
+        "primary_intent": "build a dinner-outfit for a high-end restaurant event"
+      },
+      "context": {
+        "occasion": "high-end restaurant event dinner",
+        "climate": "mild autumn weather with possible drizzle",
+        "time_of_day": "evening"
+      },
+      "recommendations": [
+        {
+          "label": "Event Night with understated edge",
+          "logic_summary": "A dark, layered outfit that feels elevated through texture and fit rather than formality, matching the user’s preference for understated high-end looks.",
+          "pieces": [
+            {
+              "role": "base layer",
+              "category": "shirt",
+              "color": "deep charcoal",
+              "styling_note": "Keep the front open for a polished but non-corporate effect; the shirt should feel substantial and not clingy."
+            },
+            {
+              "role": "mid layer",
+              "category": "overshirt",
+              "color": "navy with subtle texture",
+              "styling_note": "Wear open over the shirt to create vertical line and depth without looking like a uniform."
+            },
+            {
+              "role": "bottom",
+              "category": "trousers",
+              "color": "charcoal",
+              "styling_note": "A flat front keeps the look clean and event-appropriate while staying true to the user’s comfort zone."
+            },
+            {
+              "role": "outer layer",
+              "category": "coat",
+              "color": "dark olive or charcoal",
+              "styling_note": "Useful if drizzle is expected; keep it long enough to stay proportionate and avoid looking like a work coat."
+            },
+            {
+              "role": "footwear",
+              "category": "boots",
+              "color": "dark brown or blackened brown",
+              "styling_note": "A sleek boot keeps the outfit grounded and event-ready without becoming dressy."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "The user wants to look good for a high-end restaurant event, and the strongest response is a dark, layered outfit that feels elevated through texture, proportion, and layering rather than overt dressy details. This keeps the look sophisticated and event-appropriate while staying true to the user’s identity as understated, practical, and textured."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: high end expensive restaurant at a event\n\nprofile:\n  identity:\n    gender_identity: man\n    age: 31\n    body_shape: tall frame with broad shoulders, long arms and legs, and fuller midsection\n\nstyle:\n  context:\n    occasion: high-end restaurant event dinner\n  intent:\n    primary_intent: build a dinner-outfit for a high-end restaurant event\n  recommendations:\n  - label: Event Night with understated edge\n    logic_summary: A dark, layered outfit that feels elevated through texture and fit rather than formality, matching the user’s preference for understated high-end looks.\n    pieces:\n    - category: shirt\n      color: deep charcoal\n      role: base layer\n      styling_note: Keep the front open for a polished but non-corporate effect; the shirt should feel substantial and not clingy.\n    - category: overshirt\n      color: navy with subtle texture\n      role: mid layer\n      styling_note: Wear open over the shirt to create vertical line and depth without looking like a uniform.\n    - category: trousers\n      color: charcoal\n      role: bottom\n      styling_note: A flat front keeps the look clean and event-appropriate while staying true to the user’s comfort zone.\n    - category: coat\n      color: dark olive or charcoal\n      role: outer layer\n      styling_note: Useful if drizzle is expected; keep it long enough to stay proportionate and avoid looking like a work coat.\n    - category: boots\n      color: dark brown or blackened brown\n      role: footwear\n      styling_note: A sleek boot keeps the outfit grounded and event-ready without becoming dressy.\n",
+    "response": {
+      "scene": {
+        "occasion": "high-end restaurant event dinner",
+        "setting": "an upscale, dimly lit restaurant event setting with polished tables, soft ambient lighting, and a refined but contemporary interior",
+        "lighting": "soft, warm, intimate, realistic indoor restaurant lighting with subtle reflections and natural depth of field",
+        "time_of_day": "evening",
+        "mood": "refined, relaxed, sophisticated, and effortlessly polished"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "deep charcoal long-sleeve button-down shirt with a substantial base layer feel and a clean flat front"
+          },
+          {
+            "description": "navy overshirt with subtle texture, worn open over the shirt to create depth and a polished vertical line"
+          },
+          {
+            "description": "charcoal flat-front tailored trousers with a full-length clean line"
+          },
+          {
+            "description": "dark brown or blackened brown sleek leather boots with a polished but understated finish"
+          },
+          {
+            "description": "optional dark olive or charcoal long coat for drizzle, kept sleek and event-appropriate"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash prompt generator for a virtual try-on image. Render a realistic, high-quality photographic image of the user in the requested outfit. Follow the outfit and scene description exactly. Use photo-realistic style, natural proportions, true-to-life lighting, and a subtle, sophisticated atmosphere. Keep the image elegant but not corporate. Avoid any editorial exaggeration, fantasy styling, or fashion magazine dramatization. Preserve realism, fabric texture, and personal comfort cues.",
+        "user": "Create a photo-realistic virtual try-on image for a high-end restaurant event dinner. Use the outfit described in the profile: a deep charcoal long-sleeve button-down shirt, a navy overshirt with subtle texture worn open over the shirt, charcoal flat-front tailored trousers, dark brown or blackened brown sleek leather boots, and optionally a dark olive or charcoal long coat if drizzle is expected. The person should look like the same man from the reference photo: tall, broad-shouldered, with long arms and legs, a fuller midsection, dark brown eyes, short dark brown hair, and a relaxed but refined presence. Place him in an upscale restaurant event setting with polished tables, soft ambient lighting, and a contemporary interior. Emphasize understated luxury through texture, fit, and proportion rather than formality. Keep the look relaxed, sophisticated, and effortlessly polished, with a clean dark palette and realistic drape. Avoid any corporate tailoring cues, overtly formal details, or dramatic fashion photography effects."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash prompt generator for a virtual try-on image. Render a realistic, high-quality photographic image of the user in the requested outfit. Follow the outfit and scene description exactly. Use photo-realistic style, natural proportions, true-to-life lighting, and a subtle, sophisticated atmosphere. Keep the image elegant but not corporate. Avoid any editorial exaggeration, fantasy styling, or fashion magazine dramatization. Preserve realism, fabric texture, and personal comfort cues.",
+    "prompt_user_sent": "Create a photo-realistic virtual try-on image for a high-end restaurant event dinner. Use the outfit described in the profile: a deep charcoal long-sleeve button-down shirt, a navy overshirt with subtle texture worn open over the shirt, charcoal flat-front tailored trousers, dark brown or blackened brown sleek leather boots, and optionally a dark olive or charcoal long coat if drizzle is expected. The person should look like the same man from the reference photo: tall, broad-shouldered, with long arms and legs, a fuller midsection, dark brown eyes, short dark brown hair, and a relaxed but refined presence. Place him in an upscale restaurant event setting with polished tables, soft ambient lighting, and a contemporary interior. Emphasize understated luxury through texture, fit, and proportion rather than formality. Keep the look relaxed, sophisticated, and effortlessly polished, with a clean dark palette and realistic drape. Avoid any corporate tailoring cues, overtly formal details, or dramatic fashion photography effects.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_006_jamie/photos/headshot.png"
+  }
+}

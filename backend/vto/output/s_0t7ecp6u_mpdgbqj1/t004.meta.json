@@ -1,0 +1,111 @@
+{
+  "saved_at": 1779244773.6992571,
+  "session_id": "s_0t7ecp6u_mpdgbqj1",
+  "turn_id": "t004",
+  "user_id": "usr_006_jamie",
+  "image": {
+    "filename": "t004.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 888634
+  },
+  "input_request": {
+    "prompt": "can you show me on the vto?",
+    "style": {
+      "intent": {
+        "primary_intent": "find a bushwalking outfit"
+      },
+      "context": {
+        "occasion": "bushwalking",
+        "climate": "cool early-morning conditions with possible warmth later and variable trail conditions",
+        "time_of_day": "morning"
+      },
+      "analysis": {
+        "why_this_works_now": "The user explicitly asked for bushwalking help, so the strongest response is a trail-appropriate outfit that respects his existing palette and fit habits. The recommendations stay practical, layered, and low-maintenance rather than fashion-forward, because that matches his expressed needs for work and outdoor use.",
+        "persona_alignment": "Very strong. The request is for a real outdoor activity, and his style life is grounded in museum work, errands, and dates. The response stays functional, understated, and easy to move in, which is what his profile shows he uses most.",
+        "profile_alignment": "Excellent. All suggestions use his preferred relaxed straight fit, muted colors, and layered structure. They also avoid anything fashion-forward, boxy, or low-utility, because those are marked as rejected or weak for him.",
+        "prompt_alignment": "Directly satisfied. The response is one full bushwalking outfit with clear reasoning and no unrelated styling territory."
+      },
+      "recommendations": [
+        {
+          "label": "Core bushwalking option",
+          "logic_summary": "A practical, low-maintenance trail outfit built from his existing palette: a breathable overshirt, long sleeve base layer, mid-layer overshirt, and charcoal straight-leg trousers with good ankle coverage.",
+          "pieces": [
+            {
+              "role": "outer_layer",
+              "category": "overshirt",
+              "color": "charcoal",
+              "styling_note": "Wear open at the top to keep the torso breathable and ready for movement."
+            },
+            {
+              "role": "mid_layer",
+              "category": "overshirt",
+              "color": "olive",
+              "styling_note": "Keep open over the base layer so it stays lightweight and easy to adjust as the day warms."
+            },
+            {
+              "role": "base_layer",
+              "category": "long-sleeve shirt",
+              "color": "dark green or navy",
+              "styling_note": "Use as the visible shirt layer so it looks intentional rather than purely utilitarian."
+            },
+            {
+              "role": "bottom",
+              "category": "trousers",
+              "color": "charcoal",
+              "styling_note": "A charcoal trouser keeps the look cleaner than denim while still matching his work wardrobe."
+            },
+            {
+              "role": "footwear",
+              "category": "trail boots",
+              "color": "dark brown or charcoal",
+              "styling_note": "Choose a boot that stays neat at the ankle and can handle wet or uneven ground."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: can you show me on the vto?\n\nstyle:\n  context:\n    occasion: bushwalking\n  intent:\n    primary_intent: find a bushwalking outfit\n  recommendations:\n  - label: Core bushwalking option\n    logic_summary: A practical, low-maintenance trail outfit built from his existing palette: a breathable overshirt, long sleeve base layer, mid-layer overshirt, and charcoal straight-leg trousers with good ankle coverage.\n    pieces:\n    - category: overshirt\n      color: charcoal\n      role: outer_layer\n      styling_note: Wear open at the top to keep the torso breathable and ready for movement.\n    - category: overshirt\n      color: olive\n      role: mid_layer\n      styling_note: Keep open over the base layer so it stays lightweight and easy to adjust as the day warms.\n    - category: long-sleeve shirt\n      color: dark green or navy\n      role: base_layer\n      styling_note: Use as the visible shirt layer so it looks intentional rather than purely utilitarian.\n    - category: trousers\n      color: charcoal\n      role: bottom\n      styling_note: A charcoal trouser keeps the look cleaner than denim while still matching his work wardrobe.\n    - category: trail boots\n      color: dark brown or charcoal\n      role: footwear\n      styling_note: Choose a boot that stays neat at the ankle and can handle wet or uneven ground.\n",
+    "response": {
+      "scene": {
+        "occasion": "bushwalking",
+        "setting": "a natural Australian bush trail with uneven ground, native vegetation, and a clear day",
+        "lighting": "soft natural daylight with realistic outdoor exposure and subtle movement shadows",
+        "time_of_day": "morning to early afternoon",
+        "mood": "practical, calm, and confident"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "charcoal overshirt worn as outer layer, open at the top, with a relaxed fit and soft wind-resistant fabric"
+          },
+          {
+            "description": "olive overshirt worn as mid-layer, open over the base layer, with a roomy fit and breathable technical fabric"
+          },
+          {
+            "description": "dark green or navy long-sleeve shirt worn as base layer, with a relaxed fit and moisture-wicking cotton-polyester blend"
+          },
+          {
+            "description": "charcoal straight-leg trousers in a soft stretch twill, ankle-length, with a relaxed waistband and room through the thigh and calf"
+          },
+          {
+            "description": "dark brown or charcoal waterproof trail boots with a supportive mid-ankle profile and grippy sole"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash prompt generator for virtual try-on. Render a realistic full-body photo of the person in their recommended bushwalking outfit. Keep the image believable, natural, and true to the user's photo references. Use photographic realism with accurate proportions, realistic fabric behavior, natural body posture, and believable outdoor lighting. Avoid stylisation, illustration, fashion editorial exaggeration, or fantasy elements. Preserve the outfit hierarchy: base layer shirt, mid-layer overshirt, outer overshirt, charcoal trousers, waterproof trail boots. Show the shirt as the visible long-sleeve layer, the olive overshirt open over it, and the charcoal overshirt open at the top. Keep the silhouette relaxed but not sloppy. Use subtle movement and natural trekking context rather than posed fashion poses.",
+        "user": "Render the user in the top recommended bushwalking outfit: a dark green or navy long-sleeve shirt, an olive overshirt worn as the mid-layer, a charcoal overshirt worn as the outer layer, charcoal straight-leg trousers, and dark brown or charcoal waterproof trail boots. The scene is a natural Australian bush trail in soft daylight, with uneven ground and native vegetation visible in the background. The person should look practical, calm, and confident, as if ready for a day of bushwalking. Use the photo references to keep the face, body proportions, and style identity consistent with the user. Show realistic fabric drape, breathable technical layers, natural movement shadows, and believable outdoor lighting. Keep the image photo-realistic and true to life."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash prompt generator for virtual try-on. Render a realistic full-body photo of the person in their recommended bushwalking outfit. Keep the image believable, natural, and true to the user's photo references. Use photographic realism with accurate proportions, realistic fabric behavior, natural body posture, and believable outdoor lighting. Avoid stylisation, illustration, fashion editorial exaggeration, or fantasy elements. Preserve the outfit hierarchy: base layer shirt, mid-layer overshirt, outer overshirt, charcoal trousers, waterproof trail boots. Show the shirt as the visible long-sleeve layer, the olive overshirt open over it, and the charcoal overshirt open at the top. Keep the silhouette relaxed but not sloppy. Use subtle movement and natural trekking context rather than posed fashion poses.",
+    "prompt_user_sent": "Render the user in the top recommended bushwalking outfit: a dark green or navy long-sleeve shirt, an olive overshirt worn as the mid-layer, a charcoal overshirt worn as the outer layer, charcoal straight-leg trousers, and dark brown or charcoal waterproof trail boots. The scene is a natural Australian bush trail in soft daylight, with uneven ground and native vegetation visible in the background. The person should look practical, calm, and confident, as if ready for a day of bushwalking. Use the photo references to keep the face, body proportions, and style identity consistent with the user. Show realistic fabric drape, breathable technical layers, natural movement shadows, and believable outdoor lighting. Keep the image photo-realistic and true to life.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_006_jamie/photos/headshot.png"
+  }
+}

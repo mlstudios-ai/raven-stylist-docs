@@ -1,0 +1,93 @@
+{
+  "saved_at": 1778418346.09276,
+  "session_id": "s_iwxcee3p_mozsccxh",
+  "turn_id": "t001",
+  "user_id": "usr_007_maya",
+  "image": {
+    "filename": "t001.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 662149
+  },
+  "input_request": {
+    "prompt": "show me in a wedding dress",
+    "style": {
+      "intent": {
+        "primary_intent": "Find a wedding guest dress that fits the user's style and event context."
+      },
+      "context": {
+        "occasion": "wedding guest",
+        "climate": "cool autumn evening",
+        "time_of_day": "after-work dinner into social event"
+      },
+      "recommendations": [
+        {
+          "label": "Muted midi dress with soft structure",
+          "logic_summary": "This is the strongest wedding option because it keeps the user's muted palette and after-work dinner comfort while adding enough structure and occasion awareness for a formal evening.",
+          "pieces": [
+            {
+              "role": "main dress",
+              "category": "dress",
+              "color": "plum or deep olive",
+              "styling_note": "Choose a neckline that opens the chest without exposing too much, and a hem that stops just above the ankle for a flattering midi length."
+            },
+            {
+              "role": "outer layer",
+              "category": "jacket or capelet",
+              "color": "charcoal or muted navy",
+              "styling_note": "Use this only if needed for the cool evening; keep it open and lightly structured so it reads like an event-appropriate layer rather than a formal coat."
+            },
+            {
+              "role": "shoes",
+              "category": "dress shoes",
+              "color": "washed black or deep plum",
+              "styling_note": "Avoid very high heeled stiletto shapes; choose a refined block or softly pointed toe that supports movement and keeps the look grounded."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "The user asked to be shown in a wedding dress, and the strongest answer is a muted, softly structured midi dress that feels formal enough for the event while staying true to her everyday palette and comfort preferences.",
+        "persona_alignment": "This recommendation matches her creative professional life and her preference for polished casual rather than formal-dressy shapes. It uses her successful silhouette cues and keeps the dress grounded, textural, and seasonally appropriate.",
+        "profile_alignment": "The dress fits her body preferences: softly shaped through the bust, waist-emphasizing, and not clingy. The midi length keeps proportion balanced for her 158cm frame, and the muted color avoids overstimulation while staying elegant.",
+        "prompt_alignment": "The response follows the style lens exactly: it stays in muted structure, avoids boxy or overtly formal cues, uses texture and proportion control, and gives one focused dress option with detailed styling logic."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: show me in a wedding dress\n\nprofile:\n  identity:\n    gender_identity: woman\n    age: 27\n    body_shape: shorter stature with defined waist, narrower shoulders, and fuller hips and thighs\n\nstyle:\n  context:\n    occasion: wedding guest\n  intent:\n    primary_intent: Find a wedding guest dress that fits the user's style and event context.\n  recommendations:\n  - label: Muted midi dress with soft structure\n    logic_summary: This is the strongest wedding option because it keeps the user's muted palette and after-work dinner comfort while adding enough structure and occasion awareness for a formal evening.\n    pieces:\n    - category: dress\n      color: plum or deep olive\n      role: main dress\n      styling_note: Choose a neckline that opens the chest without exposing too much, and a hem that stops just above the ankle for a flattering midi length.\n    - category: jacket or capelet\n      color: charcoal or muted navy\n      role: outer layer\n      styling_note: Use this only if needed for the cool evening; keep it open and lightly structured so it reads like an event-appropriate layer rather than a formal coat.\n    - category: dress shoes\n      color: washed black or deep plum\n      role: shoes\n      styling_note: Avoid very high heeled stiletto shapes; choose a refined block or softly pointed toe that supports movement and keeps the look grounded.\n",
+    "response": {
+      "scene": {
+        "occasion": "wedding guest",
+        "setting": "intimate indoor dinner setting in a stylish apartment or townhouse with subtle event décor",
+        "lighting": "soft natural and warm ambient indoor lighting creating a gentle, realistic evening atmosphere",
+        "time_of_day": "evening",
+        "mood": "refined, understated, and comfortable"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "plum muted midi dress with a softly structured column silhouette, subtle body contouring, a modest neckline, and a hem that stops just above the ankle"
+          },
+          {
+            "description": "charcoal muted navy lightweight jacket or capelet kept open for a clean, event-appropriate outer layer"
+          },
+          {
+            "description": "washed black or deep plum refined block or softly pointed dress shoes"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash prompt generator for virtual try-on. Render a photorealistic image of the user wearing the specified outfit. Keep the result realistic, natural-looking, and true to the user's identity. Use the headshot reference as the exact visual anchor for face, hair, body proportions, and personal style. Avoid editorial exaggeration, fantasy styling, or any visual cues that would make the result look staged or unrealistic.",
+        "user": "Create a photorealistic virtual try-on image for a 27-year-old woman with a shorter stature, a defined waist, narrower shoulders, and fuller hips and thighs. She is wearing a muted plum midi dress with a softly structured column silhouette, modest neckline, and hem just above the ankle. The dress has subtle body contouring and keeps her style intent of understated, comfortable, and refined wear. Keep the palette calm and muted. Add a charcoal muted navy lightweight jacket or capelet kept open for an event-appropriate outer layer. Shoes are washed black or deep plum refined block or softly pointed. Scene is an intimate indoor wedding dinner in a stylish apartment or townhouse with soft event décor. Lighting is a blend of natural and warm ambient evening light, creating a gentle, realistic mood. The result should look like a real wedding-dressed guest photo rather than fashion editorial. Keep all proportions true to the photo: shorter torso, defined waist, narrower shoulders, fuller hips, and natural leg balance. Emphasize clean lines, subtle body shaping, and a relaxed yet polished presence. Avoid high heeled stiletto shapes, dramatic styling, or any formal coat cues. Keep the overall feel refined, understated, and comfortable."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash prompt generator for virtual try-on. Render a photorealistic image of the user wearing the specified outfit. Keep the result realistic, natural-looking, and true to the user's identity. Use the headshot reference as the exact visual anchor for face, hair, body proportions, and personal style. Avoid editorial exaggeration, fantasy styling, or any visual cues that would make the result look staged or unrealistic.",
+    "prompt_user_sent": "Create a photorealistic virtual try-on image for a 27-year-old woman with a shorter stature, a defined waist, narrower shoulders, and fuller hips and thighs. She is wearing a muted plum midi dress with a softly structured column silhouette, modest neckline, and hem just above the ankle. The dress has subtle body contouring and keeps her style intent of understated, comfortable, and refined wear. Keep the palette calm and muted. Add a charcoal muted navy lightweight jacket or capelet kept open for an event-appropriate outer layer. Shoes are washed black or deep plum refined block or softly pointed. Scene is an intimate indoor wedding dinner in a stylish apartment or townhouse with soft event décor. Lighting is a blend of natural and warm ambient evening light, creating a gentle, realistic mood. The result should look like a real wedding-dressed guest photo rather than fashion editorial. Keep all proportions true to the photo: shorter torso, defined waist, narrower shoulders, fuller hips, and natural leg balance. Emphasize clean lines, subtle body shaping, and a relaxed yet polished presence. Avoid high heeled stiletto shapes, dramatic styling, or any formal coat cues. Keep the overall feel refined, understated, and comfortable.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_007_maya/photos/headshot.png"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "saved_at": 1779247298.938949,
+  "session_id": "s_7vd38kd9_mpdhuyuo",
+  "turn_id": "t002",
+  "user_id": "usr_006_jamie",
+  "image": {
+    "filename": "t002.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 660992
+  },
+  "input_request": {
+    "prompt": "please show me",
+    "style": {
+      "intent": {
+        "primary_intent": "find a wedding outfit that feels appropriate, understated, and true to my everyday wardrobe"
+      },
+      "context": {
+        "occasion": "formal wedding",
+        "climate": "London spring with possible rain and variable temperatures",
+        "time_of_day": "evening"
+      },
+      "analysis": {
+        "why_this_works_now": "Your last message asks for a wedding recommendation, so the response focuses on one polished option that feels special without becoming overdressed or out of character. It uses the straight-leg trouser + overshirt base you already trust, adds a subtle tonal layer, and keeps the palette quiet so the outfit can work through day and night.",
+        "persona_alignment": "This recommendation stays within your expressed wardrobe logic: practical, understated, textured, and weather-aware. It avoids anything dressy, bright, or heavily embellished, and it keeps the silhouette familiar so you can feel comfortable and authentic at a formal event.",
+        "profile_alignment": "The pieces fit your size range and build: relaxed straight trousers, overshirt, textured knit, and sturdy evening shoes. The look also matches your primary use cases because it can survive museum work, travel, and an evening transition without feeling out of place.",
+        "prompt_alignment": "The response follows the strict style-recommendation format and uses only the information from the last user message. It does not add new styling ideas beyond what is needed for a wedding look."
+      },
+      "recommendations": [
+        {
+          "label": "Muted tonal evening wedding",
+          "logic_summary": "A dark navy straight-leg trouser + charcoal overshirt + deep-tonal textured knit + dark brown or charcoal brogue-style shoes gives a polished but understated wedding presence that feels natural in London spring.",
+          "pieces": [
+            {
+              "role": "base",
+              "category": "trousers",
+              "color": "dark navy",
+              "styling_note": "Choose a hem that stops just above the boot for a clean line and keeps the look contemporary rather than formal."
+            },
+            {
+              "role": "outer_layer",
+              "category": "overshirt",
+              "color": "charcoal",
+              "styling_note": "Wear open to create depth and keep the outfit from feeling dressy."
+            },
+            {
+              "role": "neat layer",
+              "category": "textured knit",
+              "color": "deep charcoal or dark green",
+              "styling_note": "A fine-gauge cable or rib texture adds interest without relying on color or shine."
+            },
+            {
+              "role": "footwear",
+              "category": "dress shoes",
+              "color": "charcoal or dark brown",
+              "styling_note": "Keep the finish polished but not glossy so the outfit stays subtle."
+            },
+            {
+              "role": "accessory",
+              "category": "watch",
+              "color": "dark brown or black",
+              "styling_note": "Use only one subtle accessory so the outfit does not feel accessorized."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: please show me\n\nstyle:\n  context:\n    occasion: formal wedding\n  intent:\n    primary_intent: find a wedding outfit that feels appropriate, understated, and true to my everyday wardrobe\n  recommendations:\n  - label: Muted tonal evening wedding\n    logic_summary: A dark navy straight-leg trouser + charcoal overshirt + deep-tonal textured knit + dark brown or charcoal brogue-style shoes gives a polished but understated wedding presence that feels natural in London spring.\n    pieces:\n    - category: trousers\n      color: dark navy\n      role: base\n      styling_note: Choose a hem that stops just above the boot for a clean line and keeps the look contemporary rather than formal.\n    - category: overshirt\n      color: charcoal\n      role: outer_layer\n      styling_note: Wear open to create depth and keep the outfit from feeling dressy.\n    - category: textured knit\n      color: deep charcoal or dark green\n      role: neat layer\n      styling_note: A fine-gauge cable or rib texture adds interest without relying on color or shine.\n    - category: dress shoes\n      color: charcoal or dark brown\n      role: footwear\n      styling_note: Keep the finish polished but not glossy so the outfit stays subtle.\n    - category: watch\n      color: dark brown or black\n      role: accessory\n      styling_note: Use only one subtle accessory so the outfit does not feel accessorized.\n",
+    "response": {
+      "scene": {
+        "occasion": "formal wedding",
+        "setting": "London spring evening wedding reception in a polished indoor venue",
+        "lighting": "soft warm indoor evening lighting with subtle table and ambient venue light, natural skin tone preserved, no harsh flash",
+        "time_of_day": "evening",
+        "mood": "understated, elegant, contemporary, photo-ready"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "dark navy straight-leg trousers in a fine-wicking twill or lightweight wool blend, ankle-length, clean hem, contemporary tailoring"
+          },
+          {
+            "description": "charcoal deep-tonal textured overshirt in a matte wool or wool-blend fabric, open-front, relaxed but deliberate fit"
+          },
+          {
+            "description": "deep-tonal fine-gauge textured knit in charcoal or dark green, cable or rib texture, neat collarless layering piece"
+          },
+          {
+            "description": "charcoal or dark brown matte leather dress shoes in a brogue or brogue-inspired style, low-profile, polished but not glossy"
+          },
+          {
+            "description": "subtle dark brown or black dress watch with matte leather strap and understated face"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash fashion virtual try-on image generator. Render a realistic, high-quality full-body image of the user wearing the specified outfit. Preserve body proportions, natural pose, and true-to-life fabric behavior. Keep the style understated, contemporary, and elegant rather than theatrical. Use the photo observation guidelines: realistic body shape, natural shoulders, realistic fabric drape, accurate garment fit, believable proportions, and no fantasy styling. Avoid editorial exaggeration, glossy sheen, exaggerated color contrast, or dramatic lighting. The image should look like a polished personal wardrobe photo taken at a formal wedding reception.",
+        "user": "Create a full-body virtual try-on image for a formal London spring wedding reception in the evening. Show the person wearing a dark navy straight-leg trouser, a charcoal deep-tonal textured overshirt worn open, and a deep-tonal textured knit collarless layer underneath. Add charcoal or dark brown matte leather dress shoes and a subtle dark brown or black leather watch. Pose them naturally as if they are standing in a reception room, looking relaxed and approachable. Use soft warm indoor evening lighting, contemporary wedding-appropriate proportions, and a polished but understated mood. Keep the overall style true to their everyday wardrobe rather than formal or dramatic."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash fashion virtual try-on image generator. Render a realistic, high-quality full-body image of the user wearing the specified outfit. Preserve body proportions, natural pose, and true-to-life fabric behavior. Keep the style understated, contemporary, and elegant rather than theatrical. Use the photo observation guidelines: realistic body shape, natural shoulders, realistic fabric drape, accurate garment fit, believable proportions, and no fantasy styling. Avoid editorial exaggeration, glossy sheen, exaggerated color contrast, or dramatic lighting. The image should look like a polished personal wardrobe photo taken at a formal wedding reception.",
+    "prompt_user_sent": "Create a full-body virtual try-on image for a formal London spring wedding reception in the evening. Show the person wearing a dark navy straight-leg trouser, a charcoal deep-tonal textured overshirt worn open, and a deep-tonal textured knit collarless layer underneath. Add charcoal or dark brown matte leather dress shoes and a subtle dark brown or black leather watch. Pose them naturally as if they are standing in a reception room, looking relaxed and approachable. Use soft warm indoor evening lighting, contemporary wedding-appropriate proportions, and a polished but understated mood. Keep the overall style true to their everyday wardrobe rather than formal or dramatic.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_006_jamie/photos/headshot.png"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "saved_at": 1778463958.616967,
+  "session_id": "s_tcccfidt_mp0jgarf",
+  "turn_id": "t003",
+  "user_id": "usr_025_lerato",
+  "image": {
+    "filename": "t003.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 625804
+  },
+  "input_request": {
+    "prompt": "i want you to inspire me",
+    "style": {
+      "intent": {
+        "primary_intent": "Get a polished work-to-social outfit inspired by the described look."
+      },
+      "context": {
+        "occasion": "business-casual work day with meetings, site visits and an evening social follow-up",
+        "climate": "moderate South African spring with warm days and cooler evenings",
+        "time_of_day": "day to evening"
+      },
+      "recommendations": [
+        {
+          "label": "Work-to-evening polished silhouette",
+          "logic_summary": "This is the strongest match for her request: a dark full-length trouser line, long open-front layer, and soft structure that reads clean by evening without looking overdressed.",
+          "pieces": [
+            {
+              "role": "base",
+              "category": "tunic top",
+              "color": "deep plum",
+              "styling_note": "use the long open-front layer as the key visual anchor and keep the neckline simple so the top stays flattering through the day."
+            },
+            {
+              "role": "layer",
+              "category": "long coat",
+              "color": "charcoal",
+              "styling_note": "the charcoal keeps the look grounded and office-appropriate while the longer line adds polish for evening."
+            },
+            {
+              "role": "bottom",
+              "category": "full-length trousers",
+              "color": "black",
+              "styling_note": "a dark straight or softly tapered trouser keeps the silhouette refined without feeling formal."
+            },
+            {
+              "role": "shoes",
+              "category": "block-heel loafers",
+              "color": "black",
+              "styling_note": "keeps the outfit grounded and office-appropriate while still looking dressy enough after dark."
+            },
+            {
+              "role": "bag",
+              "category": "structured tote",
+              "color": "black",
+              "styling_note": "a simple black tote supports the polished line and works from day to evening."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "The last user message asks for inspiration based on the described outfit, so the strongest response is a single polished work-to-evening look that keeps her color preferences, vertical emphasis, and non-restrictive comfort in mind while adding enough structure to feel intentional rather than overdressed."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: i want you to inspire me\n\nprofile:\n  identity:\n    gender_identity: woman\n    age: 47\n    body_shape: broader shoulders with fuller midsection and slimmer legs\n\nstyle:\n  context:\n    occasion: business-casual work day with meetings, site visits and an evening social follow-up\n  intent:\n    primary_intent: Get a polished work-to-social outfit inspired by the described look.\n  recommendations:\n  - label: Work-to-evening polished silhouette\n    logic_summary: This is the strongest match for her request: a dark full-length trouser line, long open-front layer, and soft structure that reads clean by evening without looking overdressed.\n    pieces:\n    - category: tunic top\n      color: deep plum\n      role: base\n      styling_note: use the long open-front layer as the key visual anchor and keep the neckline simple so the top stays flattering through the day.\n    - category: long coat\n      color: charcoal\n      role: layer\n      styling_note: the charcoal keeps the look grounded and office-appropriate while the longer line adds polish for evening.\n    - category: full-length trousers\n      color: black\n      role: bottom\n      styling_note: a dark straight or softly tapered trouser keeps the silhouette refined without feeling formal.\n    - category: block-heel loafers\n      color: black\n      role: shoes\n      styling_note: keeps the outfit grounded and office-appropriate while still looking dressy enough after dark.\n    - category: structured tote\n      color: black\n      role: bag\n      styling_note: a simple black tote supports the polished line and works from day to evening.\n",
+    "response": {
+      "scene": {
+        "occasion": "business-casual work day with meetings, site visits and an evening social follow-up",
+        "setting": "modern office corridor meeting a city sidewalk and a dimly lit social venue in Hong Kong",
+        "lighting": "soft natural daylight blending into warm indoor practical lighting and subtle evening mood lighting",
+        "time_of_day": "late afternoon into evening",
+        "mood": "confident, polished, understated, practical, and smoothly work-to-social"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "deep plum long-sleeve tunic top with a clean neckline and soft structure"
+          },
+          {
+            "description": "charcoal long open-front coat with a practical side zip and refined silhouette"
+          },
+          {
+            "description": "black full-length trousers with a clean line and comfortable movement"
+          },
+          {
+            "description": "black block-heel loafers with a sleek low-profile finish"
+          },
+          {
+            "description": "black structured tote bag in a simple matte finish"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash prompt generator for a virtual try-on system. Render the outfit as a realistic, photo-quality image of the user exactly matching their identity, body shape, and photo appearance. Use photographic detail, accurate proportions, and subtle visual cues. Keep the look business-casual and polished. Avoid editorial exaggeration, fantasy styling, or any person other than the user.",
+        "user": "Create a photo-realistic virtual try-on image for a 47-year-old woman with broader shoulders, a fuller midsection, and slimmer legs, matching the exact face, hair, and body shape from the provided headshot. She wants a polished work-to-evening outfit inspired by the described look. Render her in a deep plum long-sleeve tunic top, a charcoal long open-front coat with a side zip, black full-length trousers, black block-heel loafers, and a black structured tote. Show her in a modern Hong Kong business-casual setting at the end of a workday: she could be on an office corridor, near a city sidewalk, or just inside a dimly lit social venue after meetings and site visits. Use soft daylight blending into warm indoor evening lighting, keep the proportions realistic, and emphasize confidence, understated polish, and practical elegance. The outfit should read clean and work-appropriate by day while still feeling suitable for evening. Avoid any formal blazer, cropped coat, cropped trouser, shiny shoes, or overly dramatic styling. Keep the silhouette clean, contemporary, and business-appropriate."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash prompt generator for a virtual try-on system. Render the outfit as a realistic, photo-quality image of the user exactly matching their identity, body shape, and photo appearance. Use photographic detail, accurate proportions, and subtle visual cues. Keep the look business-casual and polished. Avoid editorial exaggeration, fantasy styling, or any person other than the user.",
+    "prompt_user_sent": "Create a photo-realistic virtual try-on image for a 47-year-old woman with broader shoulders, a fuller midsection, and slimmer legs, matching the exact face, hair, and body shape from the provided headshot. She wants a polished work-to-evening outfit inspired by the described look. Render her in a deep plum long-sleeve tunic top, a charcoal long open-front coat with a side zip, black full-length trousers, black block-heel loafers, and a black structured tote. Show her in a modern Hong Kong business-casual setting at the end of a workday: she could be on an office corridor, near a city sidewalk, or just inside a dimly lit social venue after meetings and site visits. Use soft daylight blending into warm indoor evening lighting, keep the proportions realistic, and emphasize confidence, understated polish, and practical elegance. The outfit should read clean and work-appropriate by day while still feeling suitable for evening. Avoid any formal blazer, cropped coat, cropped trouser, shiny shoes, or overly dramatic styling. Keep the silhouette clean, contemporary, and business-appropriate.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_025_lerato/photos/headshot.png"
+  }
+}

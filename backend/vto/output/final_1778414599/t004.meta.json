@@ -1,0 +1,183 @@
+{
+  "saved_at": 1778414635.3188748,
+  "session_id": "final_1778414599",
+  "turn_id": "t004",
+  "user_id": "usr_006_jamie",
+  "image": {
+    "filename": "t004.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 726923
+  },
+  "input_request": {
+    "prompt": "show me what that looks like",
+    "style": {
+      "intent": {
+        "primary_intent": "Get a wedding outfit recommendation that feels appropriate, understated, and true to their style."
+      },
+      "context": {
+        "occasion": "formal daytime wedding",
+        "climate": "mild spring weather with possible light wind",
+        "time_of_day": "daytime"
+      },
+      "recommendations": [
+        {
+          "label": "Classic navy semi-formal suit with texture",
+          "logic_summary": "A dark navy semi-formal suit keeps the look wedding-appropriate while staying far from corporate. Using texture and understated tailoring lets the outfit feel elegant without trying too hard.",
+          "pieces": [
+            {
+              "role": "base",
+              "category": "dress pants",
+              "color": "dark navy",
+              "styling_note": "Choose a clean flat front or very mild pleat so the line stays wedding-appropriate rather than casual."
+            },
+            {
+              "role": "layer",
+              "category": "dress shirt",
+              "color": "off-white or light ivory",
+              "styling_note": "Keeps the look refined and wedding-appropriate while staying softer than stark white."
+            },
+            {
+              "role": "layer",
+              "category": "dress suit jacket",
+              "color": "deep navy",
+              "styling_note": "A half-structured jacket keeps the outfit semi-formal and photo-friendly without feeling corporate."
+            },
+            {
+              "role": "accessory",
+              "category": "watch",
+              "color": "dark brown or blackened steel",
+              "styling_note": "Keeps the finish understated and season-appropriate."
+            },
+            {
+              "role": "footwear",
+              "category": "dress shoes",
+              "color": "dark brown",
+              "styling_note": "Avoid very stiff leather if the event involves standing or walking."
+            }
+          ]
+        },
+        {
+          "label": "Textured charcoal suit with overshirt layering",
+          "logic_summary": "Using a charcoal suit instead of a traditional navy keeps the wedding look serious but less expected. Layering with a fine-gauge overshirt adds personality while staying respectful of the occasion.",
+          "pieces": [
+            {
+              "role": "base",
+              "category": "dress pants",
+              "color": "charcoal",
+              "styling_note": "A dark base keeps the outfit wedding-appropriate and modern rather than classic."
+            },
+            {
+              "role": "layer",
+              "category": "overshirt",
+              "color": "dark green or charcoal olive",
+              "styling_note": "Keeps the outfit layered and personal without adding overt wedding-specific detail."
+            },
+            {
+              "role": "layer",
+              "category": "dress shirt",
+              "color": "off-white",
+              "styling_note": "Keeps the shirt visible and elegant rather than stark white."
+            },
+            {
+              "role": "accessory",
+              "category": "belt",
+              "color": "dark brown",
+              "styling_note": "Matches shoes and keeps the palette understated."
+            },
+            {
+              "role": "footwear",
+              "category": "dress shoes",
+              "color": "dark brown",
+              "styling_note": "Keeps the finish understated and event-appropriate."
+            }
+          ]
+        },
+        {
+          "label": "Deep olive semi-formal trouser and jacket combo",
+          "logic_summary": "If they want to stay away from navy and charcoal, a deep olive jacket with matching trousers keeps the wedding respectful while letting their personal palette shine.",
+          "pieces": [
+            {
+              "role": "base",
+              "category": "dress pants",
+              "color": "deep olive",
+              "styling_note": "Keeps the line clean and wedding-appropriate while standing out from typical dark suits."
+            },
+            {
+              "role": "layer",
+              "category": "dress jacket",
+              "color": "deep olive",
+              "styling_note": "A single-breasted jacket keeps the look formal enough for a wedding without becoming corporate."
+            },
+            {
+              "role": "layer",
+              "category": "fine-gauge knit",
+              "color": "charcoal or dark navy",
+              "styling_note": "Adds depth and keeps the outfit from looking like a plain suit."
+            },
+            {
+              "role": "accessory",
+              "category": "watch",
+              "color": "blackened steel or dark brown",
+              "styling_note": "Keeps the finish understated and season-appropriate."
+            },
+            {
+              "role": "footwear",
+              "category": "dress shoes",
+              "color": "dark brown",
+              "styling_note": "Keeps the finish understated and event-appropriate."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "The last user message is a direct request for a wedding outfit. All recommendations stay within their proven palette and semi-formal range, using texture, layering, and understated tailoring to keep the look respectful without becoming corporate or overly formal.",
+        "persona_alignment": "These outfits match the user's strong preference for practical, understated, textured, and weather-aware dressing. They feel true to his museum-leaning, functional, and non-corporate wardrobe rather than shoe-shy or overly casual.",
+        "profile_alignment": "The choices fit his XL top size, relaxed straight fit, and need for mobility, as well as his weekday workwear context. They also respect his budget range by staying in dark neutrals and classic construction rather than expensive novelty pieces.",
+        "prompt_alignment": "All recommendations are for a daytime wedding and stay within the user's known style constraints. They avoid formal tuxedo logic, overt wedding-specific detail, and any piece that would feel stiff, corporate, or too casual for the occasion."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: show me what that looks like\n\nstyle:\n  context:\n    occasion: formal daytime wedding\n  intent:\n    primary_intent: Get a wedding outfit recommendation that feels appropriate, understated, and true to their style.\n  recommendations:\n  - label: Classic navy semi-formal suit with texture\n    logic_summary: A dark navy semi-formal suit keeps the look wedding-appropriate while staying far from corporate. Using texture and understated tailoring lets the outfit feel elegant without trying too hard.\n    pieces:\n    - category: dress pants\n      color: dark navy\n      role: base\n      styling_note: Choose a clean flat front or very mild pleat so the line stays wedding-appropriate rather than casual.\n    - category: dress shirt\n      color: off-white or light ivory\n      role: layer\n      styling_note: Keeps the look refined and wedding-appropriate while staying softer than stark white.\n    - category: dress suit jacket\n      color: deep navy\n      role: layer\n      styling_note: A half-structured jacket keeps the outfit semi-formal and photo-friendly without feeling corporate.\n    - category: watch\n      color: dark brown or blackened steel\n      role: accessory\n      styling_note: Keeps the finish understated and season-appropriate.\n    - category: dress shoes\n      color: dark brown\n      role: footwear\n      styling_note: Avoid very stiff leather if the event involves standing or walking.\n",
+    "response": {
+      "scene": {
+        "occasion": "formal daytime wedding",
+        "setting": "outdoor garden wedding with floral arches, wooden tables, and subtle décor, photographed in a natural wedding environment",
+        "lighting": "soft natural daylight with gentle diffused light and realistic shadow balance, flattering for fine fabric and color accuracy",
+        "time_of_day": "daytime",
+        "mood": "elegant, understated, and contemporary"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "dark navy semi-formal dress pants with a flat front and clean line"
+          },
+          {
+            "description": "off-white or light ivory crisp dress shirt with a subtle collar and smooth fabric"
+          },
+          {
+            "description": "deep navy semi-formal dress suit jacket with a half-structured clean line"
+          },
+          {
+            "description": "blackened steel dress watch with a simple clean face"
+          },
+          {
+            "description": "dark brown leather dress shoes with a refined polished finish"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a virtual try-on image generator. Produce a single high-fidelity realistic photograph of the requested outfit on a model, optimized for Gemini Flash. Focus on accurate garment rendering, natural body proportions, realistic fabric behavior, true color, and scene coherence. Keep the image commercial-quality but candid and wedding-appropriate. Avoid editorial exaggeration, fantasy styling, or any unrelated visual elements.",
+        "user": "Create a high-fidelity virtual try-on image for this request: \"show me what that looks like\". Use the style context and outfit recommendations exactly. Render the model wearing a dark navy semi-formal suit with texture, an off-white or light ivory crisp dress shirt, and a blackened steel watch. The photo should feel elegant, understated, and contemporary, suitable for a formal daytime wedding. Place the model outdoors in a wedding garden setting with soft natural daylight, subtle floral arches, and tasteful event décor. Emphasize clean tailoring, fabric texture, realistic drape, accurate color, and natural posture. Avoid any corporate styling cues, stiff stiff leather shoes, stark white shirt, or overly formal tuxedo language. The result should look like a real wedding day photograph rather than a fashion editorial."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a virtual try-on image generator. Produce a single high-fidelity realistic photograph of the requested outfit on a model, optimized for Gemini Flash. Focus on accurate garment rendering, natural body proportions, realistic fabric behavior, true color, and scene coherence. Keep the image commercial-quality but candid and wedding-appropriate. Avoid editorial exaggeration, fantasy styling, or any unrelated visual elements.",
+    "prompt_user_sent": "Create a high-fidelity virtual try-on image for this request: \"show me what that looks like\". Use the style context and outfit recommendations exactly. Render the model wearing a dark navy semi-formal suit with texture, an off-white or light ivory crisp dress shirt, and a blackened steel watch. The photo should feel elegant, understated, and contemporary, suitable for a formal daytime wedding. Place the model outdoors in a wedding garden setting with soft natural daylight, subtle floral arches, and tasteful event décor. Emphasize clean tailoring, fabric texture, realistic drape, accurate color, and natural posture. Avoid any corporate styling cues, stiff stiff leather shoes, stark white shirt, or overly formal tuxedo language. The result should look like a real wedding day photograph rather than a fashion editorial.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_006_jamie/photos/headshot.png"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "saved_at": 1779248031.351378,
+  "session_id": "s_rfaf7uif_mpdia69l",
+  "turn_id": "t002",
+  "user_id": "usr_007_maya",
+  "image": {
+    "filename": "t002.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 659498
+  },
+  "input_request": {
+    "prompt": "can you show me please",
+    "style": {
+      "intent": {
+        "primary_intent": "choose a restaurant birthday dinner outfit"
+      },
+      "context": {
+        "occasion": "birthday dinner at a restaurant",
+        "climate": "late-autumn in Toronto with cool, possibly damp conditions",
+        "time_of_day": "evening"
+      },
+      "analysis": {
+        "why_this_works_now": "The user is looking for a single dinner-appropriate outfit, so the response focuses on polished casual wear that feels celebratory without being overdressed. The recommendations use her success cues: softly shaped tops, defined waist, drape, matte textures, and hip-skimming outer layers. They avoid boxy knits, close body dresses, shiny fabrics, and anything too formal.",
+        "persona_alignment": "This works well with her creative professional life and her preference for versatile dressing. The style is sophisticated enough for a restaurant but still grounded and comfortable for a social evening.",
+        "profile_alignment": "All choices match her budget range, her fit preference for softly shaped tops with waist awareness, her height, and her best-known styling cues. The pieces are easy to mix with her existing wardrobe and stay within her comfort zone.",
+        "prompt_alignment": "The response follows the last user message directly by giving one clear dinner outfit idea. It stays in her aesthetic world and uses the style guides to avoid known weak points."
+      },
+      "recommendations": [
+        {
+          "label": "Muted evening midi with soft jacket",
+          "logic_summary": "A matte midi dress or skirt-and-top combination with a soft jacket gives celebratory polish while staying comfortable and true to her wardrobe. The muted tone keeps it evening-appropriate and her favorite part of her current dressing world.",
+          "pieces": [
+            {
+              "role": "base",
+              "category": "midi dress",
+              "color": "plum or muted olive",
+              "styling_note": "Choose a dress with a slightly defined waist and enough length to feel elegant without being restrictive. A V or soft scoop neckline keeps it refined and her favorite."
+            },
+            {
+              "role": "outer_layer",
+              "category": "trench coat or long coat",
+              "color": "charcoal or deep olive",
+              "styling_note": "Wear open over the dress to create vertical line and evening depth without extra bulk."
+            },
+            {
+              "role": "footwear",
+              "category": "heeled ankle boot",
+              "color": "washed black or muted taupe",
+              "styling_note": "A slightly heeled boot keeps the leg line elegant and her comfort zone better than stiletto or very rigid high-ankle options."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: can you show me please\n\nstyle:\n  context:\n    occasion: birthday dinner at a restaurant\n  intent:\n    primary_intent: choose a restaurant birthday dinner outfit\n  recommendations:\n  - label: Muted evening midi with soft jacket\n    logic_summary: A matte midi dress or skirt-and-top combination with a soft jacket gives celebratory polish while staying comfortable and true to her wardrobe. The muted tone keeps it evening-appropriate and her favorite part of her current dressing world.\n    pieces:\n    - category: midi dress\n      color: plum or muted olive\n      role: base\n      styling_note: Choose a dress with a slightly defined waist and enough length to feel elegant without being restrictive. A V or soft scoop neckline keeps it refined and her favorite.\n    - category: trench coat or long coat\n      color: charcoal or deep olive\n      role: outer_layer\n      styling_note: Wear open over the dress to create vertical line and evening depth without extra bulk.\n    - category: heeled ankle boot\n      color: washed black or muted taupe\n      role: footwear\n      styling_note: A slightly heeled boot keeps the leg line elegant and her comfort zone better than stiletto or very rigid high-ankle options.\n",
+    "response": {
+      "scene": {
+        "occasion": "birthday dinner at a restaurant",
+        "setting": "intimate upscale restaurant interior, softly elegant, subtle décor, warm wood accents, dim evening lighting, table near a large window with city night lights",
+        "lighting": "soft warm interior lighting with gentle natural window light, matte fabric-friendly, realistic shadows, no harsh flash",
+        "time_of_day": "evening",
+        "mood": "refined, celebratory, comfortable, understated"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "muted plum matte midi dress with slightly defined waist, V neckline, sleeveless or soft elbow-length sleeves, open front, flowing skirt, easy comfortable fit, soft structured body"
+          },
+          {
+            "description": "muted olive soft long jacket or open trench-style outer layer, open over the dress, matte fabric, clean vertical line, relaxed but polished"
+          },
+          {
+            "description": "washed black slightly heeled ankle boots with soft sole, clean line, understated detail, comfortable for standing and walking"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash prompt generator for virtual try-on. Render the user in the requested outfit with photographic realism, accurate body proportions, true-to-life lighting, and believable garment drape. Preserve the style context and intent. Use only the described outfit and scene. Avoid editorial exaggeration, fantasy elements, or anything that changes her real appearance. Keep the image useful for shopping and styling decisions.",
+        "user": "Show me the Muted evening midi with soft jacket outfit for a birthday dinner at a restaurant. Use her favorite plum matte midi dress with a slightly defined waist and V neckline, open over a soft long jacket, and washed black slightly heeled ankle boots. Keep the palette muted, the fit comfortable, and the look refined rather than dramatic. Photograph her in a warm intimate upscale restaurant setting, softly elegant, with evening city lights visible through a large window. Use warm soft interior lighting, realistic fabric texture, natural body proportions, and a flattering full-body pose that feels candid and true-to-life."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash prompt generator for virtual try-on. Render the user in the requested outfit with photographic realism, accurate body proportions, true-to-life lighting, and believable garment drape. Preserve the style context and intent. Use only the described outfit and scene. Avoid editorial exaggeration, fantasy elements, or anything that changes her real appearance. Keep the image useful for shopping and styling decisions.",
+    "prompt_user_sent": "Show me the Muted evening midi with soft jacket outfit for a birthday dinner at a restaurant. Use her favorite plum matte midi dress with a slightly defined waist and V neckline, open over a soft long jacket, and washed black slightly heeled ankle boots. Keep the palette muted, the fit comfortable, and the look refined rather than dramatic. Photograph her in a warm intimate upscale restaurant setting, softly elegant, with evening city lights visible through a large window. Use warm soft interior lighting, realistic fabric texture, natural body proportions, and a flattering full-body pose that feels candid and true-to-life.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_007_maya/photos/headshot.png"
+  }
+}

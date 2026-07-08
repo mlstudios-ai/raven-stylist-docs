@@ -1,0 +1,103 @@
+{
+  "saved_at": 1778416020.491561,
+  "session_id": "multi2_1778415972",
+  "turn_id": "t002",
+  "user_id": "usr_006_jamie",
+  "image": {
+    "filename": "t002.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 889065
+  },
+  "input_request": {
+    "prompt": "show me a different style",
+    "style": {
+      "intent": {
+        "primary_intent": "Get a wedding outfit that feels elegant, comfortable, and true to my everyday style."
+      },
+      "context": {
+        "occasion": "wedding",
+        "climate": "cool summer evening with light wind",
+        "time_of_day": "evening"
+      },
+      "recommendations": [
+        {
+          "label": "Muted evening affair",
+          "logic_summary": "A dark tailored look that feels formal without looking like a tuxedo, using my favorite understated palette and my usual straight-leg ease.",
+          "pieces": [
+            {
+              "role": "base",
+              "category": "dress shirt",
+              "color": "charcoal",
+              "styling_note": "Keep the front open for elegance; a half or full button-down feels too formal for this climate."
+            },
+            {
+              "role": "layer",
+              "category": "overshirt",
+              "color": "dark olive",
+              "styling_note": "Adds structure and keeps the look grounded rather than dressy."
+            },
+            {
+              "role": "bottom",
+              "category": "dress trousers",
+              "color": "black",
+              "styling_note": "Keep the hem clean and slightly longer than usual to avoid a work-from-home feel."
+            },
+            {
+              "role": "shoe",
+              "category": "oxfords",
+              "color": "dark brown",
+              "styling_note": "A refined finishing point that keeps the outfit grounded and season-appropriate."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "The last message asks for a different wedding style, so I keep the same color authority and relaxed tailoring but shift away from anything sharp or formal. The result is a dark, textured evening outfit that feels special but still looks like me and stays comfortable in a cool wind."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: show me a different style\n\nstyle:\n  context:\n    occasion: wedding\n  intent:\n    primary_intent: Get a wedding outfit that feels elegant, comfortable, and true to my everyday style.\n  recommendations:\n  - label: Muted evening affair\n    logic_summary: A dark tailored look that feels formal without looking like a tuxedo, using my favorite understated palette and my usual straight-leg ease.\n    pieces:\n    - category: dress shirt\n      color: charcoal\n      role: base\n      styling_note: Keep the front open for elegance; a half or full button-down feels too formal for this climate.\n    - category: overshirt\n      color: dark olive\n      role: layer\n      styling_note: Adds structure and keeps the look grounded rather than dressy.\n    - category: dress trousers\n      color: black\n      role: bottom\n      styling_note: Keep the hem clean and slightly longer than usual to avoid a work-from-home feel.\n    - category: oxfords\n      color: dark brown\n      role: shoe\n      styling_note: A refined finishing point that keeps the outfit grounded and season-appropriate.\n",
+    "response": {
+      "scene": {
+        "occasion": "wedding",
+        "setting": "outdoor garden wedding at a historic house in the English countryside, subtle table décor, string lights, mature trees, and a polished but relaxed reception area",
+        "lighting": "soft golden hour to early evening natural light with gentle practical lighting, realistic skin tones, natural fabric lightness, and accurate shadow detail",
+        "time_of_day": "late summer to early autumn evening",
+        "mood": "elegant, understated, relaxed, and true-to-life"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "role": "top",
+            "description": "charcoal long-sleeve dress shirt in a fine matte cotton blend, relaxed straight body, open front, subtle drape, no collar stiffness"
+          },
+          {
+            "role": "layer",
+            "description": "dark olive unlined overshirt in a lightweight soft twill, open front, clean straight line, minimal tailoring, easy through the torso"
+          },
+          {
+            "role": "bottom",
+            "description": "black matte dress trousers in a soft twill-cotton blend, flat front, true straight leg, slightly longer hem, comfortable through the thigh and knee"
+          },
+          {
+            "role": "shoes",
+            "description": "dark brown matte leather oxfords, low-profile, refined but not dressy, realistic worn-through texture"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash visual prompt generator for a virtual try-on task. Produce a single high-fidelity photorealistic image prompt. Focus on realistic human appearance, accurate garment drape, true-to-life fabric behavior, natural lighting, and believable scene composition. Keep the result retailer-agnostic. Avoid editorial exaggeration, fashion magazine styling, or surreal elements. Use the outfit and scene details exactly as described, and render the look as a realistic person wearing it in the specified wedding environment.",
+        "user": "Create a photorealistic virtual try-on image for a wedding guest. Use the outfit described as a different style from the user's wardrobe: a charcoal long-sleeve dress shirt with a dark olive unlined overshirt, black flat-front dress trousers, and dark brown matte leather oxfords. Set the scene at an outdoor garden wedding at a historic house in the English countryside, during late summer to early autumn evening with soft golden hour to early evening light. The person should look elegant, comfortable, and true to their everyday style, not like a tuxedo or formal shirt. Show the shirt open at the front, the overshirt also open, and the trousers with a clean true straight line and slightly longer hem. Keep the palette muted and understated. Emphasize realistic fabric texture, natural body proportions, accurate drape, subtle shadows, and believable environmental detail such as string lights, trees, and a polished but relaxed reception area. The final image should feel like a real wedding photo, not a fashion illustration."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash visual prompt generator for a virtual try-on task. Produce a single high-fidelity photorealistic image prompt. Focus on realistic human appearance, accurate garment drape, true-to-life fabric behavior, natural lighting, and believable scene composition. Keep the result retailer-agnostic. Avoid editorial exaggeration, fashion magazine styling, or surreal elements. Use the outfit and scene details exactly as described, and render the look as a realistic person wearing it in the specified wedding environment.",
+    "prompt_user_sent": "Create a photorealistic virtual try-on image for a wedding guest. Use the outfit described as a different style from the user's wardrobe: a charcoal long-sleeve dress shirt with a dark olive unlined overshirt, black flat-front dress trousers, and dark brown matte leather oxfords. Set the scene at an outdoor garden wedding at a historic house in the English countryside, during late summer to early autumn evening with soft golden hour to early evening light. The person should look elegant, comfortable, and true to their everyday style, not like a tuxedo or formal shirt. Show the shirt open at the front, the overshirt also open, and the trousers with a clean true straight line and slightly longer hem. Keep the palette muted and understated. Emphasize realistic fabric texture, natural body proportions, accurate drape, subtle shadows, and believable environmental detail such as string lights, trees, and a polished but relaxed reception area. The final image should feel like a real wedding photo, not a fashion illustration.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_006_jamie/photos/headshot.png"
+  }
+}

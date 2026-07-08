@@ -1,0 +1,90 @@
+{
+  "saved_at": 1778415574.0590441,
+  "session_id": "s_5sz3dheo_mozqoonb",
+  "turn_id": "t002",
+  "user_id": "usr_007_maya",
+  "image": {
+    "filename": "t002.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 657376
+  },
+  "input_request": {
+    "prompt": "render it",
+    "style": {
+      "intent": {
+        "primary_intent": "find a dinner-appropriate outfit for a social evening event"
+      },
+      "context": {
+        "occasion": "dinner with friends at a casual upscale restaurant",
+        "climate": "cool early-spring weather with possible drizzle",
+        "time_of_day": "evening"
+      },
+      "recommendations": [
+        {
+          "label": "Muted midi dress with soft outer layer",
+          "logic_summary": "A charcoal or plum midi dress with a clean neckline and soft drape, paired with a matte jacket or overshirt, works well for a dinner setting because it feels polished without being formal and keeps the silhouette balanced through waist definition and a straight leg.",
+          "pieces": [
+            {
+              "role": "base",
+              "category": "dress",
+              "color": "charcoal",
+              "styling_note": "Choose a dress with a defined waist line and enough length to avoid midsection emphasis; keep the neckline open for proportion and pair with a softly structured outer layer rather than a tight jacket."
+            },
+            {
+              "role": "outer layer",
+              "category": "jacket",
+              "color": "olive",
+              "styling_note": "An overshirt or soft blazer adds polish and weather protection without becoming dressy; keep it unstructured rather than a sharp blazer."
+            },
+            {
+              "role": "footwear",
+              "category": "heels",
+              "color": "washed black",
+              "styling_note": "Choose a low-to-mid heel or refined flat that supports long wear and keeps the line clean rather than a pointed formal shoe."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "The user asked for a dinner outfit, and the strongest response is to build on her proven dinner-appropriate palette and silhouettes: softly shaped midi dresses, muted colors, matte textures, and non-straight-sharp outer layers. This keeps the look refined and event-appropriate without risking overdressing or creating a formal bias she dislikes."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: render it\n\nstyle:\n  context:\n    occasion: dinner with friends at a casual upscale restaurant\n  intent:\n    primary_intent: find a dinner-appropriate outfit for a social evening event\n  recommendations:\n  - label: Muted midi dress with soft outer layer\n    logic_summary: A charcoal or plum midi dress with a clean neckline and soft drape, paired with a matte jacket or overshirt, works well for a dinner setting because it feels polished without being formal and keeps the silhouette balanced through waist definition and a straight leg.\n    pieces:\n    - category: dress\n      color: charcoal\n      role: base\n      styling_note: Choose a dress with a defined waist line and enough length to avoid midsection emphasis; keep the neckline open for proportion and pair with a softly structured outer layer rather than a tight jacket.\n    - category: jacket\n      color: olive\n      role: outer layer\n      styling_note: An overshirt or soft blazer adds polish and weather protection without becoming dressy; keep it unstructured rather than a sharp blazer.\n    - category: heels\n      color: washed black\n      role: footwear\n      styling_note: Choose a low-to-mid heel or refined flat that supports long wear and keeps the line clean rather than a pointed formal shoe.\n",
+    "response": {
+      "scene": {
+        "occasion": "dinner with friends at a casual upscale restaurant",
+        "setting": "modern upscale dining room in a boutique hotel or high-end city restaurant, polished but relaxed, tasteful decor, soft table lighting, other diners blurred in background",
+        "lighting": "warm intimate interior lighting with soft focused table light, natural evening light outside, no harsh artificial contrast",
+        "time_of_day": "evening",
+        "mood": "refined, relaxed, socially engaging, subtly elegant"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "charcoal midi dress with a clean neckline, soft drape, defined waist line, and a slightly longer hem that grazes the calf"
+          },
+          {
+            "description": "olive soft overshirt or unstructured jacket in a matte weave, worn open over the dress"
+          },
+          {
+            "description": "washed black low-to-mid heel or refined flat with a clean polished finish"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are Gemini Flash, generating a photorealistic virtual try-on image. Prioritize scene realism, accurate garment drape, natural body proportions, and subtle styling fidelity. Keep the image retailer-agnostic. Use the outfit and style context to inform fabric behavior, fit, and placement. Avoid editorial exaggeration, dramatic poses, or fantasy lighting. Render a single person in a believable real-world dinner scene with high-resolution photographic quality.",
+        "user": "Create a photorealistic virtual try-on image for a woman wearing the recommended dinner outfit: a charcoal midi dress with a clean neckline, soft drape, defined waist line, and a hem that grazes the calf; over it an olive soft overshirt or unstructured jacket in a matte weave, worn open; washed black low-to-mid heels or refined flats. Set the scene as a dinner with friends at a casual upscale restaurant in a large city, late evening, warm intimate interior lighting, tasteful modern decor, other diners softly blurred in background. Emphasize natural body proportions, realistic fabric folding, accurate charcoal and olive color rendering, matte textures, and a polished but relaxed mood. The dress should look elegant without being formal, the outer layer should add structure without becoming sharp, and the overall silhouette should feel balanced and flattering. Keep the focus on scene realism, garment fit, and believable social context."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are Gemini Flash, generating a photorealistic virtual try-on image. Prioritize scene realism, accurate garment drape, natural body proportions, and subtle styling fidelity. Keep the image retailer-agnostic. Use the outfit and style context to inform fabric behavior, fit, and placement. Avoid editorial exaggeration, dramatic poses, or fantasy lighting. Render a single person in a believable real-world dinner scene with high-resolution photographic quality.",
+    "prompt_user_sent": "Create a photorealistic virtual try-on image for a woman wearing the recommended dinner outfit: a charcoal midi dress with a clean neckline, soft drape, defined waist line, and a hem that grazes the calf; over it an olive soft overshirt or unstructured jacket in a matte weave, worn open; washed black low-to-mid heels or refined flats. Set the scene as a dinner with friends at a casual upscale restaurant in a large city, late evening, warm intimate interior lighting, tasteful modern decor, other diners softly blurred in background. Emphasize natural body proportions, realistic fabric folding, accurate charcoal and olive color rendering, matte textures, and a polished but relaxed mood. The dress should look elegant without being formal, the outer layer should add structure without becoming sharp, and the overall silhouette should feel balanced and flattering. Keep the focus on scene realism, garment fit, and believable social context.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_007_maya/photos/headshot.png"
+  }
+}

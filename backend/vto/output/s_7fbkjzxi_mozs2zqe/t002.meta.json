@@ -1,0 +1,111 @@
+{
+  "saved_at": 1778417934.14952,
+  "session_id": "s_7fbkjzxi_mozs2zqe",
+  "turn_id": "t002",
+  "user_id": "usr_006_jamie",
+  "image": {
+    "filename": "t002.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 757885
+  },
+  "input_request": {
+    "prompt": "can you show me how it will look on me",
+    "style": {
+      "intent": {
+        "primary_intent": "Get a wedding outfit that feels respectful, season-appropriate, and true to my everyday style."
+      },
+      "context": {
+        "occasion": "formal wedding",
+        "climate": "mild autumn weather with possible wind",
+        "time_of_day": "evening"
+      },
+      "recommendations": [
+        {
+          "label": "Deep charcoal semi-formal charcoal",
+          "logic_summary": "This is the closest thing to a tuxedo in my palette without feeling overdressed: charcoal dress shirt, charcoal knit vest, charcoal trousers, and dark brown oxford shoes. It reads wedding-appropriate, understated, and more like my normal evening workwear than a tuxedo.",
+          "pieces": [
+            {
+              "role": "base layer",
+              "category": "dress shirt",
+              "color": "deep charcoal",
+              "styling_note": "Keep the front open for a cleaner modern look and to avoid the stiffness of a full tuxedo."
+            },
+            {
+              "role": "mid layer",
+              "category": "fine-gauge knit vest",
+              "color": "charcoal",
+              "styling_note": "This keeps the outfit contemporary and less formal than a tuxedo without needing a jacket."
+            },
+            {
+              "role": "bottom",
+              "category": "dress trousers",
+              "color": "charcoal",
+              "styling_note": "A flat front keeps the line sleek and more like my usual work outfit than a tuxedo pant."
+            },
+            {
+              "role": "footwear",
+              "category": "oxford shoes",
+              "color": "dark brown",
+              "styling_note": "This keeps the outfit grounded and season-appropriate compared to black shoes."
+            },
+            {
+              "role": "outer layer",
+              "category": "overshirt",
+              "color": "charcoal",
+              "styling_note": "Wear open if needed for wind; it keeps the look layered and not tuxedo-formal."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "He asked what to wear to a wedding, and the strongest answer is a charcoal semi-formal outfit that uses knit layers and a deep-coloured dress shirt instead of a stiff tuxedo. That keeps the event respectfulness while staying true to his understated, textured, weather-aware aesthetic.",
+        "persona_alignment": "The recommendation stays within his comfort zone: relaxed straight fit, muted palette, structured shoulders, layered upper body, and cleaner appearance when shirts are partially covered. It avoids anything stiff, bright, or overly formal.",
+        "profile_alignment": "All pieces match his size preferences and climate needs for London in early autumn: breathable layers, wind-aware outerwear, and sturdy evening shoes that can handle damp ground.",
+        "prompt_alignment": "The response follows the style agent rules exactly: no brand names, no product listings, no social-media style tropes, and a strict focus on one wedding outfit that feels like an extension of his normal work-to-evening wardrobe."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: can you show me how it will look on me\n\nprofile:\n  identity:\n    gender_identity: man\n    age: 31\n    body_shape: tall frame with broad shoulders, long arms and legs, and fuller midsection\n\nstyle:\n  context:\n    occasion: formal wedding\n  intent:\n    primary_intent: Get a wedding outfit that feels respectful, season-appropriate, and true to my everyday style.\n  recommendations:\n  - label: Deep charcoal semi-formal charcoal\n    logic_summary: This is the closest thing to a tuxedo in my palette without feeling overdressed: charcoal dress shirt, charcoal knit vest, charcoal trousers, and dark brown oxford shoes. It reads wedding-appropriate, understated, and more like my normal evening workwear than a tuxedo.\n    pieces:\n    - category: dress shirt\n      color: deep charcoal\n      role: base layer\n      styling_note: Keep the front open for a cleaner modern look and to avoid the stiffness of a full tuxedo.\n    - category: fine-gauge knit vest\n      color: charcoal\n      role: mid layer\n      styling_note: This keeps the outfit contemporary and less formal than a tuxedo without needing a jacket.\n    - category: dress trousers\n      color: charcoal\n      role: bottom\n      styling_note: A flat front keeps the line sleek and more like my usual work outfit than a tuxedo pant.\n    - category: oxford shoes\n      color: dark brown\n      role: footwear\n      styling_note: This keeps the outfit grounded and season-appropriate compared to black shoes.\n    - category: overshirt\n      color: charcoal\n      role: outer layer\n      styling_note: Wear open if needed for wind; it keeps the look layered and not tuxedo-formal.\n",
+    "response": {
+      "scene": {
+        "occasion": "formal wedding",
+        "setting": "outdoor garden wedding at sunset with soft floral backdrop and elegant lawn surroundings",
+        "lighting": "natural golden sunset light with soft warm rim lighting and subtle outdoor evening glow",
+        "time_of_day": "late afternoon into early evening",
+        "mood": "respectful, understated, elegant, and contemporary"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "deep charcoal long-sleeve dress shirt with a flat collar and open front, worn without a tie"
+          },
+          {
+            "description": "fine-gauge charcoal knit vest with a clean modern cut and flat front"
+          },
+          {
+            "description": "charcoal flat-front dress trousers with a contemporary straight-leg and room through the seat and thigh"
+          },
+          {
+            "description": "dark brown oxford shoes with a refined brogue detail and low-profile leather sole"
+          },
+          {
+            "description": "optional charcoal overshirt with a soft structured front, worn open for layering"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash prompt generator for virtual try-on. Render a photo-realistic image of a single person wearing the specified outfit. Keep the image natural, elegant, and true to the user's actual appearance. Use realistic fabric behavior, accurate lighting, and subtle styling. Avoid editorial exaggeration, fantasy styling, or any visual cues that would make the image look staged or unrealistic.",
+        "user": "Create a photo-realistic virtual try-on image for the user. Use the exact outfit described: a deep charcoal long-sleeve dress shirt with a flat collar and open front, a charcoal fine-gauge knit vest worn over it, charcoal flat-front dress trousers, dark brown brogue-style oxford shoes, and an optional charcoal overshirt worn open for layering. The subject is a 31-year-old man with a tall frame, broad shoulders, long arms and legs, and a fuller midsection. Match the face, skin tone, hair, and overall body shape exactly from the headshot reference. Place him outdoors at a formal garden wedding during sunset, with soft floral and lawn surroundings. Keep the lighting warm and natural, with golden sunset light and gentle rim highlights. The expression should be relaxed and confident, as if he is standing casually while people talk nearby. Emphasize respectful semi-formal style, season appropriateness, and a contemporary polished look that feels like his normal evening workwear rather than a tuxedo. Avoid any tuxedo stiffness, stiff shirt stiffness, or overly formal jacket cues. Keep the image realistic and camera-ready, with accurate fabric texture, natural posture, and true-to-life color rendering."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash prompt generator for virtual try-on. Render a photo-realistic image of a single person wearing the specified outfit. Keep the image natural, elegant, and true to the user's actual appearance. Use realistic fabric behavior, accurate lighting, and subtle styling. Avoid editorial exaggeration, fantasy styling, or any visual cues that would make the image look staged or unrealistic.",
+    "prompt_user_sent": "Create a photo-realistic virtual try-on image for the user. Use the exact outfit described: a deep charcoal long-sleeve dress shirt with a flat collar and open front, a charcoal fine-gauge knit vest worn over it, charcoal flat-front dress trousers, dark brown brogue-style oxford shoes, and an optional charcoal overshirt worn open for layering. The subject is a 31-year-old man with a tall frame, broad shoulders, long arms and legs, and a fuller midsection. Match the face, skin tone, hair, and overall body shape exactly from the headshot reference. Place him outdoors at a formal garden wedding during sunset, with soft floral and lawn surroundings. Keep the lighting warm and natural, with golden sunset light and gentle rim highlights. The expression should be relaxed and confident, as if he is standing casually while people talk nearby. Emphasize respectful semi-formal style, season appropriateness, and a contemporary polished look that feels like his normal evening workwear rather than a tuxedo. Avoid any tuxedo stiffness, stiff shirt stiffness, or overly formal jacket cues. Keep the image realistic and camera-ready, with accurate fabric texture, natural posture, and true-to-life color rendering.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_006_jamie/photos/headshot.png"
+  }
+}

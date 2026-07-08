@@ -1,0 +1,99 @@
+{
+  "saved_at": 1778477920.689701,
+  "session_id": "s_ov6lm8pi_mp0rso61",
+  "turn_id": "t002",
+  "user_id": "usr_025_lerato",
+  "image": {
+    "filename": "t002.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 670969
+  },
+  "input_request": {
+    "prompt": "show me how I would look in it",
+    "style": {
+      "intent": {
+        "primary_intent": "select a polished dinner outfit that feels personal and appropriate for a friend's birthday at home"
+      },
+      "context": {
+        "occasion": "friend's birthday dinner at home",
+        "climate": "cool Johannesburg autumn evening",
+        "time_of_day": "evening"
+      },
+      "recommendations": [
+        {
+          "label": "Deep-tone midi with soft outer layer",
+          "logic_summary": "This is the safest and most personal choice: a dark midi dress kept simple by vertical structure, softened with a long open layer and grounded by loafers or dressy flats.",
+          "pieces": [
+            {
+              "role": "main_outfit",
+              "category": "dress",
+              "color": "navy",
+              "styling_note": "Choose a midi line that falls just below the knee to keep it elegant and balanced on your proportions."
+            },
+            {
+              "role": "layer",
+              "category": "long coat",
+              "color": "charcoal",
+              "styling_note": "Keep the front open for vertical emphasis and to soften the dress without adding visual clutter."
+            },
+            {
+              "role": "footwear",
+              "category": "block-heel flats",
+              "color": "black",
+              "styling_note": "A slightly higher block heel keeps the look refined and stable for standing and moving around a dinner setting."
+            },
+            {
+              "role": "accessory",
+              "category": "watch",
+              "color": "dark-tone",
+              "styling_note": "Use one polished timepiece to reinforce the understated professional feel rather than adding sparkle."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "The user asked for dinner outfit ideas, and the strongest response is to keep the palette dark and the silhouette softly structured, with a long open layer and minimal jewelry. That keeps the look elegant, private, and consistent with their photo-conscious but understated wardrobe."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: show me how I would look in it\n\nstyle:\n  context:\n    occasion: friend's birthday dinner at home\n  intent:\n    primary_intent: select a polished dinner outfit that feels personal and appropriate for a friend's birthday at home\n  recommendations:\n  - label: Deep-tone midi with soft outer layer\n    logic_summary: This is the safest and most personal choice: a dark midi dress kept simple by vertical structure, softened with a long open layer and grounded by loafers or dressy flats.\n    pieces:\n    - category: dress\n      color: navy\n      role: main_outfit\n      styling_note: Choose a midi line that falls just below the knee to keep it elegant and balanced on your proportions.\n    - category: long coat\n      color: charcoal\n      role: layer\n      styling_note: Keep the front open for vertical emphasis and to soften the dress without adding visual clutter.\n    - category: block-heel flats\n      color: black\n      role: footwear\n      styling_note: A slightly higher block heel keeps the look refined and stable for standing and moving around a dinner setting.\n    - category: watch\n      color: dark-tone\n      role: accessory\n      styling_note: Use one polished timepiece to reinforce the understated professional feel rather than adding sparkle.\n",
+    "response": {
+      "scene": {
+        "occasion": "friend's birthday dinner at home",
+        "setting": "intimate dinner setting in a stylish apartment with a dining table, subtle decor, and a cozy background that suggests a home celebration",
+        "lighting": "soft, warm, natural-to-ambient indoor lighting with gentle shadows and realistic skin tones",
+        "time_of_day": "evening",
+        "mood": "refined, personal, understated, and comfortable"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "navy deep-tone midi dress with a V-neckline, straight to softly A-line silhouette, short-sleeve or sleeveless upper arm coverage, and a clean body line"
+          },
+          {
+            "description": "charcoal long coat or cape-like layer kept open over the dress"
+          },
+          {
+            "description": "black polished watch with a dark-tone strap"
+          },
+          {
+            "description": "black low-profile block-heel flats or polished loafers"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash prompt generator for a virtual try-on task. Render the user in the requested outfit with photo-realistic detail, accurate body proportions, and natural garment drape. Keep the image believable, tasteful, and true to the user's style context. Use the attached headshot reference as the visual anchor; do not create a different person. Preserve realism, avoid editorial exaggeration, and avoid any fantasy or fashion illustration language.",
+        "user": "Show me how I would look in it. I want a polished dinner outfit that feels personal and appropriate for a friend's birthday at home. Render the navy deep-tone midi dress with a V-neckline and short-sleeve or sleeveless upper arm coverage, kept simple by vertical structure. Add a charcoal long coat or cape-like layer kept open over the dress. Keep the silhouette refined, not tight, and balanced for my proportions. Use black low-profile block-heel flats or polished loafers. Include a black watch with a dark-tone strap. The scene is an intimate birthday dinner at home in the evening, with soft warm indoor lighting, a stylish apartment background, and a cozy, personal mood. Make the image photo-realistic, flattering, and believable for everyday life."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash prompt generator for a virtual try-on task. Render the user in the requested outfit with photo-realistic detail, accurate body proportions, and natural garment drape. Keep the image believable, tasteful, and true to the user's style context. Use the attached headshot reference as the visual anchor; do not create a different person. Preserve realism, avoid editorial exaggeration, and avoid any fantasy or fashion illustration language.",
+    "prompt_user_sent": "Show me how I would look in it. I want a polished dinner outfit that feels personal and appropriate for a friend's birthday at home. Render the navy deep-tone midi dress with a V-neckline and short-sleeve or sleeveless upper arm coverage, kept simple by vertical structure. Add a charcoal long coat or cape-like layer kept open over the dress. Keep the silhouette refined, not tight, and balanced for my proportions. Use black low-profile block-heel flats or polished loafers. Include a black watch with a dark-tone strap. The scene is an intimate birthday dinner at home in the evening, with soft warm indoor lighting, a stylish apartment background, and a cozy, personal mood. Make the image photo-realistic, flattering, and believable for everyday life.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_025_lerato/photos/headshot.png"
+  }
+}

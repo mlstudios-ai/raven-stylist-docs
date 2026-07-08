@@ -1,0 +1,99 @@
+{
+  "saved_at": 1778399658.379786,
+  "session_id": "s_up6nzlkj_mozh6i9x",
+  "turn_id": "t003",
+  "user_id": "usr_025_lerato",
+  "image": {
+    "filename": "t003.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 660210
+  },
+  "input_request": {
+    "prompt": "show me what it looks like",
+    "style": {
+      "intent": {
+        "primary_intent": "find a wedding outfit that feels appropriate, elegant, and consistent with her work wardrobe"
+      },
+      "context": {
+        "occasion": "colleague's wedding",
+        "climate": "warm Johannesburg summer",
+        "time_of_day": "evening"
+      },
+      "recommendations": [
+        {
+          "label": "Evening floral shift with structured cape",
+          "logic_summary": "This keeps her wedding look understated and elegant without feeling formal or feminine-heavy; the long open layer and block-heel silhouette match her everyday choices.",
+          "pieces": [
+            {
+              "role": "main",
+              "category": "shift dress",
+              "color": "soft navy with muted floral",
+              "styling_note": "The dress should skim the body and open at the front so it feels polished rather than tight."
+            },
+            {
+              "role": "layer",
+              "category": "long open-front cape",
+              "color": "deep charcoal",
+              "styling_note": "Use the cape to add vertical line and ceremony-appropriate gravitas while staying familiar."
+            },
+            {
+              "role": "footwear",
+              "category": "block-heel loafers",
+              "color": "dark brown",
+              "styling_note": "Keeps the look grounded and office-appropriate while still wedding-ready."
+            },
+            {
+              "role": "accessory",
+              "category": "handbag",
+              "color": "black",
+              "styling_note": "Choose a simple structured bag so the outfit stays elegant and not decorative."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "Her last message asks for wedding ideas, so the response focuses on one polished option that feels ceremony-appropriate while staying true to her preference for long open layers, straight lines, and dark-grounded palettes. It avoids anything overtly feminine, heavily beaded, or formally tailored for the occasion."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: show me what it looks like\n\nstyle:\n  context:\n    occasion: colleague's wedding\n  intent:\n    primary_intent: find a wedding outfit that feels appropriate, elegant, and consistent with her work wardrobe\n  recommendations:\n  - label: Evening floral shift with structured cape\n    logic_summary: This keeps her wedding look understated and elegant without feeling formal or feminine-heavy; the long open layer and block-heel silhouette match her everyday choices.\n    pieces:\n    - category: shift dress\n      color: soft navy with muted floral\n      role: main\n      styling_note: The dress should skim the body and open at the front so it feels polished rather than tight.\n    - category: long open-front cape\n      color: deep charcoal\n      role: layer\n      styling_note: Use the cape to add vertical line and ceremony-appropriate gravitas while staying familiar.\n    - category: block-heel loafers\n      color: dark brown\n      role: footwear\n      styling_note: Keeps the look grounded and office-appropriate while still wedding-ready.\n    - category: handbag\n      color: black\n      role: accessory\n      styling_note: Choose a simple structured bag so the outfit stays elegant and not decorative.\n",
+    "response": {
+      "scene": {
+        "occasion": "colleague's wedding",
+        "setting": "intimate indoor wedding reception in a softly decorated loft or gallery space, with subtle floral accents, candlelight, and tasteful table décor",
+        "lighting": "warm realistic evening indoor lighting from uplights, candles, and low table lamps, with gentle fabric lightness and no harsh flash",
+        "time_of_day": "evening",
+        "mood": "intimate, elegant, understated, feminine, grounded"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "soft navy floral shift dress with a relaxed fit, side slit, and open front that skims the body rather than clinging"
+          },
+          {
+            "description": "deep charcoal long open-front cape with a clean vertical line and structured drape"
+          },
+          {
+            "description": "dark brown block-heel loafers with a polished matte finish"
+          },
+          {
+            "description": "black structured handbag with minimal embellishment"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "Create a photorealistic virtual try-on image optimized for Gemini Flash. Prioritize scene realism, accurate garment drape, natural body proportions, and subtle styling. Keep the image believable and editorially elegant rather than fashion-magazine dramatic. Use the photo observations to inform shape and fit: the shift dress should skim rather than cling, the cape should fall cleanly and not skim the arms, and the loafers should look polished and grounded. Avoid any exaggerated editorial styling, heavy accessories, or overly formal wedding-dress tropes.",
+        "user": "Show me what it looks like: a wedding outfit for a woman who wants something appropriate, elegant, and consistent with her work wardrobe. Render the chosen look for a colleague's wedding in a relaxed intimate indoor setting. Photograph a soft navy floral shift dress with a relaxed fit and open front, a deep charcoal long open-front cape, dark brown block-heel loafers, and a black structured handbag. The mood should feel elegant but understated, feminine, and grounded. Emphasize realistic evening indoor lighting, natural body proportions, accurate fabric lightness, and believable garment drape. Keep the scene subtle and intimate, with soft floral décor and warm candlelit ambience. Avoid formal wedding-dress clichés, heavy embellishment, dramatic posing, or editorial exaggeration."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "Create a photorealistic virtual try-on image optimized for Gemini Flash. Prioritize scene realism, accurate garment drape, natural body proportions, and subtle styling. Keep the image believable and editorially elegant rather than fashion-magazine dramatic. Use the photo observations to inform shape and fit: the shift dress should skim rather than cling, the cape should fall cleanly and not skim the arms, and the loafers should look polished and grounded. Avoid any exaggerated editorial styling, heavy accessories, or overly formal wedding-dress tropes.",
+    "prompt_user_sent": "Show me what it looks like: a wedding outfit for a woman who wants something appropriate, elegant, and consistent with her work wardrobe. Render the chosen look for a colleague's wedding in a relaxed intimate indoor setting. Photograph a soft navy floral shift dress with a relaxed fit and open front, a deep charcoal long open-front cape, dark brown block-heel loafers, and a black structured handbag. The mood should feel elegant but understated, feminine, and grounded. Emphasize realistic evening indoor lighting, natural body proportions, accurate fabric lightness, and believable garment drape. Keep the scene subtle and intimate, with soft floral décor and warm candlelit ambience. Avoid formal wedding-dress clichés, heavy embellishment, dramatic posing, or editorial exaggeration.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_025_lerato/photos/headshot.png"
+  }
+}

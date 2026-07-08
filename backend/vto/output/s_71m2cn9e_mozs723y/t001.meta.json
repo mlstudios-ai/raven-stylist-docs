@@ -1,0 +1,102 @@
+{
+  "saved_at": 1778418122.683201,
+  "session_id": "s_71m2cn9e_mozs723y",
+  "turn_id": "t001",
+  "user_id": "usr_006_jamie",
+  "image": {
+    "filename": "t001.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 723479
+  },
+  "input_request": {
+    "prompt": "show me a lighter option outfit for wedding",
+    "style": {
+      "intent": {
+        "primary_intent": "build a wedding outfit that feels appropriate but not overdressed"
+      },
+      "context": {
+        "occasion": "wedding",
+        "climate": "cool summer",
+        "time_of_day": "day-to-evening"
+      },
+      "recommendations": [
+        {
+          "label": "Muted charcoal linen shirt with navy trousers and soft overshirt",
+          "logic_summary": "This is the strongest wedding option because it keeps the tone formal enough for an event while avoiding crisp white and heavy tailoring. The linen shirt and overshirt give structure without stiffness, and the charcoal/navy palette stays wedding-appropriate in a subtle way.",
+          "pieces": [
+            {
+              "role": "base layer",
+              "category": "shirt",
+              "color": "charcoal",
+              "styling_note": "Wear open at the neck for a relaxed but intentional look; keep the collar clean and avoid crisp stiffness."
+            },
+            {
+              "role": "outer layer",
+              "category": "overshirt",
+              "color": "charcoal",
+              "styling_note": "Keep open to create vertical line and keep the outfit from feeling like work uniform; the overshirt can be removed for the evening if needed."
+            },
+            {
+              "role": "bottom",
+              "category": "trousers",
+              "color": "navy",
+              "styling_note": "Choose a hem that stops just below the ankle for a modern finish and keep the waistband relaxed so the outfit still feels comfortable."
+            },
+            {
+              "role": "shoe",
+              "category": "dress shoe",
+              "color": "dark brown",
+              "styling_note": "This keeps the outfit polished without becoming formal; avoid crisp oxford stiffness if possible."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "The user asked for a wedding outfit that feels appropriate but not overdressed. The best response is to keep the palette muted, avoid crisp tailoring, and use semi-formal layers that read intentional rather than stiff. This keeps the outfit serious enough for the day while still looking fresh and modern.",
+        "persona_alignment": "The recommendation matches the persona's need for work-leaning, understated, weather-aware dressing and his preference for charcoal, navy, and muted tones. It also respects his tendency to look better with layers and avoids crisp white or heavy formal tailoring.",
+        "profile_alignment": "The outfit uses relaxed straight trousers, a semi-straight overshirt, and a breathable base layer, all of which fit the user's inferred fit preference. The construction is light enough for a cool summer day but still event-appropriate.",
+        "prompt_alignment": "All responses are tied directly to the last user message and the persona profile. The outfit stays understated, practical, and wedding-appropriate without becoming corporate or overdressed."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: show me a lighter option outfit for wedding\n\nprofile:\n  identity:\n    gender_identity: man\n    age: 31\n    body_shape: tall frame with broad shoulders, long arms and legs, and fuller midsection\n\nstyle:\n  context:\n    occasion: wedding\n  intent:\n    primary_intent: build a wedding outfit that feels appropriate but not overdressed\n  recommendations:\n  - label: Muted charcoal linen shirt with navy trousers and soft overshirt\n    logic_summary: This is the strongest wedding option because it keeps the tone formal enough for an event while avoiding crisp white and heavy tailoring. The linen shirt and overshirt give structure without stiffness, and the charcoal/navy palette stays wedding-appropriate in a subtle way.\n    pieces:\n    - category: shirt\n      color: charcoal\n      role: base layer\n      styling_note: Wear open at the neck for a relaxed but intentional look; keep the collar clean and avoid crisp stiffness.\n    - category: overshirt\n      color: charcoal\n      role: outer layer\n      styling_note: Keep open to create vertical line and keep the outfit from feeling like work uniform; the overshirt can be removed for the evening if needed.\n    - category: trousers\n      color: navy\n      role: bottom\n      styling_note: Choose a hem that stops just below the ankle for a modern finish and keep the waistband relaxed so the outfit still feels comfortable.\n    - category: dress shoe\n      color: dark brown\n      role: shoe\n      styling_note: This keeps the outfit polished without becoming formal; avoid crisp oxford stiffness if possible.\n",
+    "response": {
+      "scene": {
+        "occasion": "wedding",
+        "setting": "outdoor garden wedding reception at a private house in the hills of Tuscany, Italy, with stone walls, lanterns, and a subtle table setting",
+        "lighting": "soft golden hour twilight light with natural outdoor ambience and gentle lantern glow, realistic fabric response, natural skin rendering",
+        "time_of_day": "late summer evening",
+        "mood": "refined, understated, elegant, and comfortable"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "muted charcoal linen shirt with a clean collar, open neckline, slightly boxy fit through chest and midsection, long sleeves with rolled cuffs, breathable crisp-soft linen-cotton blend fabric"
+          },
+          {
+            "description": "muted charcoal overshirt in a soft structured linen-cotton blend, open front with vertical line, long sleeves with rolled cuffs, relaxed through chest and midsection, lightweight enough to stay comfortable"
+          },
+          {
+            "description": "muted navy tailored trousers in a soft twill or lightweight linen-cotton blend, flat front, mid-rise waistband, ankle-length hem, relaxed through seat and midsection, breathable and polished"
+          },
+          {
+            "description": "dark brown soft leather dress shoes in a muted finish, low-profile, refined but not formal, comfortable enough for standing and dancing"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash prompt generator for a virtual try-on image system. Produce a single photorealistic image of the user wearing the specified outfit. Prioritize realism, accurate body proportion, true-to-life fabric behavior, natural lighting, and the visual details from the outfit description. Keep the image editorially neutral and event-appropriate. Do not add accessories, jewelry, or extra people. Do not create a stylized illustration. Use the headshot reference as the anchor for face, hair, body shape, and personal appearance. Render the scene as a realistic outdoor wedding reception in Tuscany at dusk, with soft natural light and subtle evening ambience. Preserve the muted charcoal/navy palette, the linen and overshirt layers, and the overall understated elegance. Avoid crisp stiff white shirts, heavy tailoring, overt luxury, or formal oxford stiffness. Keep the silhouette tall, broad-shouldered, long-sleeved, and slightly relaxed through midsection.",
+        "user": "Create a photorealistic virtual try-on image for a user who said: \"prompt: show me a lighter option outfit for wedding\". Use the outfit described in the profile: a muted charcoal linen shirt with a clean collar and open neckline, a muted charcoal soft-structured overshirt worn open over the shirt, and muted navy tailored trousers with a flat front and ankle-length hem. Keep the color palette subtle and wedding-appropriate. Show the same man from the reference photo, with his described face, hair, and body shape, wearing this exact outfit in an outdoor garden wedding reception at a private house in the hills of Tuscany, Italy, during late summer twilight. Use soft golden hour twilight light with natural outdoor ambience and gentle lantern glow. The image should feel realistic, elegant, and comfortable, not overdressed. Keep the mood refined and understated. Pay attention to fabric texture, natural drape, clean tailoring, and the relaxed but intentional look of the overshirt open over the shirt. Do not stiffen the shirt, make the overshirt too formal, add extra accessories, or change any garment detail."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash prompt generator for a virtual try-on image system. Produce a single photorealistic image of the user wearing the specified outfit. Prioritize realism, accurate body proportion, true-to-life fabric behavior, natural lighting, and the visual details from the outfit description. Keep the image editorially neutral and event-appropriate. Do not add accessories, jewelry, or extra people. Do not create a stylized illustration. Use the headshot reference as the anchor for face, hair, body shape, and personal appearance. Render the scene as a realistic outdoor wedding reception in Tuscany at dusk, with soft natural light and subtle evening ambience. Preserve the muted charcoal/navy palette, the linen and overshirt layers, and the overall understated elegance. Avoid crisp stiff white shirts, heavy tailoring, overt luxury, or formal oxford stiffness. Keep the silhouette tall, broad-shouldered, long-sleeved, and slightly relaxed through midsection.",
+    "prompt_user_sent": "Create a photorealistic virtual try-on image for a user who said: \"prompt: show me a lighter option outfit for wedding\". Use the outfit described in the profile: a muted charcoal linen shirt with a clean collar and open neckline, a muted charcoal soft-structured overshirt worn open over the shirt, and muted navy tailored trousers with a flat front and ankle-length hem. Keep the color palette subtle and wedding-appropriate. Show the same man from the reference photo, with his described face, hair, and body shape, wearing this exact outfit in an outdoor garden wedding reception at a private house in the hills of Tuscany, Italy, during late summer twilight. Use soft golden hour twilight light with natural outdoor ambience and gentle lantern glow. The image should feel realistic, elegant, and comfortable, not overdressed. Keep the mood refined and understated. Pay attention to fabric texture, natural drape, clean tailoring, and the relaxed but intentional look of the overshirt open over the shirt. Do not stiffen the shirt, make the overshirt too formal, add extra accessories, or change any garment detail.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_006_jamie/photos/headshot.png"
+  }
+}

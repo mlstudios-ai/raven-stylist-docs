@@ -1,0 +1,102 @@
+{
+  "saved_at": 1778393739.917102,
+  "session_id": "smoke",
+  "turn_id": "vto",
+  "user_id": "usr_006_jamie",
+  "image": {
+    "filename": "vto.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 683968
+  },
+  "input_request": {
+    "prompt": "yeah show me what that looks like on me",
+    "style": {
+      "intent": {
+        "primary_intent": "build a single going-out outfit formula for evenings that feel presentable and relaxed, with one useful addition if needed"
+      },
+      "context": {
+        "occasion": "evenings with dinner and then a drink, or similar social outings",
+        "climate": "cool damp outdoor conditions requiring texture and practical layering",
+        "time_of_day": "night"
+      },
+      "recommendations": [
+        {
+          "label": "Primary dark evening formula",
+          "logic_summary": "A navy overshirt over a charcoal knit with dark straight trousers and brown boots gives a sharp but low-key evening look that moves easily from dinner to drinks.",
+          "pieces": [
+            {
+              "role": "outer layer",
+              "category": "overshirt",
+              "color": "navy",
+              "styling_note": "Wear open to create depth and keep the look non-corporate; the navy keeps it grounded and sharp."
+            },
+            {
+              "role": "middle layer",
+              "category": "zip-neck knit",
+              "color": "charcoal",
+              "styling_note": "A half-zip or full zip keeps the outfit relaxed while still looking intentional and presentable."
+            },
+            {
+              "role": "bottom",
+              "category": "trousers",
+              "color": "dark olive or charcoal",
+              "styling_note": "Choose a trouser with some fabric weight and a straight leg so it holds shape over boots and through movement."
+            },
+            {
+              "role": "footwear",
+              "category": "leather boots",
+              "color": "dark brown",
+              "styling_note": "A brown-brown connection keeps the outfit grounded and evening-appropriate without effort."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "The user needs one formula that feels presentable for dinner-and-drinks but not overdressed, and wants a single addition that improves evenings rather than a whole new wardrobe. The strongest response is to keep the same dark understated palette, use relaxed layering, and pick a knit or overshirt instead of a tucked shirt. That keeps the look sharp in his own clothes while avoiding the office-like or restrictive options he dislikes.",
+        "persona_alignment": "The recommendations match his practical, understated, and weather-aware persona: no flashy details, no shiny materials, and no sharp office shapes. They keep his usual straight-leg trouser logic while giving him a more intentional evening presence through texture and useful layering.",
+        "profile_alignment": "All choices fit his body and wardrobe signals: relaxed overshirts, textured knits, dark straight trousers, and sturdy boots. They avoid the slim office cuts he has trouble with and stay true to his preference for visual interest from fabric rather than loud styling.",
+        "prompt_alignment": "The response follows the request exactly: suggest a going-out outfit formula that feels put together but not flashy, and give one item worth adding if he doesn’t already have it."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: yeah show me what that looks like on me\n\nstyle:\n  context:\n    occasion: evenings with dinner and then a drink, or similar social outings\n  intent:\n    primary_intent: build a single going-out outfit formula for evenings that feel presentable and relaxed, with one useful addition if needed\n  recommendations:\n  - label: Primary dark evening formula\n    logic_summary: A navy overshirt over a charcoal knit with dark straight trousers and brown boots gives a sharp but low-key evening look that moves easily from dinner to drinks.\n    pieces:\n    - category: overshirt\n      color: navy\n      role: outer layer\n      styling_note: Wear open to create depth and keep the look non-corporate; the navy keeps it grounded and sharp.\n    - category: zip-neck knit\n      color: charcoal\n      role: middle layer\n      styling_note: A half-zip or full zip keeps the outfit relaxed while still looking intentional and presentable.\n    - category: trousers\n      color: dark olive or charcoal\n      role: bottom\n      styling_note: Choose a trouser with some fabric weight and a straight leg so it holds shape over boots and through movement.\n    - category: leather boots\n      color: dark brown\n      role: footwear\n      styling_note: A brown-brown connection keeps the outfit grounded and evening-appropriate without effort.\n",
+    "response": {
+      "scene": {
+        "occasion": "evening social outing with dinner followed by a drink",
+        "setting": "modern urban apartment balcony overlooking a softly lit cityscape at night",
+        "lighting": "warm interior accent lighting combined with cool reflected city street lights and subtle moonlight",
+        "time_of_day": "late evening",
+        "mood": "intimate, sharp, relaxed, and contemporary"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "navy overshirt in a soft matte wool blend, worn open over a charcoal half-zip knit, with a relaxed full-length fit and a slightly longer hem"
+          },
+          {
+            "description": "charcoal half-zip knit in a fine merino-wool blend, worn open for layering depth and a clean vertical line"
+          },
+          {
+            "description": "dark olive or charcoal straight-leg trousers in a matte wool twill, full-length with a subtle creasing and a clean break at the boot"
+          },
+          {
+            "description": "dark brown brown leather Chelsea-style boots in a matte finish, worn through the ankle with a sleek but understated silhouette"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "Create a photorealistic virtual try-on image optimized for Gemini Flash. Prioritize scene realism, accurate garment drape, natural body proportions, true-to-life fabric behavior, and subtle lighting. Keep the composition simple and believable. Avoid editorial exaggeration, fantasy styling, or product-focused framing. Use the outfit and scene details exactly as described, and render the image as a high-resolution contemporary lifestyle photograph.",
+        "user": "Show me what the recommended outfit looks like on me: a navy overshirt worn open over a charcoal half-zip knit, dark olive or charcoal straight-leg trousers, and dark brown matte leather Chelsea-style boots. The scene is a modern urban apartment balcony at night, after dinner and heading to a drink, with soft interior lighting, cool reflected city lights, and a subtle moonlight glow. Emphasize a sharp but relaxed evening look, low-key color harmony, and natural movement. Keep the focus on the outfit and realistic body proportions, with believable fabric folds, accurate collar and hem placement, and a matte textile finish. The overall mood should feel presentable, relaxed, and contemporary, as if taken by a friend in a real evening setting."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "Create a photorealistic virtual try-on image optimized for Gemini Flash. Prioritize scene realism, accurate garment drape, natural body proportions, true-to-life fabric behavior, and subtle lighting. Keep the composition simple and believable. Avoid editorial exaggeration, fantasy styling, or product-focused framing. Use the outfit and scene details exactly as described, and render the image as a high-resolution contemporary lifestyle photograph.",
+    "prompt_user_sent": "Show me what the recommended outfit looks like on me: a navy overshirt worn open over a charcoal half-zip knit, dark olive or charcoal straight-leg trousers, and dark brown matte leather Chelsea-style boots. The scene is a modern urban apartment balcony at night, after dinner and heading to a drink, with soft interior lighting, cool reflected city lights, and a subtle moonlight glow. Emphasize a sharp but relaxed evening look, low-key color harmony, and natural movement. Keep the focus on the outfit and realistic body proportions, with believable fabric folds, accurate collar and hem placement, and a matte textile finish. The overall mood should feel presentable, relaxed, and contemporary, as if taken by a friend in a real evening setting.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_006_jamie/photos/headshot.png"
+  }
+}

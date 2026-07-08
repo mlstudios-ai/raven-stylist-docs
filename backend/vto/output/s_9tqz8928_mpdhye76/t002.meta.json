@@ -1,0 +1,102 @@
+{
+  "saved_at": 1779247468.514988,
+  "session_id": "s_9tqz8928_mpdhye76",
+  "turn_id": "t002",
+  "user_id": "usr_007_maya",
+  "image": {
+    "filename": "t002.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 626698
+  },
+  "input_request": {
+    "prompt": "please show me",
+    "style": {
+      "intent": {
+        "primary_intent": "find a wedding-appropriate outfit that feels personal, polished, and not overly formal"
+      },
+      "context": {
+        "occasion": "formal wedding",
+        "climate": "Toronto winter with possible snow, so the look needs to read dressy rather than costume-like",
+        "time_of_day": "evening"
+      },
+      "analysis": {
+        "why_this_works_now": "The user is asking for a wedding outfit, so the recommendation focuses on polished-dressy attire that feels contemporary and personal rather than conventional or theatrical. It uses her success signals: softly shaped tops, defined waist, muted colors, matte textures, and proportion control through hip-skimming layers or midi lengths.",
+        "persona_alignment": "This works because her style is about understated polish, creative refinement, and versatile dressing. A wedding is a high-constraint event, so the best response is to elevate her normal wardrobe logic rather than propose something outside her comfort zone.",
+        "profile_alignment": "The outfit stays within her budget, her fit preference for softly shaped tops with waist awareness, and her proven color and texture language. It also respects her dislike of boxy knit tops, close body dresses, and anything that feels costume-like.",
+        "prompt_alignment": "All recommendations come from the last user message and the conversation intent: find one wedding-appropriate outfit that feels personal and polished, not costume-like."
+      },
+      "recommendations": [
+        {
+          "label": "Muted charcoal midi dress with structured jacket",
+          "logic_summary": "This is the strongest wedding option because it keeps her familiar muted palette and flattering midi length while adding polish through a soft jacket and matte texture.",
+          "pieces": [
+            {
+              "role": "main_outfit",
+              "category": "midi dress",
+              "color": "charcoal",
+              "styling_note": "Choose a dress with a softly shaped bodice and a defined waist through a belt or built-in seam, and pair it with a long structured jacket rather than a full blazer to avoid looking costume-like."
+            },
+            {
+              "role": "layer",
+              "category": "longline jacket",
+              "color": "washed black",
+              "styling_note": "This adds authority and seasonality without breaking her muted palette; keep the front open to preserve her favorite neckline logic."
+            },
+            {
+              "role": "footwear",
+              "category": "dress flats or low heels",
+              "color": "black",
+              "styling_note": "Choose a sleek, low-profile option so the outfit stays elegant and practical for winter conditions."
+            },
+            {
+              "role": "accessory",
+              "category": "minimal jewelry",
+              "color": "muted silver or brushed metal",
+              "styling_note": "Keep it understated so the dress does the talking; a simple bar or small hoop and subtle clutch work best."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: please show me\n\nstyle:\n  context:\n    occasion: formal wedding\n  intent:\n    primary_intent: find a wedding-appropriate outfit that feels personal, polished, and not overly formal\n  recommendations:\n  - label: Muted charcoal midi dress with structured jacket\n    logic_summary: This is the strongest wedding option because it keeps her familiar muted palette and flattering midi length while adding polish through a soft jacket and matte texture.\n    pieces:\n    - category: midi dress\n      color: charcoal\n      role: main_outfit\n      styling_note: Choose a dress with a softly shaped bodice and a defined waist through a belt or built-in seam, and pair it with a long structured jacket rather than a full blazer to avoid looking costume-like.\n    - category: longline jacket\n      color: washed black\n      role: layer\n      styling_note: This adds authority and seasonality without breaking her muted palette; keep the front open to preserve her favorite neckline logic.\n    - category: dress flats or low heels\n      color: black\n      role: footwear\n      styling_note: Choose a sleek, low-profile option so the outfit stays elegant and practical for winter conditions.\n    - category: minimal jewelry\n      color: muted silver or brushed metal\n      role: accessory\n      styling_note: Keep it understated so the dress does the talking; a simple bar or small hoop and subtle clutch work best.\n",
+    "response": {
+      "scene": {
+        "occasion": "formal wedding",
+        "setting": "indoor wedding reception hall in a historic European city, polished marble floors, dark wood furnishings, soft ambient lighting, subtle floral and metallic décor",
+        "lighting": "warm soft indoor lighting with gentle directional highlights, realistic fabric creasing, natural skin tone balance, matte textile emphasis",
+        "time_of_day": "evening",
+        "mood": "intimate, elegant, personal, understated"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "muted charcoal sleeveless midi dress in a matte crepe or fine crepe-wool blend, A-line or softly structured bodice, defined waist, midi hem above the mid-thigh, open neckline, long structured jacket in washed black with a softly tailored silhouette"
+          },
+          {
+            "description": "black longline soft jacket in a matte woven crepe or crepe-wool blend, gently structured, waist-cinching option, open front, full length to balance the midi dress"
+          },
+          {
+            "description": "minimal black dress flat or low-heel stiletto in a supportive fine leather or fine leather blend, sleek profile, understated ankle-height, polished finish"
+          },
+          {
+            "description": "simple muted silver or brushed metal jewelry, small hoop or bar earrings, delicate bracelet or watch, small matte clutch"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "You are a Gemini Flash prompt generator for virtual try-on. Render a photorealistic image of the user wearing the specified outfit. Preserve their real body proportions, face, and personal style. Use the attached headshot reference as the exact visual guide for face, hair, and expression. Keep the image realistic, tasteful, and wedding-appropriate. Emphasize fabric texture, garment fit, and subtle styling details. Avoid editorial exaggeration, fantasy styling, or any change to the described outfit. Render in a realistic indoor evening lighting setting with soft ambient light and gentle directional highlights. Keep the overall look personal, polished, and not overly formal. Use matte fabrics, muted colors, and understated elegance. Do not add extra layers, accessories, jewelry, or accessories beyond what is described.",
+        "user": "Please show me the Muted charcoal midi dress with structured jacket for a formal wedding. I want something wedding-appropriate that feels personal, polished, and not overly formal. Keep the charcoal sleeveless midi dress with a softly structured bodice and defined waist, and pair it with a long black soft jacket that cinches at the waist rather than a full blazer. Use a matte crepe or crepe-wool fabric, keep the neckline open, and choose minimal black dress flats or low heels. Add only simple muted silver or brushed metal jewelry and a small matte clutch. The photo should look like a real wedding reception evening in a historic European city, with warm soft indoor lighting, realistic fabric creasing, and a polished but understated mood."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "You are a Gemini Flash prompt generator for virtual try-on. Render a photorealistic image of the user wearing the specified outfit. Preserve their real body proportions, face, and personal style. Use the attached headshot reference as the exact visual guide for face, hair, and expression. Keep the image realistic, tasteful, and wedding-appropriate. Emphasize fabric texture, garment fit, and subtle styling details. Avoid editorial exaggeration, fantasy styling, or any change to the described outfit. Render in a realistic indoor evening lighting setting with soft ambient light and gentle directional highlights. Keep the overall look personal, polished, and not overly formal. Use matte fabrics, muted colors, and understated elegance. Do not add extra layers, accessories, jewelry, or accessories beyond what is described.",
+    "prompt_user_sent": "Please show me the Muted charcoal midi dress with structured jacket for a formal wedding. I want something wedding-appropriate that feels personal, polished, and not overly formal. Keep the charcoal sleeveless midi dress with a softly structured bodice and defined waist, and pair it with a long black soft jacket that cinches at the waist rather than a full blazer. Use a matte crepe or crepe-wool fabric, keep the neckline open, and choose minimal black dress flats or low heels. Add only simple muted silver or brushed metal jewelry and a small matte clutch. The photo should look like a real wedding reception evening in a historic European city, with warm soft indoor lighting, realistic fabric creasing, and a polished but understated mood.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_007_maya/photos/headshot.png"
+  }
+}

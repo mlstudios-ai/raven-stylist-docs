@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $ECR_REGISTRY
+      - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c1-8)
+
+  build:
+    commands:
+      - echo Building image...
+      - docker build --platform linux/amd64 -f docker/Dockerfile -t $ECR_REPO_URL:$IMAGE_TAG -t $ECR_REPO_URL:latest .
+
+  post_build:
+    commands:
+      - echo Pushing image...
+      - docker push $ECR_REPO_URL:$IMAGE_TAG
+      - docker push $ECR_REPO_URL:latest
+      - echo Build complete. Image $ECR_REPO_URL:$IMAGE_TAG

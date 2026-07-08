@@ -1,0 +1,111 @@
+{
+  "saved_at": 1778415891.4385478,
+  "session_id": "multi_1778415782",
+  "turn_id": "t002",
+  "user_id": "usr_006_jamie",
+  "image": {
+    "filename": "t002.jpg",
+    "mime_type": "image/jpeg",
+    "bytes": 647450
+  },
+  "input_request": {
+    "prompt": "show me a different style",
+    "style": {
+      "intent": {
+        "primary_intent": "find a wedding outfit that feels respectful, contemporary, and not overdressed"
+      },
+      "context": {
+        "occasion": "formal wedding",
+        "climate": "mild autumn weather with possible wind",
+        "time_of_day": "evening"
+      },
+      "recommendations": [
+        {
+          "label": "Dark navy charcoal semi-formal option",
+          "logic_summary": "This is the closest thing to a wedding outfit that stays true to his palette and existing wardrobe: dark, understated, and not tuxedo overdressed.",
+          "pieces": [
+            {
+              "role": "base layer",
+              "category": "dress shirt",
+              "color": "charcoal",
+              "styling_note": "Wear open to create a clean vertical line and keep the look respectful without being formal."
+            },
+            {
+              "role": "mid layer",
+              "category": "fine-gauge knit vest",
+              "color": "dark charcoal",
+              "styling_note": "Use the vest to replace a blazer and keep the silhouette modern and wedding-appropriate."
+            },
+            {
+              "role": "outer layer",
+              "category": "overshirt",
+              "color": "navy",
+              "styling_note": "Keep open for the evening; it reads intentional and seasonally relevant rather than casual."
+            },
+            {
+              "role": "bottom",
+              "category": "trousers",
+              "color": "charcoal",
+              "styling_note": "A slightly boxy hip shape keeps the look contemporary and easy on his proportions."
+            },
+            {
+              "role": "footwear",
+              "category": "dress boots",
+              "color": "dark brown",
+              "styling_note": "Choose a boot rather than a loafer to keep the outfit grounded and weather-ready."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "why_this_works_now": "He asked for a wedding outfit, and the strongest answer is to stay in his dark, understated range while moving one layer up from workwear to semi-formal: a charcoal base, dark vest, navy overshirt, and dress boots. This keeps the look respectful and seasonally appropriate without becoming overdressed or formal overdressed.",
+        "persona_alignment": "The recommendation stays within his proven style DNA: practical, understated, textured, weather-aware, and smart-casual. It avoids anything bright, boxy, or heavily tailored beyond his usual straight relaxed fit.",
+        "profile_alignment": "The outfit matches his body and wardrobe signals: dark vertical layers, overshirt structure, charcoal trousers, and dress boots. It keeps his usual proportions comfortable while adding enough polish for a wedding context.",
+        "prompt_alignment": "The response follows the strict style recommendation format, uses only his own style language, and does not mention brands or shopping details."
+      }
+    }
+  },
+  "sigmoi": {
+    "model": "raven-stylist (local llama-server)",
+    "user_prompt_sent": "\nprompt: show me a different style\n\nstyle:\n  context:\n    occasion: formal wedding\n  intent:\n    primary_intent: find a wedding outfit that feels respectful, contemporary, and not overdressed\n  recommendations:\n  - label: Dark navy charcoal semi-formal option\n    logic_summary: This is the closest thing to a wedding outfit that stays true to his palette and existing wardrobe: dark, understated, and not tuxedo overdressed.\n    pieces:\n    - category: dress shirt\n      color: charcoal\n      role: base layer\n      styling_note: Wear open to create a clean vertical line and keep the look respectful without being formal.\n    - category: fine-gauge knit vest\n      color: dark charcoal\n      role: mid layer\n      styling_note: Use the vest to replace a blazer and keep the silhouette modern and wedding-appropriate.\n    - category: overshirt\n      color: navy\n      role: outer layer\n      styling_note: Keep open for the evening; it reads intentional and seasonally relevant rather than casual.\n    - category: trousers\n      color: charcoal\n      role: bottom\n      styling_note: A slightly boxy hip shape keeps the look contemporary and easy on his proportions.\n    - category: dress boots\n      color: dark brown\n      role: footwear\n      styling_note: Choose a boot rather than a loafer to keep the outfit grounded and weather-ready.\n",
+    "response": {
+      "scene": {
+        "occasion": "formal wedding",
+        "setting": "modern city wedding reception in a stylish loft event space overlooking the city skyline, with subtle architectural lines and a polished but contemporary atmosphere",
+        "lighting": "soft warm ambient interior lighting with gentle reflective surfaces and natural evening light from large windows, creating a realistic elegant mood without harsh flash",
+        "time_of_day": "evening",
+        "mood": "respectful, understated, contemporary, and seasonally appropriate"
+      },
+      "outfit": {
+        "pieces": [
+          {
+            "description": "charcoal fine-gauge dress shirt with a clean vertical line, open collar, and contemporary button closure"
+          },
+          {
+            "description": "dark charcoal semi-formal knit vest with a sleek modern cut and subtle texture"
+          },
+          {
+            "description": "navy overshirt worn open over the vest, creating a long layered effect and keeping the look intentional"
+          },
+          {
+            "description": "charcoal tailored trousers with a slightly boxy hip shape and room through the seat"
+          },
+          {
+            "description": "dark brown leather dress boots with a low block heel and refined modern silhouette"
+          }
+        ]
+      },
+      "prompt": {
+        "system": "Create a photorealistic virtual try-on image focused on scene setting, garment fidelity, and natural body proportions. Prioritize accurate rendering of fabric texture, layering, drape, and contemporary wedding appropriateness. Keep the image realistic, not editorial. Use the supplied outfit and style context to guide color, layering, and mood. Avoid fantasy, exaggerated fashion poses, or overly dramatic lighting. Preserve the intent of looking respectful, contemporary, and not overdressed.",
+        "user": "Prompt: show me a different style. Intent: find a wedding outfit that feels respectful, contemporary, and not overdressed. Render the \"Dark navy charcoal semi-formal option\" for a formal wedding reception in a modern city loft event space overlooking the skyline. Show a tall man in charcoal fine-gauge dress shirt, dark charcoal knit vest, navy overshirt worn open, charcoal tailored trousers, and dark brown leather dress boots. Emphasize understated elegance, clean vertical layering, contemporary tailoring, and seasonally relevant detail. Keep the photo realistic and respectful, with soft warm indoor lighting, natural evening light from windows, and a polished but modern atmosphere."
+      }
+    }
+  },
+  "gemini": {
+    "model": "gemini-3.1-flash-image-preview",
+    "image_size": "1K",
+    "prompt_system_sent": "Create a photorealistic virtual try-on image focused on scene setting, garment fidelity, and natural body proportions. Prioritize accurate rendering of fabric texture, layering, drape, and contemporary wedding appropriateness. Keep the image realistic, not editorial. Use the supplied outfit and style context to guide color, layering, and mood. Avoid fantasy, exaggerated fashion poses, or overly dramatic lighting. Preserve the intent of looking respectful, contemporary, and not overdressed.",
+    "prompt_user_sent": "Prompt: show me a different style. Intent: find a wedding outfit that feels respectful, contemporary, and not overdressed. Render the \"Dark navy charcoal semi-formal option\" for a formal wedding reception in a modern city loft event space overlooking the skyline. Show a tall man in charcoal fine-gauge dress shirt, dark charcoal knit vest, navy overshirt worn open, charcoal tailored trousers, and dark brown leather dress boots. Emphasize understated elegance, clean vertical layering, contemporary tailoring, and seasonally relevant detail. Keep the photo realistic and respectful, with soft warm indoor lighting, natural evening light from windows, and a polished but modern atmosphere.",
+    "headshot_used": "/Users/jasper/Technology/mlstudios/projects/raven/backend/api/profiles/usr_006_jamie/photos/headshot.png"
+  }
+}
