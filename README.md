@@ -222,6 +222,13 @@ terraform apply
 - Respect component boundaries and separation of concerns
 - See `backend/*/CLAUDE.md` for implementation details
 
+
+# Target AWS Production Infrastructure (Future Phase)
+![AWS Infrastructure Architecture](images/AWSArchitecture.png)
+
+Target production architecture for RAVEN (AWS-native), planned for a future-phase SaaS platform. It spans the full lifecycle — user access, authentication and RBAC, model serving (Bedrock orchestration with a fine-tuned custom model and RAG), the ML pipeline, and monitoring/observability. The design is a reusable reference pattern for AI-native SaaS. RAVEN currently runs locally. Next phase is MVP deployment with a subset of the architecture. This diagram represents the production target.
+
+
 ## License
 
 See LICENSE file.
