@@ -1,5 +1,5 @@
 # Raven AI Stylist
-![System Architecture](images/ui.png)
+![RAVEN Converstaional UI](images/ui.png)
 
 ## Table of Contents
 
@@ -25,9 +25,15 @@
 
 ## Overview
 
-RAVEN is a conversational AI stylist designed for online fashion retail, built to close the gap between what customers say and what they actually mean — a problem the report calls Intent Engineering, resolved by combining immediate, contextual, and universal intent signals. At its core is Sigmoi, a domain-specific reasoning model fine-tuned from the GPT-OSS-20B Mixture-of-Experts base using supervised fine-tuning on a synthetically generated, research-guided dataset of 4,739 samples spanning style, virtual try-on, and conversational tasks. RAVEN wraps this model in a multi-agent architecture with a conversational interface and photorealistic virtual try-on, aiming to achieve intuitive UI/UX, personalised guidance of an in-store stylist. 
+RAVEN is a conversational AI stylist designed for online fashion retail customers. It is built to close the gap between what customers say and what they actually mean - an emerging approach called Intent Engineering, resolved by combining immediate, contextual, and universal intent signals. At its core is Sigmoi, a domain-specific reasoning model fine-tuned from the GPT-OSS-20B Mixture-of-Experts base using supervised fine-tuning on a synthetically generated, research-guided dataset of 4,739 samples spanning style, virtual try-on, and conversational tasks. RAVEN wraps this model in a multi-agent architecture with a conversational interface and photorealistic virtual try-on, aiming to achieve intuitive UI/UX, the personalised guidance like an in-store stylist.
 
-**Purpose**: Demonstrate that domain-specific trained models and multi-agent system design can enhance personalisation and recommendations.
+The project aimed to address the following:
+
+1. More personalised and coherent recommendations with world grounding and domain specificity.
+2. Conversational UI for AI-native with zero-click accessible UX for all abilities
+3. Enhance reasoning capability in multi-agent workflow by fine-tuning MoE reasoning model
+4. Democratise access for small and medium businesses with fine-tuned self-hosted model without compromising on performance
+5. Reduce latency, lower compute, and remove dependency on third party foundational model API access
 
 > NOTE: This is a distilled repository for illustrating the overall design and implementation of an end-to-end AI-native app spanning data pipeline, model training, and multi-agent applications. Separate repos contain the full agentic application and MLOps codebase.
 
@@ -97,7 +103,7 @@ This zooms into the Fashion Agent container above. The **Orchestration Agent** o
    - Stores user profiles in JSON format
    - Provides profile list for frontend selection
 
-NOTE: Persona Agent not implmented due to time limitations.
+NOTE: Persona Agent not implemented due to time limitations.
 
 
 ### Data Flow
@@ -160,7 +166,7 @@ All files written together or none (atomic).
 
 ![MLOPs Architecture](images/ml-pipeline.png)
 
-The end-to-end training flow, from data creation to serving. A **teacher LLM** (GPT 5.4), seeded with public fashion context, distils synthetic reasoning data for every MoE task — 4,739 samples in total (Style: 2,802, Chat: 1,003, VTO: 934). The SageMaker pipeline then takes over, processing data through the **Medallion Architecture** so every stage stays traceable and inspectable: **data ingestion** extracts the raw records (**Bronze** — raw, unprocessed source), **feature selection** applies the JSON selection schemas and **data transformation** injects features into the MoE prompt templates (**Silver** — cleaned and validated), and **prepare dataset** splits and tokenises the text into ready-to-train Harmony format (**Gold** — optimised and model-ready). **Model training** fine-tunes the domain-specific reasoning model and **model evaluation** scores it against standard metrics and semantic scores — runs that fail the threshold loop back to training, while passing models land in the **model registry** for human verification and **deployment** — the approved LoRA adapter is merged with the base model and exported to GGUF (Q4_K_M 4-bit) for lightweight llama.cpp serving behind the Lambda model endpoint. Every stage persists its outputs to the S3 artefact store.
+The end-to-end training flow, from data creation to serving. A **teacher LLM** (GPT 5.4), seeded with public fashion context, distils synthetic reasoning data for every MoE task — 4,739 samples in total (Style: 2,802, Chat: 1,003, VTO: 934). The SageMaker pipeline then takes over, processing data through the **Medallion Architecture** so every stage stays traceable and inspectable: **data ingestion** extracts the raw records (**Bronze** — raw, unprocessed source), **feature selection** applies the JSON selection schemas and **data transformation** injects features into the MoE prompt templates (**Silver** — cleaned and validated), and **prepare dataset** splits and tokenises the text into ready-to-train Harmony format (**Gold** — optimised and model-ready). **Model training** fine-tunes the domain-specific reasoning model and **model evaluation** scores it against standard metrics and semantic scores — runs that fail the threshold loop back to training, while passing models land in the **model registry** for human verification and **deployment** — the approved LoRA adapter is merged with the base model and exported to GGUF (Q4_K_M 4-bit) for lightweight llama.cpp serving. Every stage persists its outputs to the S3 artefact store.
 
 **SageMaker Pipeline Orchestration**:
 
