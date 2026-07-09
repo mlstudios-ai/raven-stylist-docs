@@ -224,4 +224,4 @@ terraform apply
 
 ## License
 
-Private repository - All rights reserved
+See LICENSE file.
