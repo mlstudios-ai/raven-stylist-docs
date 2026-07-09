@@ -1,6 +1,28 @@
 # Raven AI Stylist
 ![System Architecture](images/ui.png)
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [User Journey](#user-journey)
+- [Architecture Overview](#architecture-overview)
+  - [Multi-Agent System](#multi-agent-system)
+  - [Data Flow](#data-flow)
+  - [Episode Persistence](#episode-persistence)
+  - [Architecture Principles](#architecture-principles)
+- [Technical Approach](#technical-approach)
+  - [Tech Stack](#tech-stack)
+  - [MLOps](#mlops)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Local Development](#local-development)
+  - [Deployment](#deployment)
+- [Development Notes](#development-notes)
+- [Target AWS Production Infrastructure (Future Phase)](#target-aws-production-infrastructure-future-phase)
+- [License](#license)
+
 ## Overview
 
 RAVEN is a conversational AI stylist designed for online fashion retail, built to close the gap between what customers say and what they actually mean — a problem the report calls Intent Engineering, resolved by combining immediate, contextual, and universal intent signals. At its core is Sigmoi, a domain-specific reasoning model fine-tuned from the GPT-OSS-20B Mixture-of-Experts base using supervised fine-tuning on a synthetically generated, research-guided dataset of 4,739 samples spanning style, virtual try-on, and conversational tasks. RAVEN wraps this model in a multi-agent architecture with a conversational interface and photorealistic virtual try-on, aiming to achieve intuitive UI/UX, personalised guidance of an in-store stylist. 
@@ -101,7 +123,7 @@ backend/api/profiles/{user_id}/episodes/{ep_id}/
 
 All files written together or none (atomic).
 
-## Architecture Principles
+### Architecture Principles
 - Stylist orchestrator holds session state (stateful)
 - Sub-agents are stateless functions
 - Episode-based persistence with atomic writes
