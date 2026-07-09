@@ -31,7 +31,7 @@ The project aimed to address the following:
 
 1. More personalised and coherent recommendations with world grounding and domain specificity.
 2. Conversational UI for AI-native with zero-click accessible UX for all abilities
-3. Enhance reasoning capability in multi-agent workflow by fine-tuning MoE reasoning model
+3. Enhance reasoning in multi-agent workflow by fine-tuning MoE reasoning model
 4. Democratise access for small and medium businesses with fine-tuned self-hosted model without compromising on performance
 5. Reduce latency, lower compute, and remove dependency on third party foundational model API access
 
