@@ -1,7 +1,7 @@
 # Raven AI Stylist
-Raven is a converstaional AI application (powered by custom trained MoE model fined tune on base model gpt-oss-20b) where user can simply chat and ask for style and outfit recommendations. The user can also ask for it to be display a rendering of virtual try-on (VTO) image combining user's profile photo and recommended descriptions of outfit items.
+Raven is a conversational AI application (powered by custom finetuned MoE model based on gpt-oss-20b) where user can simply chat and ask for style and outfit recommendations. The user can also ask for it to be display a rendering of virtual try-on (VTO) image combining user's profile photo and recommended descriptions of outfit items.
 
-The scope of this project is a demo prototype. The purpose to do demonstrate domain specific trained models and multi-agent system design can enhance personalisation and recommendations. The protoype is a showcase piece to back up model metrics.
+The scope of this project is a demo prototype. The purpose to do demonstrate domain specific trained models and multi-agent system design can enhance personalisation and recommendations. The prototype is a showcase piece to back up model metrics.
 
 The prototype functionalities include:
 
@@ -45,7 +45,7 @@ Code location: backend/style
 
 Code location: backend/vto
 
-4. User Profile Tool: Stores user profile in JSON format. The profiles are used to construct a list for the front end so it can be choosen to demo as the logged in user.
+4. User Profile Tool: Stores user profile in JSON format. The profiles are used to construct a list for the front end so it can be chosen to demo as the logged in user.
 
 Code location: backend/profile
 
@@ -108,7 +108,7 @@ Code location: frontend
 For more details of the frontend and implementation requirements, refer to the CLAUDE.md inside the frontend folder.
 
 ### Infrastructure 
-The agents and websites are to be hosted on AWS Cloud. The infrastructer is to be set up using Infrastructre as Code (IaC).
+The agents and websites are to be hosted on AWS Cloud. The infrastructer is to be set up using Infrastructure as Code (IaC).
 
 The IaC code should go into the `terraform` folder. It should contains all files for aws. This include:
 - Lambda for hosting the agents
@@ -127,7 +127,7 @@ For testing, it should be done locally first.
 TIPS:
 
 Please take a look at Alex repo at ../alex/ to understand the system design concept.
-The Alex project contains multi-agent, orchestrator, frontend, backend, terraform and the workflow similar to this project but for different domain. Don't copy the "alex" project verbatinm, just borrow the approach. This project is much simpler.
+The Alex project contains multi-agent, orchestrator, frontend, backend, terraform and the workflow similar to this project but for different domain. Don't copy the "alex" project verbatim, just borrow the approach. This project is much simpler.
 
 ## Build Instructions
 - Use an agent to build each component

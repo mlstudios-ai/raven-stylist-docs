@@ -1,6 +1,8 @@
 # Raven AI Stylist
 ![RAVEN Converstaional UI](images/ui.png)
 
+> NOTE: This is a distilled (incomplete) repository for illustrating the overall design and implementation of an end-to-end AI-native app spanning data pipeline, model training, and multi-agent applications. Two separate repos containing the full agentic application and MLOps codebase are private
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -34,9 +36,6 @@ The project aimed to address the following:
 3. Enhance reasoning in multi-agent workflow by fine-tuning MoE reasoning model
 4. Democratise access for small and medium businesses with fine-tuned self-hosted model without compromising on performance
 5. Reduce latency, lower compute, and remove dependency on third party foundational model API access
-
-> NOTE: This is a distilled repository for illustrating the overall design and implementation of an end-to-end AI-native app spanning data pipeline, model training, and multi-agent applications. Separate repos contain the full agentic application and MLOps codebase.
-
 
 ## Features
 
