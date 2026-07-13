@@ -1,0 +1,45 @@
+name: Build Base Image
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ap-southeast-2
+
+      - name: Start CodeBuild
+        id: codebuild
+        run: |
+          BUILD_ID=$(aws codebuild start-build \
+            --project-name sigmoi-base-image-build \
+            --query 'build.id' \
+            --output text)
+          echo "build_id=$BUILD_ID" >> $GITHUB_OUTPUT
+          echo "Started build: $BUILD_ID"
+
+      - name: Wait for build to complete
+        run: |
+          BUILD_ID="${{ steps.codebuild.outputs.build_id }}"
+          echo "Polling CodeBuild status..."
+          while true; do
+            STATUS=$(aws codebuild batch-get-builds \
+              --ids "$BUILD_ID" \
+              --query 'builds[0].buildStatus' \
+              --output text)
+            echo "Status: $STATUS"
+            case $STATUS in
+              SUCCEEDED) echo "Build succeeded."; exit 0 ;;
+              FAILED|FAULT|STOPPED|TIMED_OUT) echo "Build failed: $STATUS"; exit 1 ;;
+            esac
+            sleep 30
+          done

@@ -1,0 +1,99 @@
+name: Run SageMaker Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Environment
+        required: true
+        default: dev
+        type: choice
+        options: [dev, staging, prod]
+      model_name:
+        description: Base model name
+        required: false
+        default: unsloth/gpt-oss-20b-unsloth-bnb-4bit
+        type: string
+      action:
+        description: "upsert = update pipeline definition then run, start = run existing pipeline"
+        required: true
+        default: upsert
+        type: choice
+        options: [upsert, start]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install pipeline dependencies
+        # Install local package without heavy training deps (torch/unsloth run inside SageMaker containers)
+        run: |
+          pip install --no-deps -e .
+          pip install "sagemaker==3.7.0" "sagemaker-mlflow==0.2.0" "boto3>=1.35.0" "pyyaml>=6.0" "jsonref>=1.1.0" "mlflow==3.10.1"
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ap-southeast-2
+
+      - name: Upsert pipeline definition
+        if: inputs.action == 'upsert'
+        working-directory: pipelines
+        env:
+          SAGEMAKER_ROLE_ARN: ${{ secrets.SAGEMAKER_ROLE_ARN }}
+          AWS_REGION: ap-southeast-2
+        run: |
+          python run_pipeline.py \
+            --remote \
+            --pipeline-name sigmoi-stylist \
+            --role "$SAGEMAKER_ROLE_ARN" \
+            --no-start
+
+      - name: Start pipeline execution
+        id: pipeline
+        run: |
+          EXECUTION_ARN=$(aws sagemaker start-pipeline-execution \
+            --pipeline-name sigmoi-stylist \
+            --pipeline-execution-display-name "gh-${{ github.run_id }}" \
+            --query 'PipelineExecutionArn' \
+            --output text)
+          echo "execution_arn=$EXECUTION_ARN" >> $GITHUB_OUTPUT
+          echo "Started: $EXECUTION_ARN"
+
+      - name: Wait for pipeline to complete
+        run: |
+          EXECUTION_ARN="${{ steps.pipeline.outputs.execution_arn }}"
+          echo "Polling pipeline execution..."
+          while true; do
+            STATUS=$(aws sagemaker describe-pipeline-execution \
+              --pipeline-execution-arn "$EXECUTION_ARN" \
+              --query 'PipelineExecutionStatus' \
+              --output text)
+            echo "Status: $STATUS"
+            case $STATUS in
+              Succeeded)
+                echo "Pipeline succeeded."
+                exit 0 ;;
+              Failed|Stopped)
+                echo "Pipeline failed with status: $STATUS"
+                aws sagemaker list-pipeline-execution-steps \
+                  --pipeline-execution-arn "$EXECUTION_ARN" \
+                  --query 'PipelineExecutionSteps[?StepStatus==`Failed`].[StepName,FailureReason]' \
+                  --output table
+                exit 1 ;;
+            esac
+            sleep 60
+          done
